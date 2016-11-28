@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/installation.rst:4
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
 #: ../../source/installation.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "イントロダクション"
 
 #: ../../source/installation.rst:9
 msgid ""
@@ -33,6 +33,8 @@ msgid ""
 "Python API you can access all functionalities of Selenium WebDriver in an"
 " intuitive way."
 msgstr ""
+"Selenium Python バインディングは、Selenium WebDriverを使って機能/受入れテストを書くためのシンプルなAPIを提供します。"
+"Selenium Python APIを使用すると、直感的な方法でSelenium WebDriverのすべての機能にアクセスできます。"
 
 #: ../../source/installation.rst:14
 msgid ""
@@ -40,16 +42,20 @@ msgid ""
 "WebDrivers like Firefox, Ie, Chrome, Remote etc.  The current supported "
 "Python versions are 2.7, 3.2 and above."
 msgstr ""
+"Selenium PythonバインディングはFirefox、IE、Chrome、RemoteなどのSelenium WebDriversにアクセスするための便利なAPIを提供します。"
+"現在サポートされているPythonバージョンは2.7,3.2以上です。"
 
 #: ../../source/installation.rst:18
 msgid ""
 "This documentation explains Selenium 2 WebDriver API.  Selenium 1 / "
 "Selenium RC API is not covered here."
 msgstr ""
+"このドキュメントでは、Selenium 2 WebDriver APIについて説明します。"
+"Selenium1 / Selenium RC APIについては、ここでは扱いません。"
 
 #: ../../source/installation.rst:23
 msgid "Downloading Python bindings for Selenium"
-msgstr ""
+msgstr "SeleniumのPythonバインディングをダウンロード"
 
 #: ../../source/installation.rst:25
 msgid ""
@@ -61,6 +67,9 @@ msgid ""
 "<https://docs.python.org/3.5/installing/index.html>`_. Using `pip`, you "
 "can install selenium like this::"
 msgstr ""
+"SeleniumのPythonバインディングは、`PyPI page for selenium package <https://pypi.python.org/pypi/selenium>`_ からダウンロードできます。"
+"しかし、より良いアプローチは、 `pip <https://pip.pypa.io/en/latest/installing/>`_ を使ってselenium packageをインストールすることです。"
+"Python 3.5には `標準ライブラリ <https://docs.python.org/3.5/installing/index.html>`_ があります。 `pip` を使うと、次のようにseleniumをインストールできます。::"
 
 #: ../../source/installation.rst:35
 msgid ""
@@ -69,26 +78,30 @@ msgid ""
 "<https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ which "
 "is almost same as virtualenv."
 msgstr ""
+"孤立したPython環境を作るために `virtualenv <http://www.virtualenv.org>`_ を使うことを検討するかもしれません。"
+"Python 3.5には、virtualenvとほとんど同じ `pyvenv <https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ があります。"
 
 #: ../../source/installation.rst:42
 msgid "Detailed instructions for Windows users"
-msgstr ""
+msgstr "Windowsユーザーの詳細な手順"
 
 #: ../../source/installation.rst:46
 msgid "You should have internet connection to perform this installation."
-msgstr ""
+msgstr "このインストールを実行するには、インターネット接続が必要です。"
 
 #: ../../source/installation.rst:48
 msgid ""
 "Install Python 3.5 using the `MSI available in python.org download page "
 "<http://www.python.org/download>`_."
 msgstr ""
+"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが使えるPython 3.5をインストールする 。"
 
 #: ../../source/installation.rst:51
 msgid ""
 "Start a command prompt using the ``cmd.exe`` program and run the ``pip`` "
 "command as given below to install `selenium`."
 msgstr ""
+"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが使えるPython 3.5をインストールする 。"
 
 #: ../../source/installation.rst:58
 msgid ""
@@ -96,6 +109,9 @@ msgid ""
 " created a Selenium based script and saved it inside "
 "``C:\\my_selenium_script.py``, you can run it like this::"
 msgstr ""
+"これでPythonを使用してテストスクリプトを実行できます。"
+"例えば、Seleniumベースのスクリプトを作成して内部に保存した場合"
+"``C：\ my_selenium_script.py`` を実行すると、次のように実行できます::"
 
 #: ../../source/installation.rst:66
 msgid "Downloading Selenium server"
