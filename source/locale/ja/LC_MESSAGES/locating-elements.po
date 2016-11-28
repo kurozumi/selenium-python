@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Baiju Muthukadan
+# This file is distributed under the same license as the Selenium Python
+# Bindings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Selenium Python Bindings 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-28 14:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/locating-elements.rst:4
+msgid "Locating Elements"
+msgstr ""
+
+#: ../../source/locating-elements.rst:6
+msgid ""
+"There are various strategies to locate elements in a page.  You can use "
+"the most appropriate one for your case.  Selenium provides the following "
+"methods to locate elements in a page:"
+msgstr ""
+
+#: ../../source/locating-elements.rst:10
+msgid "`find_element_by_id`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:11
+msgid "`find_element_by_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:12
+msgid "`find_element_by_xpath`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:13
+msgid "`find_element_by_link_text`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:14
+msgid "`find_element_by_partial_link_text`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:15
+msgid "`find_element_by_tag_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:16
+msgid "`find_element_by_class_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:17
+msgid "`find_element_by_css_selector`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:20
+msgid "**To find multiple elements (these methods will return a list):**"
+msgstr ""
+
+#: ../../source/locating-elements.rst:22
+msgid "`find_elements_by_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:23
+msgid "`find_elements_by_xpath`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:24
+msgid "`find_elements_by_link_text`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:25
+msgid "`find_elements_by_partial_link_text`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:26
+msgid "`find_elements_by_tag_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:27
+msgid "`find_elements_by_class_name`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:28
+msgid "`find_elements_by_css_selector`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:31
+msgid ""
+"Apart from the public methods given above, there are two private methods "
+"which might be useful with locators in page objects.  These are the two "
+"private methods: `find_element` and `find_elements`."
+msgstr ""
+
+#: ../../source/locating-elements.rst:35
+msgid "Example usage::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:43
+msgid "These are the attributes available for `By` class::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:56
+msgid "Locating by Id"
+msgstr ""
+
+#: ../../source/locating-elements.rst:58
+msgid ""
+"Use this when you know `id` attribute of an element.  With this strategy,"
+" the first element with the `id` attribute value matching the location "
+"will be returned.  If no element has a matching `id` attribute, a "
+"``NoSuchElementException`` will be raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:63 ../../source/locating-elements.rst:88
+#: ../../source/locating-elements.rst:136
+#: ../../source/locating-elements.rst:220
+#: ../../source/locating-elements.rst:244
+#: ../../source/locating-elements.rst:266
+#: ../../source/locating-elements.rst:286
+msgid "For instance, consider this page source::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:75
+msgid "The form element can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:81
+msgid "Locating by Name"
+msgstr ""
+
+#: ../../source/locating-elements.rst:83
+msgid ""
+"Use this when you know `name` attribute of an element.  With this "
+"strategy, the first element with the `name` attribute value matching the "
+"location will be returned.  If no element has a matching `name` "
+"attribute, a ``NoSuchElementException`` will be raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:101
+msgid "The username & password elements can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:106
+msgid ""
+"This will give the \"Login\" button as it occurs before the \"Clear\" "
+"button::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:113
+msgid "Locating by XPath"
+msgstr ""
+
+#: ../../source/locating-elements.rst:115
+msgid ""
+"XPath is the language used for locating nodes in an XML document.  As "
+"HTML can be an implementation of XML (XHTML), Selenium users can leverage"
+" this powerful language to target elements in their web applications.  "
+"XPath extends beyond (as well as supporting) the simple methods of "
+"locating by id or name attributes, and opens up all sorts of new "
+"possibilities such as locating the third checkbox on the page."
+msgstr ""
+
+#: ../../source/locating-elements.rst:122
+msgid ""
+"One of the main reasons for using XPath is when you don't have a suitable"
+" id or name attribute for the element you wish to locate.  You can use "
+"XPath to either locate the element in absolute terms (not advised), or "
+"relative to an element that does have an id or name attribute.  XPath "
+"locators can also be used to specify elements via attributes other than "
+"id and name."
+msgstr ""
+
+#: ../../source/locating-elements.rst:129
+msgid ""
+"Absolute XPaths contain the location of all elements from the root (html)"
+" and as a result are likely to fail with only the slightest adjustment to"
+" the application.  By finding a nearby element with an id or name "
+"attribute (ideally a parent element) you can locate your target element "
+"based on the relationship.  This is much less likely to change and can "
+"make your tests more robust."
+msgstr ""
+
+#: ../../source/locating-elements.rst:149
+msgid "The form elements can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:156
+msgid "Absolute path (would break if the HTML was changed only slightly)"
+msgstr ""
+
+#: ../../source/locating-elements.rst:158
+msgid "First form element in the HTML"
+msgstr ""
+
+#: ../../source/locating-elements.rst:160
+msgid "The form element with attribute named `id` and the value `loginForm`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:162
+msgid "The username element can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:168
+msgid ""
+"First form element with an input child element with attribute named "
+"`name` and the value `username`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:171
+msgid ""
+"First input child element of the form element with attribute named `id` "
+"and the value `loginForm`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:174
+msgid "First input element with attribute named 'name' and the value `username`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:177
+msgid "The \"Clear\" button element can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:183
+msgid ""
+"Input with attribute named `name` and the value `continue` and attribute "
+"named `type` and the value `button`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:186
+msgid ""
+"Fourth input child element of the form element with attribute named `id` "
+"and value `loginForm`"
+msgstr ""
+
+#: ../../source/locating-elements.rst:189
+msgid ""
+"These examples cover some basics, but in order to learn more, the "
+"following references are recommended:"
+msgstr ""
+
+#: ../../source/locating-elements.rst:192
+msgid "`W3Schools XPath Tutorial <http://www.w3schools.com/xsl/xpath_intro.asp>`_"
+msgstr ""
+
+#: ../../source/locating-elements.rst:193
+msgid "`W3C XPath Recommendation <http://www.w3.org/TR/xpath>`_"
+msgstr ""
+
+#: ../../source/locating-elements.rst:194
+msgid ""
+"`XPath Tutorial <http://www.zvon.org/comp/r/tut-XPath_1.html>`_ - with "
+"interactive examples."
+msgstr ""
+
+#: ../../source/locating-elements.rst:198
+msgid ""
+"There are also a couple of very useful Add-ons that can assist in "
+"discovering the XPath of an element:"
+msgstr ""
+
+#: ../../source/locating-elements.rst:201
+msgid ""
+"`XPath Checker <https://addons.mozilla.org/en-"
+"US/firefox/addon/1095?id=1095>`_ - suggests XPath and can be used to test"
+" XPath results."
+msgstr ""
+
+#: ../../source/locating-elements.rst:204
+msgid ""
+"`Firebug <https://addons.mozilla.org/en-US/firefox/addon/1843>`_ - XPath "
+"suggestions are just one of the many powerful features of this very "
+"useful add-on."
+msgstr ""
+
+#: ../../source/locating-elements.rst:207
+msgid ""
+"`XPath Helper "
+"<https://chrome.google.com/webstore/detail/hgimnogjllphhhkhlmebbmlgjoejdpjl>`_"
+" - for Google Chrome"
+msgstr ""
+
+#: ../../source/locating-elements.rst:213
+msgid "Locating Hyperlinks by Link Text"
+msgstr ""
+
+#: ../../source/locating-elements.rst:215
+msgid ""
+"Use this when you know link text used within an anchor tag.  With this "
+"strategy, the first element with the link text value matching the "
+"location will be returned.  If no element has a matching link text "
+"attribute, a ``NoSuchElementException`` will be raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:230
+msgid "The continue.html link can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:237
+msgid "Locating Elements by Tag Name"
+msgstr ""
+
+#: ../../source/locating-elements.rst:239
+msgid ""
+"Use this when you want to locate an element by tag name. With this "
+"strategy, the first element with the given tag name will be returned. If "
+"no element has a matching tag name, a ``NoSuchElementException`` will be "
+"raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:253
+msgid "The heading (h1) element can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:259
+msgid "Locating Elements by Class Name"
+msgstr ""
+
+#: ../../source/locating-elements.rst:261
+msgid ""
+"Use this when you want to locate an element by class attribute name. With"
+" this strategy, the first element with the matching class attribute name "
+"will be returned.  If no element has a matching class attribute name, a "
+"``NoSuchElementException`` will be raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:274
+#: ../../source/locating-elements.rst:294
+msgid "The \"p\" element can be located like this::"
+msgstr ""
+
+#: ../../source/locating-elements.rst:279
+msgid "Locating Elements by CSS Selectors"
+msgstr ""
+
+#: ../../source/locating-elements.rst:281
+msgid ""
+"Use this when you want to locate an element by CSS selector syntax. With "
+"this strategy, the first element with the matching CSS selector will be "
+"returned.  If no element has a matching CSS selector, a "
+"``NoSuchElementException`` will be raised."
+msgstr ""
+
+#: ../../source/locating-elements.rst:298
+msgid ""
+"`Sauce Labs has good documentation "
+"<http://saucelabs.com/resources/selenium/css-selectors>`_ on CSS "
+"selectors."
+msgstr ""
+

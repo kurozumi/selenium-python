@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Baiju Muthukadan
+# This file is distributed under the same license as the Selenium Python
+# Bindings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Selenium Python Bindings 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-28 14:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/waits.rst:4
+msgid "Waits"
+msgstr ""
+
+#: ../../source/waits.rst:6
+msgid ""
+"These days most of the web apps are using AJAX techniques.  When a page "
+"is loaded to browser, the elements within that page may load at different"
+" time intervals.  This makes locating elements difficult, if the element "
+"is not present in the DOM, it will raise `ElementNotVisibleException` "
+"exception.  Using waits, we can solve this issue.  Waiting provides some "
+"time interval between actions performed - mostly locating element or any "
+"other operation with the element."
+msgstr ""
+
+#: ../../source/waits.rst:15
+msgid ""
+"Selenium Webdriver provides two types of waits - implicit & explicit. An "
+"explicit wait makes WebDriver to wait for a certain condition to occur "
+"before proceeding further with executions.  An implicit wait makes "
+"WebDriver to poll the DOM for a certain amount of time when trying to "
+"locate an element."
+msgstr ""
+
+#: ../../source/waits.rst:23
+msgid "Explicit Waits"
+msgstr ""
+
+#: ../../source/waits.rst:25
+msgid ""
+"An explicit wait is code you define to wait for a certain condition to "
+"occur before proceeding further in the code.  The worst case of this is "
+"time.sleep(), which sets the condition to an exact time period to wait.  "
+"There are some convenience methods provided that help you write code that"
+" will wait only as long as required.  WebDriverWait in combination with "
+"ExpectedCondition is one way this can be accomplished."
+msgstr ""
+
+#: ../../source/waits.rst:50
+msgid ""
+"This waits up to 10 seconds before throwing a TimeoutException or if it "
+"finds the element will return it in 0 - 10 seconds.  WebDriverWait by "
+"default calls the ExpectedCondition every 500 milliseconds until it "
+"returns successfully.  A successful return is for ExpectedCondition type "
+"is Boolean return true or not null return value for all other "
+"ExpectedCondition types."
+msgstr ""
+
+#: ../../source/waits.rst:57
+msgid "**Expected Conditions**"
+msgstr ""
+
+#: ../../source/waits.rst:59
+msgid ""
+"There are some common conditions that are frequent when automating web "
+"browsers.  Listed below are Implementations of each. Selenium Python "
+"binding provides some convienence methods so you don't have to code an "
+"expected_condition class yourself or create your own utility package for "
+"them."
+msgstr ""
+
+#: ../../source/waits.rst:65
+msgid "title_is"
+msgstr ""
+
+#: ../../source/waits.rst:66
+msgid "title_contains"
+msgstr ""
+
+#: ../../source/waits.rst:67
+msgid "presence_of_element_located"
+msgstr ""
+
+#: ../../source/waits.rst:68
+msgid "visibility_of_element_located"
+msgstr ""
+
+#: ../../source/waits.rst:69
+msgid "visibility_of"
+msgstr ""
+
+#: ../../source/waits.rst:70
+msgid "presence_of_all_elements_located"
+msgstr ""
+
+#: ../../source/waits.rst:71
+msgid "text_to_be_present_in_element"
+msgstr ""
+
+#: ../../source/waits.rst:72
+msgid "text_to_be_present_in_element_value"
+msgstr ""
+
+#: ../../source/waits.rst:73
+msgid "frame_to_be_available_and_switch_to_it"
+msgstr ""
+
+#: ../../source/waits.rst:74
+msgid "invisibility_of_element_located"
+msgstr ""
+
+#: ../../source/waits.rst:75
+msgid "element_to_be_clickable - it is Displayed and Enabled."
+msgstr ""
+
+#: ../../source/waits.rst:76
+msgid "staleness_of"
+msgstr ""
+
+#: ../../source/waits.rst:77
+msgid "element_to_be_selected"
+msgstr ""
+
+#: ../../source/waits.rst:78
+msgid "element_located_to_be_selected"
+msgstr ""
+
+#: ../../source/waits.rst:79
+msgid "element_selection_state_to_be"
+msgstr ""
+
+#: ../../source/waits.rst:80
+msgid "element_located_selection_state_to_be"
+msgstr ""
+
+#: ../../source/waits.rst:81
+msgid "alert_is_present"
+msgstr ""
+
+#: ../../source/waits.rst:90
+msgid ""
+"The expected_conditions module contains a set of predefined conditions to"
+" use with WebDriverWait."
+msgstr ""
+
+#: ../../source/waits.rst:95
+msgid "Implicit Waits"
+msgstr ""
+
+#: ../../source/waits.rst:97
+msgid ""
+"An implicit wait is to tell WebDriver to poll the DOM for a certain "
+"amount of time when trying to find an element or elements if they are not"
+" immediately available.  The default setting is 0.  Once set, the "
+"implicit wait is set for the life of the WebDriver object instance."
+msgstr ""
+

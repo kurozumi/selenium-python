@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Baiju Muthukadan
+# This file is distributed under the same license as the Selenium Python
+# Bindings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Selenium Python Bindings 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-28 14:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/installation.rst:4
+msgid "Installation"
+msgstr ""
+
+#: ../../source/installation.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/installation.rst:9
+msgid ""
+"Selenium Python bindings provides a simple API to write "
+"functional/acceptance tests using Selenium WebDriver.  Through Selenium "
+"Python API you can access all functionalities of Selenium WebDriver in an"
+" intuitive way."
+msgstr ""
+
+#: ../../source/installation.rst:14
+msgid ""
+"Selenium Python bindings provide a convenient API to access Selenium "
+"WebDrivers like Firefox, Ie, Chrome, Remote etc.  The current supported "
+"Python versions are 2.7, 3.2 and above."
+msgstr ""
+
+#: ../../source/installation.rst:18
+msgid ""
+"This documentation explains Selenium 2 WebDriver API.  Selenium 1 / "
+"Selenium RC API is not covered here."
+msgstr ""
+
+#: ../../source/installation.rst:23
+msgid "Downloading Python bindings for Selenium"
+msgstr ""
+
+#: ../../source/installation.rst:25
+msgid ""
+"You can download Python bindings for Selenium from the `PyPI page for "
+"selenium package <https://pypi.python.org/pypi/selenium>`_.  However, a "
+"better approach would be to use `pip "
+"<https://pip.pypa.io/en/latest/installing/>`_ to install the selenium "
+"package.  Python 3.5 has pip available in the `standard library "
+"<https://docs.python.org/3.5/installing/index.html>`_. Using `pip`, you "
+"can install selenium like this::"
+msgstr ""
+
+#: ../../source/installation.rst:35
+msgid ""
+"You may consider using `virtualenv <http://www.virtualenv.org>`_ to "
+"create isolated Python environments.  Python 3.5 has `pyvenv "
+"<https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ which "
+"is almost same as virtualenv."
+msgstr ""
+
+#: ../../source/installation.rst:42
+msgid "Detailed instructions for Windows users"
+msgstr ""
+
+#: ../../source/installation.rst:46
+msgid "You should have internet connection to perform this installation."
+msgstr ""
+
+#: ../../source/installation.rst:48
+msgid ""
+"Install Python 3.5 using the `MSI available in python.org download page "
+"<http://www.python.org/download>`_."
+msgstr ""
+
+#: ../../source/installation.rst:51
+msgid ""
+"Start a command prompt using the ``cmd.exe`` program and run the ``pip`` "
+"command as given below to install `selenium`."
+msgstr ""
+
+#: ../../source/installation.rst:58
+msgid ""
+"Now you can run your test scripts using Python.  For example, if you have"
+" created a Selenium based script and saved it inside "
+"``C:\\my_selenium_script.py``, you can run it like this::"
+msgstr ""
+
+#: ../../source/installation.rst:66
+msgid "Downloading Selenium server"
+msgstr ""
+
+#: ../../source/installation.rst:70
+msgid ""
+"The Selenium server is only required, if you want to use the remote "
+"WebDriver.  See the :ref:`selenium-remote-webdriver` section for more "
+"details.  If you are a beginner learning Selenium, you can skip this "
+"section and proceed with next chapter."
+msgstr ""
+
+#: ../../source/installation.rst:75
+msgid ""
+"Selenium server is a Java program.  Java Runtime Environment (JRE) 1.6 or"
+" newer version is recommended to run Selenium server."
+msgstr ""
+
+#: ../../source/installation.rst:78
+msgid ""
+"You can download Selenium server 2.x from the `download page of selenium "
+"website <http://seleniumhq.org/download/>`_.  The file name should be "
+"something like this: ``selenium-server-standalone-2.x.x.jar``.  You can "
+"always download the latest 2.x version of Selenium server."
+msgstr ""
+
+#: ../../source/installation.rst:84
+msgid ""
+"If Java Runtime Environment (JRE) is not installed in your system, you "
+"can download the `JRE from the Oracle website "
+"<http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. "
+"If you are using a GNU/Linux system and have root access in your system, "
+"you can also use your operating system instructions to install JRE."
+msgstr ""
+
+#: ../../source/installation.rst:90
+msgid ""
+"If `java` command is available in the PATH (environment variable), you "
+"can start the Selenium server using this command::"
+msgstr ""
+
+#: ../../source/installation.rst:95
+msgid ""
+"Replace `2.x.x` with actual version of Selenium server you downloaded "
+"from the site."
+msgstr ""
+
+#: ../../source/installation.rst:98
+msgid ""
+"If JRE is installed as a non-root user and/or if it is not available in "
+"the PATH (environment variable), you can type the relative or absolute "
+"path to the `java` command.  Similarly, you can provide relative or "
+"absolute path to Selenium server jar file. Then, the command will look "
+"something like this::"
+msgstr ""
+
