@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/index.rst:3
 msgid "Selenium with Python"
-msgstr ""
+msgstr "PythonでSeleniumを操作する"
 
 #: ../../source/index.rst:5
 msgid "`Baiju Muthukadan <https://muthukadan.net>`_"
@@ -32,6 +32,9 @@ msgid ""
 "ShareAlike 4.0 International License <http://creativecommons.org/licenses"
 "/by-sa/4.0/>`_."
 msgstr ""
+"このドキュメントは `Creative Commons Attribution-"
+"ShareAlike 4.0 International License <http://creativecommons.org/licenses"
+"/by-sa/4.0/>`_のもとでライセンスされています."
 
 #: ../../source/index.rst:11
 msgid ""
@@ -39,10 +42,12 @@ msgid ""
 "available `here "
 "<https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_."
 msgstr ""
+"これは公式ドキュメントではありません。 公式APIドキュメントは"
+"`here <https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_で入手できます。"
 
 #: ../../source/index.rst:29
 msgid "Indices and tables"
-msgstr ""
+msgstr "索引と表"
 
 #: ../../source/index.rst:31
 msgid ":ref:`genindex`"
