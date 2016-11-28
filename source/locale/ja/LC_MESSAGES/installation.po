@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../source/installation.rst:66
 msgid "Downloading Selenium server"
-msgstr ""
+msgstr "Seleniumサーバーをダウンロード"
 
 #: ../../source/installation.rst:70
 msgid ""
@@ -124,12 +124,17 @@ msgid ""
 "details.  If you are a beginner learning Selenium, you can skip this "
 "section and proceed with next chapter."
 msgstr ""
+"Seleniumサーバーは、リモートWebDriverを使用する場合のみ必要です。"
+"詳細については、「:ref:`selenium-remote-webdriver` 」を参照してください。"
+"初心者の方は、このセクションを飛ばして次の章に進んでください。"
 
 #: ../../source/installation.rst:75
 msgid ""
 "Selenium server is a Java program.  Java Runtime Environment (JRE) 1.6 or"
 " newer version is recommended to run Selenium server."
 msgstr ""
+"SeleniumサーバーはJavaプログラムです。"
+"Seleniumサーバーを実行するにはJava Runtime Environment（JRE）1.6または新しいバージョンをお勧めします。"
 
 #: ../../source/installation.rst:78
 msgid ""
@@ -138,6 +143,9 @@ msgid ""
 "something like this: ``selenium-server-standalone-2.x.x.jar``.  You can "
 "always download the latest 2.x version of Selenium server."
 msgstr ""
+"あなたは `Seleniumのウェブサイトのダウンロードページ <http://seleniumhq.org/download/>`_ からSelenium server 2.xをダウンロードできます。"
+"ファイル名はこのようなものでなければなりません：``selenium-server-standalone-2.x.x.jar``。"
+"あなたはいつでも最新の2.xバージョンのSeleniumサーバーをダウンロードすることができます。"
 
 #: ../../source/installation.rst:84
 msgid ""
@@ -147,18 +155,22 @@ msgid ""
 "If you are using a GNU/Linux system and have root access in your system, "
 "you can also use your operating system instructions to install JRE."
 msgstr ""
+"Java Runtime Environment（JRE）がシステムにインストールされていない場合は、Oracle Webサイトから `JREをダウンロードできます <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_ 。"
+"GNU / Linuxシステムを使用していて、システムにroot権限を持っている場合は、オペレーティングシステムの指示に従ってJREをインストールすることもできます。"
 
 #: ../../source/installation.rst:90
 msgid ""
 "If `java` command is available in the PATH (environment variable), you "
 "can start the Selenium server using this command::"
 msgstr ""
+"`java` コマンドがPATH（環境変数）で利用可能な場合、次のコマンドを使用してSeleniumサーバーを起動できます::"
 
 #: ../../source/installation.rst:95
 msgid ""
 "Replace `2.x.x` with actual version of Selenium server you downloaded "
 "from the site."
 msgstr ""
+"`2.x.x` をサイトからダウンロードしたSeleniumサーバーの実際のバージョンに置き換えてください。"
 
 #: ../../source/installation.rst:98
 msgid ""
@@ -168,4 +180,7 @@ msgid ""
 "absolute path to Selenium server jar file. Then, the command will look "
 "something like this::"
 msgstr ""
+"JREが非rootユーザーとしてインストールされている場合、またはPATH（環境変数）で使用できない場合は、 `java` コマンドの相対パスまたは絶対パスを入力できます。"
+"同様に、Seleniumサーバーのjarファイルに相対パスまたは絶対パスを指定できます。"
+"コマンドは次のようになります::"
 
