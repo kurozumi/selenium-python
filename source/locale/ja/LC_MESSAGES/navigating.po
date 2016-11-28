@@ -20,13 +20,15 @@ msgstr ""
 
 #: ../../source/navigating.rst:4
 msgid "Navigating"
-msgstr ""
+msgstr "ナビゲート"
 
 #: ../../source/navigating.rst:6
 msgid ""
 "The first thing you'll want to do with WebDriver is navigate to a link.  "
 "The normal way to do this is by calling ``get`` method:"
 msgstr ""
+"WebDriverで最初にやりたいことは、リンクに移動することです。"
+"これを行う通常の方法は `get` メソッドを呼び出すことです::"
 
 #: ../../source/navigating.rst:13
 msgid ""
@@ -37,10 +39,13 @@ msgid ""
 "to ensure such pages are fully loaded then you can use :ref:`waits "
 "<waits>`."
 msgstr ""
+"WebDriverは、テストまたはスクリプトに制御を戻す前に、ページが完全にロードされる（つまり、`onload` イベントの発生）まで待機します。" 
+"あなたのページが大量のAJAXを使用している場合、WebDriverは完全にロードされたかわかりません。"
+"そのようなページが完全にロードされていることを確認する必要がある場合は、:ref:`waits <waits>` を使用しましょう。"
 
 #: ../../source/navigating.rst:21
 msgid "Interacting with the page"
-msgstr ""
+msgstr "ページとのやりとり"
 
 #: ../../source/navigating.rst:23
 msgid ""
@@ -50,10 +55,15 @@ msgid ""
 "offers a number of ways to find elements.  For example, given an element "
 "defined as::"
 msgstr ""
+"正しい場所に行くことができることが重要ではありません。"
+"私たちが本当にやりたいことは、ページ、あるいは具体的にはページ内のHTML要素とやりとりすることです。"
+"まず、私たちはひとつの要素を見つける必要があります。"
+"WebDriverは、要素を見つけるためのさまざまな方法を提供します。"
+"例えば、以下のように定義された要素::"
 
 #: ../../source/navigating.rst:31
 msgid "you could find it using any of::"
-msgstr ""
+msgstr "次のいずれかを使用して見つけることができます。::"
 
 #: ../../source/navigating.rst:37
 msgid ""
@@ -63,6 +73,11 @@ msgid ""
 "then only the first will be returned.  If nothing can be found, a "
 "``NoSuchElementException`` will be raised."
 msgstr ""
+"テキストでリンクを探すこともできますが、注意してください！"
+"テキストは完全一致でなければなりません！"
+"WebDriverで `XPATH` を使用する際も注意が必要です。"
+"クエリに一致する要素が複数ある場合は、最初の要素だけが返されます。"
+"何も見つからない場合は、 ``NoSuchElementException`` という例外が発生します。"
 
 #: ../../source/navigating.rst:45
 msgid ""
@@ -74,16 +89,26 @@ msgid ""
 "method that makes no sense (\"setSelected()\" on a \"meta\" tag, for "
 "example) an exception will be raised."
 msgstr ""
+"WebDriverには「オブジェクトベース」のAPIがあります。"
+"同じインターフェースを使用して、すべてのタイプの要素を表します。"
+"つまり、IDEのオートコンプリートキーの組み合わせをヒットしたときに呼び出すことのできるメソッドがたくさんあるかもしれませんが、"
+"それらのすべてが意味をなさないか、有効であるとは限りません。"
+"心配しないでください！"
+"WebDriverは正しいことをしようとします。"
+"意味のないメソッド（例えば、 metaタグにsetSelected()）を呼び出した場合、例外が発生します。"
 
 #: ../../source/navigating.rst:53
 msgid ""
 "So, you've got an element.  What can you do with it? First of all, you "
 "may want to enter some text into a text field::"
 msgstr ""
+"だから、あなたは要素を持っています。あなたはそれで何がしたいですか？"
+"まず、テキストフィールドにテキストを入力したいかもしれませんね。::"
 
 #: ../../source/navigating.rst:58
 msgid "You can simulate pressing the arrow keys by using the \"Keys\" class::"
 msgstr ""
+"「Key」クラスを使用して矢印キーを押すことをシミュレートすることができます。::"
 
 #: ../../source/navigating.rst:62
 msgid ""
@@ -94,10 +119,15 @@ msgid ""
 "what's already there.  You can easily clear the contents of a text field "
 "or textarea with `clear` method::"
 msgstr ""
+"任意の要素に対して `send_keys` を呼び出すことができます。"
+"これにより、Gmailで使用されているようなキーボードショートカットをテストすることができます。"
+"これの副作用は、テキストフィールドに何かを入力しても自動的にクリアされないということです。"
+"代わりに、あなたが入力したものはすでに入力されたものに追記されます。"
+"テキストフィールドまたはテキストエリアの内容は `clear` メソッドで簡単にクリアすることができます::"
 
 #: ../../source/navigating.rst:73
 msgid "Filling in forms"
-msgstr ""
+msgstr "フォームの記入"
 
 #: ../../source/navigating.rst:75
 msgid ""
@@ -106,6 +136,10 @@ msgid ""
 " and you can use \"setSelected\" to set something like an `OPTION` tag "
 "selected.  Dealing with `SELECT` tags isn't too bad::"
 msgstr ""
+"テキストエリアやテキストフィールドにテキストを入力する方法はすでに見てきましたが、他の要素についてはどうでしょうか？"
+"Seleniumはドロップダウンの状態を「切り替える」こともできます。"
+"また、「setSelected」を使用して、 `OPTION` タグのようなものを選択することもできます。"
+"`SELECT` タグを扱うことはそれほど難しくありません::"
 
 #: ../../source/navigating.rst:86
 msgid ""
@@ -113,6 +147,8 @@ msgid ""
 "through each of it's OPTIONs in turn, printing out their values, and "
 "selecting each in turn."
 msgstr ""
+"これは、ページ上の最初の\"SELECT\"要素を見つけ出し、"
+"OPTIONを順番に見て回って、その値を出力し順番に選択します。::"
 
 #: ../../source/navigating.rst:90
 msgid ""
@@ -120,26 +156,34 @@ msgid ""
 "elements . WebDriver's support classes include one called \"Select\", "
 "which provides useful methods for interacting with these::"
 msgstr ""
+"ご覧のとおり、これはSELECT要素を処理する最も効率的な方法ではありません。"
+"WebDriverのサポートクラスには、「Select」と呼ばれるインタラクティブに作用する"
+"便利なメソッドがあります。::"
 
 #: ../../source/navigating.rst:102
 msgid ""
 "WebDriver also provides features for deselecting all the selected "
 "options::"
 msgstr ""
+"WebDriverには、選択したすべてのオプションの選択を解除する機能もあります。::"
 
 #: ../../source/navigating.rst:107
 msgid "This will deselect all OPTIONs from the first SELECT on the page."
 msgstr ""
+"これにより、ページの最初のSELECTからすべてのOPTIONが選択解除されます"
 
 #: ../../source/navigating.rst:109
 msgid ""
 "Suppose in a test, we need the list of all default selected options, "
 "Select class provides a property method that returns a list::"
 msgstr ""
+"テストで、すべてのデフォルト選択されたオプションのリストが必要であるとします。"
+"Selectクラスは、リストを返すプロパティメソッドを提供します。::"
 
 #: ../../source/navigating.rst:115
 msgid "To get all available options::"
 msgstr ""
+"利用可能なすべてのオプションを取得するには::"
 
 #: ../../source/navigating.rst:119
 msgid ""
@@ -147,6 +191,8 @@ msgid ""
 "it. One way to do this would be to find the \"submit\" button and click "
 "it::"
 msgstr ""
+"フォームの記入が終わったら、おそらく送信したいでしょう。"
+"これを行う方法は、「Submit」ボタンを見つけてクリックすることです。::"
 
 #: ../../source/navigating.rst:126
 msgid ""
@@ -156,20 +202,26 @@ msgid ""
 "on that.  If the element isn't in a form, then the "
 "``NoSuchElementException`` will be raised::"
 msgstr ""
+"あるいは、WebDriverには、すべての要素に対して「submit」する便利なメソッドがあります。"
+"これをフォーム内の要素で呼び出すと、WebDriverはフォームを見つけてそのフォームを呼び出すまでDOMを検索します。"
+"要素がフォームにない場合は、 `NoSuchElementException` が発生します。::"
 
 #: ../../source/navigating.rst:136
 msgid "Drag and drop"
-msgstr ""
+msgstr "ドラッグアンドドロップ"
 
 #: ../../source/navigating.rst:138
 msgid ""
 "You can use drag and drop, either moving an element by a certain amount, "
 "or on to another element::"
 msgstr ""
+"特定の量で要素を移動するか、別の要素に移動するかのいずれかで、"
+"ドラッグアンドドロップを使用できます"
 
 #: ../../source/navigating.rst:149
 msgid "Moving between windows and frames"
 msgstr ""
+"ウィンドウとフレームの間を移動する"
 
 #: ../../source/navigating.rst:151
 msgid ""
@@ -177,6 +229,8 @@ msgid ""
 "constrained to a single window.  WebDriver supports moving between named "
 "windows using the \"switch_to_window\" method::"
 msgstr ""
+"最新のWebアプリケーションはフレームを持たない、または単一のウィンドウに制約されることはまれです。"
+"WebDriverは、「switch_to_window」メソッドを使用して、名前付きウィンドウ間の移動をサポートしています。::"
 
 #: ../../source/navigating.rst:157
 msgid ""
@@ -184,6 +238,9 @@ msgid ""
 "particular window.  But how do you know the window's name? Take a look at"
 " the javascript or link that opened it::"
 msgstr ""
+"`driver` へのすべての呼び出しは、特定のウィンドウに向けられたものとして解釈されます。"
+"しかし、どのようにしてウィンドウの名前をを知るでしょうか？"
+"ウィンドウを開いたjavascriptまたはリンクを見てみましょう。::"
 
 #: ../../source/navigating.rst:163
 msgid ""
@@ -191,32 +248,41 @@ msgid ""
 "\"switch_to_window()\" method.  Knowing this, it's possible to iterate "
 "over every open window like so::"
 msgstr ""
+"\"window handle\"を \"switch_to_window()\"メソッドに渡すこともできます。"
+"これを知っていると、開いているすべてのウィンドウを繰り返し処理することができます。::"
 
 #: ../../source/navigating.rst:170
 msgid "You can also swing from frame to frame (or into iframes)::"
 msgstr ""
+"フレームからフレーム（またはiframeの中）に切り替えることもできます。::"
 
 #: ../../source/navigating.rst:174
 msgid ""
 "It's possible to access subframes by separating the path with a dot, and "
 "you can specify the frame by its index too.  That is::"
 msgstr ""
+"ドットのパスで区切っているサブフレームにアクセスすることも可能です。"
+"インデックスでフレームを指定することもできます。::"
 
 #: ../../source/navigating.rst:179
 msgid ""
 "would go to the frame named \"child\" of the first subframe of the frame "
 "called \"frameName\".  **All frames are evaluated as if from *top*.**"
 msgstr ""
+"「frameName」と呼ばれるフレームの最初のサブフレームの「child」という名前のフレームに移動します。"
+"すべてのフレームは、*top*からのように評価されます。"
 
 #: ../../source/navigating.rst:182
 msgid ""
 "Once we are done with working on frames, we will have to come back to the"
 " parent frame which can be done using::"
 msgstr ""
+"フレーム上での作業が終わったら、親フレームに戻ってくる必要があります。"
+"これは、以下を使用して行うことができます。::"
 
 #: ../../source/navigating.rst:188
 msgid "Popup dialogs"
-msgstr ""
+msgstr "ポップアップダイアログ"
 
 #: ../../source/navigating.rst:190
 msgid ""
@@ -224,6 +290,8 @@ msgid ""
 "  After you've triggerd action that would open a popup, you can access "
 "the alert with the following::"
 msgstr ""
+"Selenium WebDriverには、ポップアップダイアログボックスの処理が組み込まれています。"
+"ポップアップを開くアクションを実行したら、次のようにしてアラートにアクセスできます。::"
 
 #: ../../source/navigating.rst:196
 msgid ""
@@ -232,10 +300,14 @@ msgid ""
 "This interface works equally well on alerts, confirms, prompts.  Refer to"
 " the API documentation for more information."
 msgstr ""
+"これにより、現在開いているアラートオブジェクトが返されます。"
+"このオブジェクトを使用すると、その内容を受け入れたり、却下したり、内容を読み込んだり、プロンプトに入力したりすることができます。"
+"このインターフェイスは、アラート、確認、プロンプトに対しても同様に機能します。"
+"詳細については、APIドキュメントを参照してください。"
 
 #: ../../source/navigating.rst:203
 msgid "Navigation: history and location"
-msgstr ""
+msgstr "ナビゲーション: 履歴と場所"
 
 #: ../../source/navigating.rst:205
 msgid ""
@@ -244,10 +316,13 @@ msgid ""
 " a number of smaller, task-focused interfaces, and navigation is a useful"
 " task.  To navigate to a page, you can use `get` method::"
 msgstr ""
+"前に\"get\"コマンド (``driver.get（\"http://www.example.com\")``)を使用してページを移動する方法について説明しました。"
+"ページに移動するには、getメソッドを使用します。::"
 
 #: ../../source/navigating.rst:212
 msgid "To move backwards and forwards in your browser's history::"
 msgstr ""
+"ブラウザの履歴を移動するには::"
 
 #: ../../source/navigating.rst:217
 msgid ""
@@ -256,10 +331,12 @@ msgid ""
 "happen when you call these methods if you're used to the behaviour of one"
 " browser over another."
 msgstr ""
+"この機能は、基本となるドライバに完全に依存することに注意してください。"
+"あるブラウザの動作に慣れている場合、これらのメソッドを呼び出すと予期しないことが起こる可能性があります。"
 
 #: ../../source/navigating.rst:224
 msgid "Cookies"
-msgstr ""
+msgstr "クッキー"
 
 #: ../../source/navigating.rst:226
 msgid ""
@@ -267,4 +344,5 @@ msgid ""
 "how to use cookies.  First of all, you need to be on the domain that the "
 "cookie will be valid for:"
 msgstr ""
-
+"これらの次のステップを終える前に、Cookieの使い方を理解したいかもしれません。"
+"最初にクッキーが有効になるドメイン上にいる必要があります。"

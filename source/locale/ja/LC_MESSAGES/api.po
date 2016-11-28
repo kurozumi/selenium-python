@@ -28,38 +28,46 @@ msgid ""
 "available `here "
 "<https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_."
 msgstr ""
+"これは公式なドキュメントではありません。公式のAPIドキュメントは `こちら <http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html>`_ から入手できます。"
 
 #: ../../source/api.rst:12
 msgid "This chapter cover all the interfaces of Selenium WebDriver."
 msgstr ""
+"この章では、Selenium WebDriverのすべてのインターフェイスについて説明します。"
 
 #: ../../source/api.rst:15
 msgid "**Recommended Import Style**"
 msgstr ""
+"**推奨するインポートスタイル**"
 
 #: ../../source/api.rst:17
 msgid ""
 "The API definitions in this chapter shows the absolute location of "
 "classes. However the recommended import style is as given below::"
 msgstr ""
+"この章のAPI定義には、クラスの絶対位置が示されています。"
+"ただし、推奨されるインポートスタイルは次のとおりです。::"
 
 #: ../../source/api.rst:22
 msgid "Then, you can access the classes like this::"
 msgstr ""
+"次に、このようなクラスにアクセスできます。::"
 
 #: ../../source/api.rst:37
 msgid "The special keys class (``Keys``) can be imported like this::"
 msgstr ""
+"特別なキークラス（ ``Keys`` ）は次のようにインポートできます。::"
 
 #: ../../source/api.rst:41
 msgid ""
 "The exception classes can be imported like this (Replace the "
 "``TheNameOfTheExceptionClass`` with actual class name given below)::"
 msgstr ""
+"例外クラスは次のようにインポートできます（ ``TheNameOfTheExceptionClass`` を実際のクラス名で置き換えてください）::"
 
 #: ../../source/api.rst:45
 msgid "**Conventions used in the API**"
-msgstr ""
+msgstr "**APIで使用される表記規則**"
 
 #: ../../source/api.rst:47
 msgid ""
@@ -67,10 +75,13 @@ msgid ""
 "(properties).  All the callable attributes are ending with round "
 "brackets."
 msgstr ""
+"いくつかの属性は呼び出し可能（またはメソッド）であり、"
+"他の属性は呼び出し不能（プロパティ）です。"
+"すべての呼び出し可能属性は丸括弧で終わります。"
 
 #: ../../source/api.rst:51
 msgid "Here is an example for property:"
-msgstr ""
+msgstr "プロパティの例を次に示します。:"
 
 #: ../../source/api.rst:53
 msgid "current_url"
@@ -78,7 +89,7 @@ msgstr ""
 
 #: ../../source/api.rst:55
 msgid "URL of the current loaded page."
-msgstr ""
+msgstr "現在読み込まれているページのURLです。"
 
 #: ../../source/api.rst:57 ../../source/api.rst:67
 msgid "Usage::"
@@ -86,7 +97,7 @@ msgstr ""
 
 #: ../../source/api.rst:61
 msgid "Here is an example for a method:"
-msgstr ""
+msgstr "メソッドの例を次に示します:"
 
 #: ../../source/api.rst:63
 msgid "close()"
@@ -95,11 +106,11 @@ msgstr ""
 #: ../../source/api.rst:65 of
 #: selenium.webdriver.remote.webdriver.WebDriver.close:1
 msgid "Closes the current window."
-msgstr ""
+msgstr "現在のウィンドウを閉じます。"
 
 #: ../../source/api.rst:73
 msgid "Exceptions"
-msgstr ""
+msgstr "例外"
 
 #: of selenium.common.exceptions:1
 msgid "Exceptions that may happen in all the webdriver code."
@@ -323,7 +334,7 @@ msgstr ""
 
 #: ../../source/api.rst:83
 msgid "Action Chains"
-msgstr ""
+msgstr "アクションチェーン"
 
 #: of selenium.webdriver.common.action_chains:1
 msgid "The ActionChains implementation,"
@@ -574,7 +585,7 @@ msgstr ""
 
 #: ../../source/api.rst:93
 msgid "Alerts"
-msgstr ""
+msgstr "アラート"
 
 #: of selenium.webdriver.common.alert:1
 msgid "The Alert implementation."
@@ -656,7 +667,7 @@ msgstr ""
 
 #: ../../source/api.rst:103
 msgid "Special Keys"
-msgstr ""
+msgstr "特殊キー"
 
 #: of selenium.webdriver.common.keys:1
 msgid "The Keys implementation."
@@ -668,13 +679,15 @@ msgstr ""
 
 #: ../../source/api.rst:113
 msgid "Locate elements By"
-msgstr ""
+msgstr "要素を検索"
 
 #: ../../source/api.rst:115
 msgid ""
 "These are the attributes which can be used to locate elements.  See the "
 ":ref:`locating-elements` chapter for example usages."
 msgstr ""
+"これらは、要素の位置を特定するために使用できる属性です。"
+"使用例については、 :ref:`locating-elements` の章を参照してください。"
 
 #: of selenium.webdriver.common.by:1
 msgid "The By implementation."
@@ -686,13 +699,14 @@ msgstr ""
 
 #: ../../source/api.rst:126
 msgid "Desired Capabilities"
-msgstr ""
+msgstr "望ましい機能"
 
 #: ../../source/api.rst:128
 msgid ""
 "See the :ref:`selenium-remote-webdriver` section for example usages of "
 "desired capabilities."
 msgstr ""
+"望ましい機能の使用例については、:ref:`selenium-remote-webdriver` を参照してください。"
 
 #: of selenium.webdriver.common.desired_capabilities:1
 msgid "The Desired Capabilities implementation."
@@ -747,7 +761,7 @@ msgstr ""
 
 #: ../../source/api.rst:138
 msgid "Utilities"
-msgstr ""
+msgstr "ユーティリティ"
 
 #: of selenium.webdriver.common.utils:1
 msgid "The Utils methods."
@@ -862,7 +876,7 @@ msgstr ""
 
 #: ../../source/api.rst:167
 msgid "Remote WebDriver"
-msgstr ""
+msgstr "リモートWebDriver"
 
 #: of selenium.webdriver.remote.webdriver:1
 msgid "The WebDriver implementation."
@@ -1942,7 +1956,7 @@ msgstr ""
 
 #: ../../source/api.rst:186
 msgid "UI Support"
-msgstr ""
+msgstr "UIサポート"
 
 #: of selenium.webdriver.support.select.Select.deselect_all:1
 msgid ""
@@ -2060,7 +2074,7 @@ msgstr ""
 
 #: ../../source/api.rst:201
 msgid "Color Support"
-msgstr ""
+msgstr "カラーサポート"
 
 #: of selenium.webdriver.support.color.Color:1
 msgid "Color conversion support class"
@@ -2068,7 +2082,7 @@ msgstr ""
 
 #: ../../source/api.rst:210
 msgid "Expected conditions Support"
-msgstr ""
+msgstr "期待される条件サポート"
 
 #: of selenium.webdriver.support.expected_conditions.alert_is_present:1
 msgid "Expect an alert to be present."
