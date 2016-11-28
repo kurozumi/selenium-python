@@ -20,33 +20,36 @@ msgstr ""
 
 #: ../../source/getting-started.rst:4
 msgid "Getting Started"
-msgstr ""
+msgstr "入門"
 
 #: ../../source/getting-started.rst:7
 msgid "Simple Usage"
-msgstr ""
+msgstr "簡単な使い方"
 
 #: ../../source/getting-started.rst:9
 msgid ""
 "If you have installed Selenium Python bindings, you can start using it "
 "from Python like this."
-msgstr ""
+msgstr "Selenium Pythonバインディングをインストールしている場合は、このようにPythonから使用することができます。"
 
 #: ../../source/getting-started.rst:27
 msgid ""
 "The above script can be saved into a file (eg:- `python_org_search.py`), "
 "then it can be run like this::"
 msgstr ""
+"上記のスクリプトはファイルに保存することができます（例： - `python_org_search.py` ）。"
+"これは次のように実行できます::
 
 #: ../../source/getting-started.rst:32
 msgid ""
 "The `python` which you are running should have the `selenium` module "
 "installed."
 msgstr ""
+"実行している `Python` には、`Selenium` モジュールがインストールされている必要があります。"
 
 #: ../../source/getting-started.rst:36
 msgid "Example Explained"
-msgstr ""
+msgstr "使い方の説明"
 
 #: ../../source/getting-started.rst:38
 msgid ""
@@ -55,10 +58,13 @@ msgid ""
 "Firefox, Chrome, IE and Remote.  The `Keys` class provide keys in the "
 "keyboard like RETURN, F1, ALT etc."
 msgstr ""
+"`selenium.webdriver` モジュールは、すべてのWebDriverを提供します。"
+"現在サポートされているWebDriverはFirefox、Chrome、IE、Remoteです。"
+"`Keys` クラスは、RETURN、F1、ALTなどのキーボードのキーを提供します。"
 
 #: ../../source/getting-started.rst:48
 msgid "Next, the instance of Firefox WebDriver is created."
-msgstr ""
+msgstr "次に、Firefox WebDriverのインスタンスが作成されます。"
 
 #: ../../source/getting-started.rst:54 ../../source/getting-started.rst:191
 msgid ""
@@ -68,12 +74,16 @@ msgid ""
 "script.  It's worth noting that if your page uses a lot of AJAX on load "
 "then WebDriver may not know when it has completely loaded.::"
 msgstr ""
+"`driver.get` メソッドは、URLによって指定されたページに移動します。"
+"WebDriverは、テストまたはスクリプトが実行する前に、ページが完全にロードされる（つまり、「onload」イベントが発生する）まで待機します。"
+"あなたのページがロード時にたくさんのAJAXを使用すると、WebDriverは完全にロードされたかどうかわからないということに注意する必要があります::"
 
 #: ../../source/getting-started.rst:62 ../../source/getting-started.rst:199
 msgid ""
 "The next line is an assertion to confirm that title has \"Python\" word "
 "in it::"
 msgstr ""
+"次の行は、タイトルに「Python」という単語があることを確認するためのアサーションです。::"
 
 #: ../../source/getting-started.rst:67 ../../source/getting-started.rst:205
 msgid ""
@@ -83,6 +93,9 @@ msgid ""
 "Detailed explanation of finding elements is available in the :ref"
 ":`locating-elements` chapter::"
 msgstr ""
+"WebDriverには、`find_element_by_*` メソッドのひとつを使って要素を見つけることができます。"
+"例えば、入力テキスト要素は、`find_element_by_name` メソッドを使用して `name` 属性>で検索できます。"
+"要素を見つける詳細な説明は、:ref:`locating-elements` の章を参照して下さい::"
 
 #: ../../source/getting-started.rst:75
 msgid ""
@@ -92,12 +105,18 @@ msgid ""
 "prepopulated text in the input field (e.g. \"Search\") so it doesn't "
 "affect our search results::"
 msgstr ""
+"次に、キーを送信しています。これは、キーボードを使用してキーを入力するのと同じです。"
+"特殊キーは、 `selenium.webdriver.common.keys` からインポートした `Keys` クラスを使用して送信できます。"
+"安全のため、あらかじめ入力フィールド（例：「検索」）に入力したテキストをクリアしましょう。"
+"そうすれば、検索結果には影響に影響を及ぼしません。::"
 
 #: ../../source/getting-started.rst:85
 msgid ""
 "After submission of the page, you should get the result if there is any. "
 "To ensure that some results are found, make an assertion::"
 msgstr ""
+"ページのサブミット後、もしページが存在すれば結果を得られます。"
+"いくつかの結果が見つかるようにするには、アサーションを作成しましょう。::"
 
 #: ../../source/getting-started.rst:90
 msgid ""
@@ -106,10 +125,14 @@ msgid ""
 "will close one tab, but if just one tab was open, by default most browser"
 " will exit entirely.::"
 msgstr ""
+"最後に、ブラウザウィンドウを閉じます。"
+"`cloce` メソッド代わりに`quit` メソッドを呼び出すこともできます。"
+"`quit` メソッドはブラウザ全体が終了しますが、 `close` メソッドは1つのタブが閉じます。"
+"しかし、1つのタブだけが開いている場合、デフォルトではほとんどのブラウザが完全に終了します。::"
 
 #: ../../source/getting-started.rst:99
 msgid "Using Selenium to write tests"
-msgstr ""
+msgstr "Seleniumを使ってテストを書く"
 
 #: ../../source/getting-started.rst:101
 msgid ""
@@ -118,6 +141,10 @@ msgid ""
 "cases using Python's unittest module.  The other options for a "
 "tool/framework are py.test and nose."
 msgstr ""
+"Seleniumは主にテストケースを書くときに使用されます。"
+"`selenium` パッケージ自体はテストツール/フレームワークを提供しません。"
+"Pythonのunittestモジュールを使ってテストケースを書くことができます。"
+"その他のツール/フレームワークには、pytestとnoseがあります。"
 
 #: ../../source/getting-started.rst:106
 msgid ""
@@ -125,18 +152,21 @@ msgid ""
 "the modified example which uses unittest module.  This is a test for "
 "`python.org` search functionality::"
 msgstr ""
+"この章では、`unittest` を選択の枠組みとして使用します。"
+"ここにunittestモジュールを使用した変更例を示します。"
+"これは `python.org` 検索機能のテストです::"
 
 #: ../../source/getting-started.rst:136
 msgid "You can run the above test case from a shell like this::"
-msgstr ""
+msgstr "以下のようなシェルから上記のテストケースを実行することができます::"
 
 #: ../../source/getting-started.rst:145
 msgid "The above result shows that the test has been successfully completed."
-msgstr ""
+msgstr "上記の結果は、テストが正常に完了したことを示しています。"
 
 #: ../../source/getting-started.rst:150
 msgid "Walk through of the example"
-msgstr ""
+msgstr "例を見てみましょう"
 
 #: ../../source/getting-started.rst:152
 msgid ""
@@ -148,6 +178,12 @@ msgid ""
 "implementations are Firefox, Chrome, Ie and Remote.  The `Keys` class "
 "provide keys in the keyboard like RETURN, F1, ALT etc."
 msgstr ""
+"はじめに必要なすべての基本モジュールをインポートします。"
+"`unittest <http://docs.python.org/library/unittest.html>`_ モジュールは、JavaのJUnitをベースにした組み込みPythonです。"
+"このモジュールは、テストケースを編成するためのフレームワークを提供します。"
+"`selenium.webdriver` モジュールは、すべてのWebDriverを提供します。"
+"現在サポートされているWebDriverはFirefox、Chrome、IE、Remoteです。"
+"`Keys` クラスは、RETURN、F1、ALTなどのキーボードのキーを提供します。::"
 
 #: ../../source/getting-started.rst:166
 msgid ""
@@ -155,6 +191,8 @@ msgid ""
 "from `TestCase` class is the way to tell `unittest` module that this is a"
 " test case::"
 msgstr ""
+"テストケースクラスは `unittest.TestCase` から継承されます。"
+"`TestCase` クラスを継承することは、これがテストケースであることを `unittest` モジュールに伝える方法です。::"
 
 #: ../../source/getting-started.rst:173
 msgid ""
@@ -162,6 +200,9 @@ msgid ""
 " every test function which you are going to write in this test case "
 "class.  Here you are creating the instance of Firefox WebDriver."
 msgstr ""
+"`setUp` は初期化の一部です。"
+"このメソッドは、このテストケースクラスに書き込むすべてのテスト関数の前に呼び出されます。"
+"ここでは、Firefox WebDriverのインスタンスを作成しています。::"
 
 #: ../../source/getting-started.rst:182
 msgid ""
@@ -169,6 +210,8 @@ msgid ""
 "with characters `test`.  The first line inside this method create a local"
 " reference to the driver object created in `setUp` method."
 msgstr ""
+"これはテストケースメソッドです。 テストケースメソッドは常に `test` で始める必要があります。"
+"このメソッド内の最初の行は、 `setUp` メソッドで作成されたドライバオブジェクトへのローカル参照を作成します。::"
 
 #: ../../source/getting-started.rst:213
 msgid ""
@@ -176,12 +219,17 @@ msgid ""
 "keyboard.  Special keys can be send using `Keys` class imported from "
 "`selenium.webdriver.common.keys`::"
 msgstr ""
+"次に、キーを送信しています。"
+"これはキーボードを使用してキーを入力するのと同じです。"
+"特別なキーは、 `selenium.webdriver.common.keys` からインポートした `Keys` クラスを使>用して送信できます。::"
 
 #: ../../source/getting-started.rst:220
 msgid ""
 "After submission of the page, you should get result as per search if "
 "there is any.  To ensure that some results are found, make an assertion::"
 msgstr ""
+"ページの送信後、もしあれば検索ごとの結果が得られます。"
+"結果が確実に見つかるようにするには、アサーションを作成しましょう。::"
 
 #: ../../source/getting-started.rst:226
 msgid ""
@@ -192,36 +240,49 @@ msgid ""
 "tab, but if it is the only tab opened, by default most browser will exit "
 "entirely.::"
 msgstr ""
+"`tearDown` メソッドはすべてのテストメソッド実行後に呼び出されます。"
+"これは全ての処理をクリーンアップする場所です。"
+"下記の方法では、ブラウザウィンドウが閉じられます。"
+"`close` の代わりに `quit` メソッドを呼び出すこともできます。"
+"`quit` はブラウザ全体が終了しますが、 `close` はタブを閉じます。"
+"デフォルトでほとんどのブラウザは完全に終了します。::"
 
 #: ../../source/getting-started.rst:236
 msgid "Final lines are some boiler plate code to run the test suite::"
-msgstr ""
+msgstr "最終の行はテストスイートを実行するためのボイラープレートコードです。::"
 
 #: ../../source/getting-started.rst:244
 msgid "Using Selenium with remote WebDriver"
-msgstr ""
+msgstr "リモートWebDriverでSeleniumを使用する"
 
 #: ../../source/getting-started.rst:246
 msgid ""
 "To use the remote WebDriver, you should have Selenium server running. To "
 "run the server, use this command::"
 msgstr ""
+"リモートWebDriverを使用するには、Seleniumサーバーを実行する必要があります。"
+"サーバーを実行するには、次のコマンドを使用します。::"
 
 #: ../../source/getting-started.rst:251
 msgid ""
 "While running the Selenium server, you could see a message looking like "
 "this::"
 msgstr ""
+"Seleniumサーバーを実行しているとき、次のようなメッセージが表示されます。::"
 
 #: ../../source/getting-started.rst:256
 msgid ""
 "The above line says that you can use this URL for connecting to remote "
 "WebDriver.  Here are some examples::"
 msgstr ""
+"上記は、このURLを使用してリモートWebDriverに接続できることを示しています。"
+"ここではいくつかの例を示します。::"
 
 #: ../../source/getting-started.rst:274
 msgid ""
 "The desired capabilities is a dictionary, so instead of using the default"
 " dictionaries, you can specify the values explicitly::"
 msgstr ""
+"必要な機能は辞書型で指定します。"
+"以下のように機能を設定することができます。::"
 
