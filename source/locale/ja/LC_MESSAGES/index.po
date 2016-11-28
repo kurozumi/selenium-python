@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "このドキュメントは `Creative Commons Attribution-"
 "ShareAlike 4.0 International License <http://creativecommons.org/licenses"
-"/by-sa/4.0/>`_ のもとにライセンスされています."
+"/by-sa/4.0/>`_ のもとに配布されています。"
 
 #: ../../source/index.rst:11
 msgid ""
