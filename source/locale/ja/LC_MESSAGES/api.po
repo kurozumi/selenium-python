@@ -576,26 +576,32 @@ msgstr ""
 #: selenium.webdriver.common.action_chains.ActionChains.key_up:8
 msgid "Example, pressing ctrl+c::"
 msgstr ""
+"例、ctrl+cを押す："
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_up:1
 msgid "Releases a modifier key."
 msgstr ""
+"修飾キーを解放します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_up:4
 msgid "value: The modifier key to send. Values are defined in Keys class."
 msgstr ""
+"value：送信する修飾キー。値はKeysクラスで定義されます。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:1
 msgid "Moving the mouse to an offset from current mouse position."
 msgstr ""
+"マウスを現在の位置からのオフセットに移動します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:4
 msgid "xoffset: X offset to move to, as a positive or negative integer."
 msgstr ""
+"xoffset：正または負の整数として移動するXオフセット。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:5
 msgid "yoffset: Y offset to move to, as a positive or negative integer."
 msgstr ""
+"yoffset：正または負の整数として移動するYオフセット。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.move_to_element:1
 msgid "Moving the mouse to the middle of an element."
@@ -605,24 +611,29 @@ msgstr ""
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:5
 msgid "to_element: The WebElement to move to."
 msgstr ""
+"to_element：移動先のWebElementです。"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:2
 msgid "Move the mouse by an offset of the specified element."
 msgstr ""
+"指定された要素のオフセットだけマウスを移動します。"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:2
 msgid "Offsets are relative to the top-left corner of the element."
 msgstr ""
+"オフセットは要素の左上隅を基準にしています。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.perform:1
 msgid "Performs all stored actions."
 msgstr ""
+"すべてのストアド・アクションを実行します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.release:1
 msgid "Releasing a held mouse button on an element."
 msgstr ""
+"保持されているマウスボタンを要素に解放します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.release:4
 msgid ""
@@ -633,28 +644,32 @@ msgstr ""
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:1
 msgid "Sends keys to current focused element."
 msgstr ""
+"現在フォーカスされている要素にキーを送信します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:4
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:5
 msgid ""
 "keys_to_send: The keys to send.  Modifier keys constants can be found in "
-"the"
+"the 'Keys' class."
 msgstr ""
+"keys_to_send：送信するキー。修飾キーの定数は 'キー'クラスにあります。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:5
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:6
-msgid "'Keys' class."
-msgstr ""
+# msgid "'Keys' class."
+# msgstr ""
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:1
 msgid "Sends keys to an element."
 msgstr ""
+"要素にキーを送信します。"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:4
 msgid "element: The element to send keys."
 msgstr ""
+"element：キーを送信する要素。"
 
 #: ../../source/api.rst:93
 msgid "Alerts"
