@@ -382,11 +382,11 @@ msgstr ""
 
 #: ../../source/api.rst:83
 msgid "Action Chains"
-msgstr "アクションチェーン"
+msgstr "Action Chains"
 
 #: of selenium.webdriver.common.action_chains:1
 msgid "The ActionChains implementation,"
-msgstr ""
+msgstr "ActionChainsの実装"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:1
 #: selenium.webdriver.common.alert.Alert:1 selenium.webdriver.common.by.By:1
@@ -427,10 +427,12 @@ msgid ""
 "interactions. This is useful for doing more complex actions like hover "
 "over and drag and drop."
 msgstr ""
+"ActionChains、マウスの動き、マウスボタンの操作、キーの押下、コンテキストメニューの操作など、低レベルのやりとりを自動化する方法です。"
+"これは、ホバーオーバーやドラッグアンドドロップなどのより複雑なアクションを実行する場合に便利です。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:9
 msgid "Generate user actions."
-msgstr ""
+msgstr "ユーザーアクションを生成"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:6
 msgid ""
@@ -438,107 +440,128 @@ msgid ""
 " are stored in a queue in the ActionChains object. When you call "
 "perform(), the events are fired in the order they are queued up."
 msgstr ""
+"ActionChainsオブジェクトのアクションのメソッドを呼び出すと、アクションはActionChainsオブジェクトのキューに格納されます。"
+"perform()を呼び出すと、イベントはキューに入れられた順に発生します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:11
 msgid "ActionChains can be used in a chain pattern::"
 msgstr ""
+"ActionChainsはチェーンパターンで使用できます。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:18
 msgid "Or actions can be queued up one by one, then performed.::"
 msgstr ""
+"あるいは、アクションを1つずつキューに入れて実行することもできます。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains:28
 msgid ""
 "Either way, the actions are performed in the order they are called, one "
 "after another."
 msgstr ""
+"どちらの方法でも、アクションは順番に呼び出され、順番に実行されます。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.click:1
 msgid "Clicks an element."
-msgstr ""
+msgstr "要素をクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.click:4
 msgid ""
 "on_element: The element to click. If None, clicks on current mouse "
 "position."
 msgstr ""
+"on_element：クリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.click_and_hold:1
 msgid "Holds down the left mouse button on an element."
 msgstr ""
+"要素上でマウスの左ボタンを押したままにします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.click_and_hold:4
 msgid ""
 "on_element: The element to mouse down. If None, clicks on current mouse "
 "position."
 msgstr ""
+"on_element：マウスを押下する要素。 Noneの場合、現在のマウス位置をクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.context_click:1
 msgid "Performs a context-click (right click) on an element."
 msgstr ""
+"要素をコンテキストクリック（右クリック）します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.context_click:4
 msgid ""
 "on_element: The element to context-click. If None, clicks on current "
 "mouse position."
 msgstr ""
+"on_element：コンテキストをクリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.double_click:1
 msgid "Double-clicks an element."
 msgstr ""
+"要素をダブルクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.double_click:4
 msgid ""
 "on_element: The element to double-click. If None, clicks on current mouse"
 " position."
 msgstr ""
+"on_element：ダブルクリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:2
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:2
 msgid "Holds down the left mouse button on the source element,"
 msgstr ""
+"ソース上の要素をマウスの左ボタンで押したままにします。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:2
 msgid "then moves to the target element and releases the mouse button."
 msgstr ""
+"ターゲット要素に移動してマウスボタンを離します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:5
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:5
 msgid "source: The element to mouse down."
-msgstr ""
+"source：マウスキーを押下する要素"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:6
 msgid "target: The element to mouse up."
 msgstr ""
+"target：マウスキーを離す要素"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:2
 msgid "then moves to the target offset and releases the mouse button."
 msgstr ""
+"ターゲットオフセットに移動し、マウスボタンを離します。"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:6
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:6
 msgid "xoffset: X offset to move to."
 msgstr ""
+"xoffset：移動するためのXオフセット"
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:7
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:7
 msgid "yoffset: Y offset to move to."
 msgstr ""
+"yoffset：移動するためのYオフセット"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_down:2
 msgid "Sends a key press only, without releasing it."
 msgstr ""
+"キーを離すことなく、キーを押すだけで送信します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_down:2
 msgid "Should only be used with modifier keys (Control, Alt and Shift)."
 msgstr ""
+"修飾キー（Controlキー、Altキー、Shiftキー）でのみ使用して下さい。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_down:5
 msgid "value: The modifier key to send. Values are defined in `Keys` class."
 msgstr ""
+"value：送信する修飾キー。値はKeysクラスで定義されます。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_down:6
 #: selenium.webdriver.common.action_chains.ActionChains.key_up:5
@@ -546,6 +569,7 @@ msgid ""
 "element: The element to send keys. If None, sends a key to current "
 "focused element."
 msgstr ""
+"element：キーを送信する要素。Noneの場合、現在フォーカスされている要素にキーを送信します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.key_down:9
 #: selenium.webdriver.common.action_chains.ActionChains.key_up:8
