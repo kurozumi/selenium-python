@@ -115,6 +115,7 @@ msgstr "例外"
 #: of selenium.common.exceptions:1
 msgid "Exceptions that may happen in all the webdriver code."
 msgstr ""
+"すべてのwebdriverコードで発生する可能性のある例外。"
 
 #: of selenium.common.exceptions.ElementNotSelectableException:1
 #: selenium.common.exceptions.ElementNotVisibleException:1
@@ -124,22 +125,26 @@ msgstr ""
 #: of selenium.common.exceptions.ElementNotSelectableException:1
 msgid "Thrown when trying to select an unselectable element."
 msgstr ""
+"選択できない要素を選択しようとするとスローされます。"
 
 #: of selenium.common.exceptions.ElementNotSelectableException:3
 msgid "For example, selecting a 'script' element."
 msgstr ""
+"たとえば、 'script'要素を選択するとき発生します。"
 
 #: of selenium.common.exceptions.ElementNotVisibleException:1
 msgid ""
 "Thrown when an element is present on the DOM, but it is not visible, and "
 "so is not able to be interacted with."
 msgstr ""
+"要素がDOM上に存在するが、要素が表示されないため対話できないときにスローされます。"
 
 #: of selenium.common.exceptions.ElementNotVisibleException:4
 msgid ""
 "Most commonly encountered when trying to click or read text of an element"
 " that is hidden from view."
 msgstr ""
+"表示されていない要素のテキストをクリックまたは読み取ろうとするときに最もよく発生します。"
 
 #: of selenium.common.exceptions.ErrorInResponseException:1
 #: selenium.common.exceptions.ImeActivationFailedException:1
@@ -163,16 +168,19 @@ msgstr ""
 #: of selenium.common.exceptions.ErrorInResponseException:1
 msgid "Thrown when an error has occurred on the server side."
 msgstr ""
+"サーバー側でエラーが発生した場合にスローされます。"
 
 #: of selenium.common.exceptions.ErrorInResponseException:3
 msgid ""
 "This may happen when communicating with the firefox extension or the "
 "remote driver server."
 msgstr ""
+"これはfirefox拡張機能またはリモートドライバサーバと通信するときに発生する可能性があります。"
 
 #: of selenium.common.exceptions.ImeActivationFailedException:1
 msgid "Thrown when activating an IME engine has failed."
 msgstr ""
+"IMEエンジンのアクティブ化が失敗したときにスローされます。"
 
 #: of selenium.common.exceptions.ImeNotAvailableException:1
 msgid ""
@@ -180,12 +188,16 @@ msgid ""
 "every IME-related method call if IME support is not available on the "
 "machine."
 msgstr ""
+"IMEサポートが利用できない場合にスローされます。"
+"この例外はIMEサポートがマシン上で利用できない場合、"
+"すべてのIME関連メソッド呼び出しでスローされます。"
 
 #: of selenium.common.exceptions.InvalidCookieDomainException:1
 msgid ""
 "Thrown when attempting to add a cookie under a different domain than the "
 "current URL."
 msgstr ""
+"現在のURLとは異なるドメインにCookieを追加しようとするとスローされます。"
 
 #: of selenium.common.exceptions.InvalidSelectorException:1
 msgid "ベースクラス: :class:`selenium.common.exceptions.NoSuchElementException`"
@@ -199,30 +211,40 @@ msgid ""
 " expression) or the expression does not select WebElements (e.g. "
 "\"count(//input)\")."
 msgstr ""
+"要素を見つけるために使用されるセレクタがWebElementを返さないときにスローされます。"
+"現在のところセレクタがxpath式であり構文的に無効(xpath式ではない)か、"
+"式でWebElements(\"count(//input)\"など）を選択していない場合にのみ発生します。"
 
 #: of selenium.common.exceptions.InvalidSwitchToTargetException:1
 msgid "Thrown when frame or window target to be switched doesn't exist."
 msgstr ""
+"切り替えられるフレームまたはウィンドウのターゲットが存在しない場合にスローされます。"
 
 #: of selenium.common.exceptions.MoveTargetOutOfBoundsException:1
 msgid ""
 "Thrown when the target provided to the `ActionsChains` move() method is "
 "invalid, i.e. out of document."
 msgstr ""
+"`ActionsChains move()` メソッドに提供されたターゲットが無効な場合、"
+"つまりドキュメントの外にある場合にスローされます。"
 
 #: of selenium.common.exceptions.NoAlertPresentException:1
 msgid "Thrown when switching to no presented alert."
 msgstr ""
+"提示されていないアラートに切り替えるとスローされます。"
 
 #: of selenium.common.exceptions.NoAlertPresentException:3
 msgid ""
 "This can be caused by calling an operation on the Alert() class when an "
 "alert is not yet on the screen."
 msgstr ""
+"これはアラートがまだ画面に表示されていないときに、"
+"Alert()クラスの操作を呼び出すことによって発生する可能性があります。"
 
 #: of selenium.common.exceptions.NoSuchAttributeException:1
 msgid "Thrown when the attribute of element could not be found."
 msgstr ""
+"要素の属性が見つからなかった場合にスローされます。"
 
 #: of selenium.common.exceptions.NoSuchAttributeException:3
 msgid ""
@@ -230,18 +252,24 @@ msgid ""
 "you are testing against.  Some browsers may have different property names"
 " for the same property.  (IE8's .innerText vs. Firefox .textContent)"
 msgstr ""
+"テストしている特定のブラウザに属性が存在するかどうかを確認することができます。"
+"一部のブラウザでは、同じプロパティのプロパティ名が異なる場合があります。"
+"(IE8の.innerTextとFirefoxの.textContent)"
 
 #: of selenium.common.exceptions.NoSuchElementException:1
 msgid "Thrown when element could not be found."
 msgstr ""
+"要素が見つからなかった場合にスローされます。"
 
 #: of selenium.common.exceptions.NoSuchElementException:6
 msgid "If you encounter this exception, you may want to check the following:"
 msgstr ""
+"この例外が発生した場合は、次の点を確認してください。"
 
 #: of selenium.common.exceptions.NoSuchElementException:4
 msgid "Check your selector used in your find_by..."
 msgstr ""
+"find_byで使用されているセレクターをチェック..."
 
 #: of selenium.common.exceptions.NoSuchElementException:5
 msgid "Element may not yet be on the screen at the time of the find operation,"
@@ -253,6 +281,10 @@ msgid ""
 "selenium.webdriver.support.wait.WebDriverWait() for how to write a wait "
 "wrapper to wait for an element to appear."
 msgstr ""
+"検索操作時に要素がまだ画面に表示されていない可能性があります"
+"（Webページがまだ読み込まれています）。"
+"要素が表示されるまで待機する待機ラッパーの記述方法については、"
+"selenium.webdriver.support.wait.WebDriverWait()を参照してください。"
 
 #: of selenium.common.exceptions.NoSuchFrameException:1
 #: selenium.common.exceptions.NoSuchWindowException:1
