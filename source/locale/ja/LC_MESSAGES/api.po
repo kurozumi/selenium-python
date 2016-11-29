@@ -652,14 +652,14 @@ msgstr ""
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:5
 msgid ""
 "keys_to_send: The keys to send. Modifier keys constants can be found in "
-"the "
+"the"
 msgstr ""
 "keys_to_send：送信するキー。修飾キーの定数は 'キー'クラスにあります。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:5
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:6
 msgid "'Keys' class."
-msgstr "'キー'クラス"
+msgstr ""
 
 #: of
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:1
