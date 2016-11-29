@@ -957,6 +957,7 @@ msgstr ""
 #: of selenium.webdriver.firefox.webdriver.WebDriver.quit:1
 msgid "Quits the driver and close every associated window."
 msgstr ""
+"ドライバを終了し、関連するすべてのウィンドウを閉じます。"
 
 #: ../../source/api.rst:157
 msgid "Chrome WebDriver"
@@ -2195,6 +2196,7 @@ msgstr "期待される条件サポート"
 #: of selenium.webdriver.support.expected_conditions.alert_is_present:1
 msgid "Expect an alert to be present."
 msgstr ""
+"アラートが存在することを期待してください。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.element_located_selection_state_to_be:1
@@ -2203,6 +2205,8 @@ msgid ""
 "specified is in that state. locator is a tuple of (by, path) is_selected "
 "is a boolean"
 msgstr ""
+"要素の位置を特定し、指定された選択状態がその状態にあるかどうかを確認すること。"
+"ロケータは（by、path）のタプルです。is_selectedはブール値です。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.element_located_to_be_selected:1
@@ -2210,6 +2214,7 @@ msgid ""
 "An expectation for the element to be located is selected. locator is a "
 "tuple of (by, path)"
 msgstr ""
+"配置される要素の期待値が選択されます。ロケータは（by、path）のタプルです。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.element_selection_state_to_be:1
@@ -2217,6 +2222,8 @@ msgid ""
 "An expectation for checking if the given element is selected. element is "
 "WebElement object is_selected is a Boolean.\""
 msgstr ""
+"指定された要素が選択されているかどうかを確認するための期待値。"
+"要素はWebElementオブジェクトis_selectedはブール値です。"
 
 #: of selenium.webdriver.support.expected_conditions.element_to_be_clickable:1
 msgid ""
