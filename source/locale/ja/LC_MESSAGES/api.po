@@ -679,25 +679,27 @@ msgstr "アラート"
 
 #: of selenium.webdriver.common.alert:1
 msgid "The Alert implementation."
-msgstr ""
+msgstr "アラートの実装。"
 
 #: of selenium.webdriver.common.alert.Alert:1
 msgid "Allows to work with alerts."
-msgstr ""
+msgstr "アラートを扱うことができます。"
 
 #: of selenium.webdriver.common.alert.Alert:3
 msgid ""
 "Use this class to interact with alert prompts.  It contains methods for "
 "dismissing, accepting, inputting, and getting text from alert prompts."
 msgstr ""
+"このクラスを使用して、アラートのプロンプトと対話します。"
+"アラートのプロンプトから却下、受け入れ、入力、テキスト取得するためのメソッドが含まれています。"
 
 #: of selenium.webdriver.common.alert.Alert:6
 msgid "Accepting / Dismissing alert prompts::"
-msgstr ""
+msgstr "アラートプロンプトの受け入れ/却下："
 
 #: of selenium.webdriver.common.alert.Alert:11
 msgid "Inputting a value into an alert prompt:"
-msgstr ""
+msgstr "アラートプロンプトへの値の入力："
 
 #: of selenium.webdriver.common.alert.Alert:13
 msgid ""
@@ -708,6 +710,7 @@ msgstr ""
 #: of selenium.webdriver.common.alert.Alert:18
 msgid "Reading a the text of a prompt for verification:"
 msgstr ""
+"確認のためにプロンプトのテキストを読む："
 
 #: of selenium.webdriver.common.alert.Alert:20
 msgid ""
@@ -717,7 +720,7 @@ msgstr ""
 
 #: of selenium.webdriver.common.alert.Alert.accept:1
 msgid "Accepts the alert available."
-msgstr ""
+msgstr "利用可能なアラートを受け入れます。"
 
 #: of selenium.webdriver.common.alert.Alert.accept:3
 msgid "Usage:: Alert(driver).accept() # Confirm a alert dialog."
@@ -728,6 +731,7 @@ msgid ""
 "Send the username / password to an Authenticated dialog (like with Basic "
 "HTTP Auth). Implicitly 'clicks ok'"
 msgstr ""
+"認証ダイアログにユーザー名とパスワードを送信します(Basic HTTP Authのように)。暗黙的にOKをクリックします。"
 
 #: of selenium.webdriver.common.alert.Alert.authenticate:4
 msgid "Usage:: driver.switch_to.alert.authenticate('cheese', 'secretGouda')"
@@ -741,19 +745,19 @@ msgstr ""
 
 #: of selenium.webdriver.common.alert.Alert.dismiss:1
 msgid "Dismisses the alert available."
-msgstr ""
+msgstr "利用可能なアラートを閉じます。"
 
 #: of selenium.webdriver.common.alert.Alert.send_keys:1
 msgid "Send Keys to the Alert."
-msgstr ""
+msgstr "アラートにキーを送信します。"
 
 #: of selenium.webdriver.common.alert.Alert.send_keys:4
 msgid "keysToSend: The text to be sent to Alert."
-msgstr ""
+msgstr "keysToSend：Alertに送信されるテキスト。"
 
 #: of selenium.webdriver.common.alert.Alert.text:1
 msgid "Gets the text of the Alert."
-msgstr ""
+msgstr "Alertのテキストを取得します。"
 
 #: ../../source/api.rst:103
 msgid "Special Keys"
