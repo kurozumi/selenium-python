@@ -606,6 +606,7 @@ msgstr ""
 #: of selenium.webdriver.common.action_chains.ActionChains.move_to_element:1
 msgid "Moving the mouse to the middle of an element."
 msgstr ""
+"マウスを要素の中央に移動する。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.move_to_element:4
 #: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:5
