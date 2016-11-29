@@ -521,6 +521,7 @@ msgstr ""
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:5
 #: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:5
 msgid "source: The element to mouse down."
+msgstr ""
 "source：マウスキーを押下する要素"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:6
