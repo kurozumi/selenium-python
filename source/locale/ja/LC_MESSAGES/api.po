@@ -2187,7 +2187,7 @@ msgstr "カラーサポート"
 
 #: of selenium.webdriver.support.color.Color:1
 msgid "Color conversion support class"
-msgstr ""
+msgstr "色変換サポートクラス"
 
 #: ../../source/api.rst:210
 msgid "Expected conditions Support"
