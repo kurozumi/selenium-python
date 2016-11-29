@@ -2230,12 +2230,14 @@ msgid ""
 "An Expectation for checking an element is visible and enabled such that "
 "you can click it."
 msgstr ""
+"要素をチェックするための期待値が表示され、クリックできるように有効になります。"
 
 #: of selenium.webdriver.support.expected_conditions.element_to_be_selected:1
 msgid ""
 "An expectation for checking the selection is selected. element is "
 "WebElement object"
 msgstr ""
+"選択を確認するための期待値が選択されます。要素はWebElementオブジェクトです。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it:1
@@ -2244,6 +2246,8 @@ msgid ""
 "switch to.  If the frame is available it switches the given driver to the"
 " specified frame."
 msgstr ""
+"指定されたフレームが切り替えることができるかどうかをチェックするための期待。"
+"フレームが利用可能な場合、指定されたドライバを指定されたフレームに切り替えます。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.invisibility_of_element_located:1
@@ -2256,16 +2260,20 @@ msgstr ""
 #: selenium.webdriver.support.expected_conditions.invisibility_of_element_located:4
 msgid "locator used to find the element"
 msgstr ""
+"DOM上に要素が見えないか、存在しないかを確認するための期待。 "
+"要素を見つけるためのロケータ。"
 
 #: of selenium.webdriver.support.expected_conditions.new_window_is_opened:1
 msgid ""
 "An expectation that a new window will be opened and have the number of "
 "windows handles increase"
 msgstr ""
+"新しいウィンドウが開かれ、ウィンドウの数が増えるとの期待"
 
 #: of selenium.webdriver.support.expected_conditions.number_of_windows_to_be:1
 msgid "An expectation for the number of windows to be a certain value."
 msgstr ""
+"ウィンドウの数が一定の値になることの期待。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.presence_of_all_elements_located:1
@@ -2274,6 +2282,8 @@ msgid ""
 " a web page. locator is used to find the element returns the list of "
 "WebElements once they are located"
 msgstr ""
+"Webページに少なくとも1つの要素が存在するかどうかを確認する必要があります。"
+"ロケータは、要素が見つかるとWebElementsのリストを返します"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.presence_of_element_located:1
@@ -2282,6 +2292,9 @@ msgid ""
 "page. This does not necessarily mean that the element is visible. locator"
 " - used to find the element returns the WebElement once it is located"
 msgstr ""
+"要素がページのDOM上に存在するかどうかを確認するための期待。"
+"これは要素が可視であることを必ずしも意味しません。"
+"locator - 見つかった要素が見つかるとWebElementを返します"
 
 #: of selenium.webdriver.support.expected_conditions.staleness_of:1
 msgid ""
@@ -2289,6 +2302,8 @@ msgid ""
 "element to wait for. returns False if the element is still attached to "
 "the DOM, true otherwise."
 msgstr ""
+"要素がDOMに接続されなくなるまで待ちます。 elementは待機する要素です。"
+"要素がまだDOMにアタッチされている場合はFalseを返し、そうでない場合はtrueを返します。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.text_to_be_present_in_element:1
@@ -2296,6 +2311,7 @@ msgid ""
 "An expectation for checking if the given text is present in the specified"
 " element. locator, text"
 msgstr ""
+"指定されたテキストが指定された要素に存在するかどうかをチェックするための期待値。ロケータ、テキスト"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.text_to_be_present_in_element_value:1
@@ -2303,6 +2319,7 @@ msgid ""
 "An expectation for checking if the given text is present in the element's"
 " locator, text"
 msgstr ""
+"指定されたテキストが要素のロケータ、テキストに存在するかどうかの確認"
 
 #: of selenium.webdriver.support.expected_conditions.title_contains:1
 msgid ""
@@ -2310,6 +2327,9 @@ msgid ""
 "substring. title is the fragment of title expected returns True when the "
 "title matches, False otherwise"
 msgstr ""
+"タイトルに大文字小文字を区別する部分文字列が含まれているかどうかを確認する必要があります。"
+"titleは期待されるタイトルの断片です。"
+"タイトルが一致するとTrueを返し、そうでない場合はFalseを返します。"
 
 #: of selenium.webdriver.support.expected_conditions.title_is:1
 msgid ""
@@ -2317,6 +2337,9 @@ msgid ""
 "title, which must be an exact match returns True if the title matches, "
 "false otherwise."
 msgstr ""
+"ページのタイトルを確認するための期待。"
+"titleは予想されるタイトルです。完全一致でなければなりません。"
+"タイトルが一致する場合はTrueを返し、そうでない場合はfalseを返します。"
 
 #: of selenium.webdriver.support.expected_conditions.visibility_of:1
 msgid ""
@@ -2325,6 +2348,9 @@ msgid ""
 "displayed but also has a height and width that is greater than 0. element"
 " is the WebElement returns the (same) WebElement once it is visible"
 msgstr ""
+"ページのDOM上に存在することがわかっている要素が表示されているかどうかを確認する必要があります。"
+"可視性は、要素が表示されるだけでなく、高さと幅が0より大きいことを意味します。"
+"要素は、WebElementが表示されたら（同じ）WebElementを返します。"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.visibility_of_any_elements_located:1
@@ -2333,6 +2359,8 @@ msgid ""
 " a web page. locator is used to find the element returns the list of "
 "WebElements once they are located"
 msgstr ""
+"Webページに少なくとも1つの要素が表示されていることを確認する必要があります。"
+"ロケータは、要素が見つかるとWebElementsのリストを返します"
 
 #: of
 #: selenium.webdriver.support.expected_conditions.visibility_of_element_located:1
@@ -2342,4 +2370,7 @@ msgid ""
 " but also has a height and width that is greater than 0. locator - used "
 "to find the element returns the WebElement once it is located and visible"
 msgstr ""
+"ある要素がページのDOM上に存在し、可視であることを確認するための期待。"
+"可視性は、要素が表示されるだけでなく、0より大きい高さと幅も持つことを意味します。"
+"locator - 要素が見つかるとWebElementを返します。"
 
