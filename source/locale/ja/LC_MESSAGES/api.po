@@ -640,6 +640,7 @@ msgid ""
 "on_element: The element to mouse up. If None, releases on current mouse "
 "position."
 msgstr ""
+"on_element：マウスを押し上げる要素。Noneの場合、現在のマウス位置を解放します。"
 
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:1
 msgid "Sends keys to current focused element."
@@ -649,7 +650,7 @@ msgstr ""
 #: of selenium.webdriver.common.action_chains.ActionChains.send_keys:4
 #: selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:5
 msgid ""
-"keys_to_send: The keys to send.  Modifier keys constants can be found in "
+"keys_to_send: The keys to send. Modifier keys constants can be found in "
 "the 'Keys' class."
 msgstr ""
 "keys_to_send：送信するキー。修飾キーの定数は 'キー'クラスにあります。"
