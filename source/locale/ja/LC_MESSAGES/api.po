@@ -765,11 +765,11 @@ msgstr "特殊キー"
 
 #: of selenium.webdriver.common.keys:1
 msgid "The Keys implementation."
-msgstr ""
+msgstr "Key実装"
 
 #: of selenium.webdriver.common.keys.Keys:1
 msgid "Set of special keys codes."
-msgstr ""
+msgstr "特別なキーコードのセット。"
 
 #: ../../source/api.rst:113
 msgid "Locate elements By"
@@ -785,30 +785,30 @@ msgstr ""
 
 #: of selenium.webdriver.common.by:1
 msgid "The By implementation."
-msgstr ""
+msgstr "By実装"
 
 #: of selenium.webdriver.common.by.By:1
 msgid "Set of supported locator strategies."
-msgstr ""
+msgstr "サポートされているロケーター戦略のセット。"
 
 #: ../../source/api.rst:126
 msgid "Desired Capabilities"
-msgstr "望ましい機能"
+msgstr ""
 
 #: ../../source/api.rst:128
 msgid ""
 "See the :ref:`selenium-remote-webdriver` section for example usages of "
 "desired capabilities."
 msgstr ""
-"望ましい機能の使用例については、:ref:`selenium-remote-webdriver` を参照してください。"
+"Desired Capabilitiesの使用例については、:ref:`selenium-remote-webdriver` を参照してください。"
 
 #: of selenium.webdriver.common.desired_capabilities:1
 msgid "The Desired Capabilities implementation."
-msgstr ""
+msgstr "Desired Capabilities実装"
 
 #: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:1
 msgid "Set of default supported desired capabilities."
-msgstr ""
+msgstr "デフォルトでサポートされている必要な機能のセット。"
 
 #: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:3
 msgid ""
@@ -816,10 +816,12 @@ msgid ""
 "for requesting remote webdrivers for connecting to selenium server or "
 "selenium grid."
 msgstr ""
+"SeleniumサーバーまたはSeleniumグリッドに接続するためのリモートwebdriverを"
+"要求するためのDesired Capabilitiesオブジェクトを作成するための出発点として使用します。"
 
 #: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:7
 msgid "Usage Example:"
-msgstr ""
+msgstr "使用例："
 
 #: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:9
 msgid "from selenium import webdriver"
@@ -859,11 +861,12 @@ msgstr "ユーティリティ"
 
 #: of selenium.webdriver.common.utils:1
 msgid "The Utils methods."
-msgstr ""
+msgstr "ユーティリティメソッド"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:1
 msgid "Resolve a hostname to an IP, preferring IPv4 addresses."
 msgstr ""
+"ホスト名をIPに解決します。IPv4アドレスを優先します。"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:3
 msgid ""
@@ -871,21 +874,24 @@ msgid ""
 "implementations, and because some drivers (e.g., FirefoxDriver) do not "
 "support IPv6 connections."
 msgstr ""
+"以前のIPv4のみの実装からの動作やFirefoxDriverなどの一部のドライバが"
+"IPv6接続をサポートしていないため、IPv4を推奨しています。"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:7
 msgid ""
 "If the optional port number is provided, only IPs that listen on the "
 "given port are considered."
 msgstr ""
+"オプションのポート番号が指定されている場合、指定されたポートでlistenするIPだけが考慮されます。"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:11
 #: selenium.webdriver.common.utils.join_host_port:7
 msgid "host - A hostname."
-msgstr ""
+msgstr "host - ホスト名"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:12
 msgid "port - Optional port number."
-msgstr ""
+msgstr "port - オプションのポート番号"
 
 #: of selenium.webdriver.common.utils.find_connectable_ip:15
 msgid ""
@@ -893,43 +899,51 @@ msgid ""
 "returned. Otherwise, if any IPv6 address is found, one is returned. If "
 "neither, then None is returned."
 msgstr ""
+"文字列としての単一のIPアドレス。"
+"IPv4アドレスが見つかった場合は、そのアドレスが返されます。"
+"それ以外の場合は、IPv6アドレスが見つかった場合は1が返されます。"
+"どちらも指定されていない場合、Noneが返されます。"
 
 #: of selenium.webdriver.common.utils.free_port:1
 msgid "Determines a free port using sockets."
-msgstr ""
+msgstr "ソケットを使用して空きポートを決定します。"
 
 #: of selenium.webdriver.common.utils.is_connectable:1
 msgid "Tries to connect to the server at port to see if it is running."
-msgstr ""
+msgstr "ポートでサーバーに接続して、実行中かどうかを調べます。"
 
 #: of selenium.webdriver.common.utils.is_connectable:4
 #: selenium.webdriver.common.utils.is_url_connectable:5
 msgid "port: The port to connect."
-msgstr ""
+msgstr "port - 接続するポート"
 
 #: of selenium.webdriver.common.utils.is_url_connectable:1
 msgid ""
 "Tries to connect to the HTTP server at /status path and specified port to"
 " see if it responds successfully."
 msgstr ""
+"/ status pathと指定されたポートのHTTPサーバーに接続して正常に応答するかどうかを調べます。"
 
 #: of selenium.webdriver.common.utils.join_host_port:1
 msgid "Joins a hostname and port together."
 msgstr ""
+"ホスト名とポートを結合します。"
 
 #: of selenium.webdriver.common.utils.join_host_port:3
 msgid ""
 "This is a minimal implementation intended to cope with IPv6 literals. For"
 " example, _join_host_port('::1', 80) == '[::1]:80'."
 msgstr ""
+"これは、IPv6リテラルに対処するための最小限の実装です。"
+"たとえば、_join_host_port（ ':: 1'、80）== '[:: 1]：80'となります。"
 
 #: of selenium.webdriver.common.utils.join_host_port:8
 msgid "port - An integer port."
-msgstr ""
+msgstr "port - 整数ポート"
 
 #: of selenium.webdriver.common.utils.keys_to_typing:1
 msgid "Processes the values that will be typed in the element."
-msgstr ""
+msgstr "要素に入力される値を処理します。"
 
 #: ../../source/api.rst:148
 msgid "Firefox WebDriver"
