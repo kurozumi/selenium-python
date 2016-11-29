@@ -274,6 +274,7 @@ msgstr ""
 #: of selenium.common.exceptions.NoSuchElementException:5
 msgid "Element may not yet be on the screen at the time of the find operation,"
 msgstr ""
+"検索操作時に要素がまだ画面に表示されていない可能性があります。"
 
 #: of selenium.common.exceptions.NoSuchElementException:6
 msgid ""
@@ -294,36 +295,44 @@ msgstr ""
 #: of selenium.common.exceptions.NoSuchFrameException:1
 msgid "Thrown when frame target to be switched doesn't exist."
 msgstr ""
+"切り替えられるフレームターゲットが存在しない場合にスローされます。"
 
 #: of selenium.common.exceptions.NoSuchWindowException:1
 msgid "Thrown when window target to be switched doesn't exist."
 msgstr ""
+"切り替えられるウィンドウのターゲットが存在しない場合にスローされます。"
 
 #: of selenium.common.exceptions.NoSuchWindowException:3
 msgid ""
 "To find the current set of active window handles, you can get a list of "
 "the active window handles in the following way::"
 msgstr ""
+"アクティブなウィンドウハンドルを見つけるには、"
+"次の方法でアクティブなウィンドウハンドルのリストを取得します。"
 
 #: of selenium.common.exceptions.StaleElementReferenceException:1
 msgid "Thrown when a reference to an element is now \"stale\"."
 msgstr ""
+"要素への参照が\"失効した\"ときにスローされます。"
 
 #: of selenium.common.exceptions.StaleElementReferenceException:3
 msgid "Stale means the element no longer appears on the DOM of the page."
 msgstr ""
+"失効とは、要素がページのDOMに表示されなくなったことを意味します。"
 
 #: of selenium.common.exceptions.StaleElementReferenceException:12
 msgid ""
 "Possible causes of StaleElementReferenceException include, but not "
 "limited to:"
 msgstr ""
+"StaleElementReferenceExceptionの原因としては次のものがありますが、これに限定されません。"
 
 #: of selenium.common.exceptions.StaleElementReferenceException:7
 msgid ""
 "You are no longer on the same page, or the page may have refreshed since "
 "the element"
 msgstr ""
+"同じページにいないか、要素が更新されている可能性があります"
 
 #: of selenium.common.exceptions.StaleElementReferenceException:8
 msgid ""
@@ -337,24 +346,30 @@ msgstr ""
 #: of selenium.common.exceptions.TimeoutException:1
 msgid "Thrown when a command does not complete in enough time."
 msgstr ""
+"コマンドが十分な時間内に完了しなかった場合にスローされます。"
 
 #: of selenium.common.exceptions.UnableToSetCookieException:1
 msgid "Thrown when a driver fails to set a cookie."
 msgstr ""
+"ドライバがクッキーを設定しなかった場合にスローされます。"
 
 #: of selenium.common.exceptions.UnexpectedAlertPresentException:1
 msgid "Thrown when an unexpected alert is appeared."
 msgstr ""
+"予期しない警告が表示されたときにスローされます。"
 
 #: of selenium.common.exceptions.UnexpectedAlertPresentException:3
 msgid ""
 "Usually raised when when an expected modal is blocking webdriver form "
 "executing any more commands."
 msgstr ""
+"通常、予想されるモーダルがWebdriverフォームをブロックして、"
+"多くのコマンドが実行しているときに発生します。"
 
 #: of selenium.common.exceptions.UnexpectedTagNameException:1
 msgid "Thrown when a support class did not get an expected web element."
 msgstr ""
+"サポートクラスが期待されるWeb要素を取得しなかった場合にスローされます。"
 
 #: of selenium.common.exceptions.WebDriverException:1
 msgid "ベースクラス: :class:`Exception`"
@@ -363,6 +378,7 @@ msgstr ""
 #: of selenium.common.exceptions.WebDriverException:1
 msgid "Base webdriver exception."
 msgstr ""
+"Base webdriverの例外"
 
 #: ../../source/api.rst:83
 msgid "Action Chains"
