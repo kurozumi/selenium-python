@@ -1735,13 +1735,14 @@ msgstr ""
 
 #: of selenium.webdriver.remote.webelement.WebElement:1
 msgid "Represents a DOM element."
-msgstr ""
+msgstr "DOM要素を表します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement:3
 msgid ""
 "Generally, all interesting operations that interact with a document will "
 "be performed through this interface."
 msgstr ""
+"一般に、ドキュメントとやりとりするすべて操作はこのインターフェイスを通じて実行されます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement:6
 msgid ""
@@ -1751,49 +1752,61 @@ msgid ""
 "``StaleElementReferenceException`` is thrown, and all future calls to "
 "this instance will fail."
 msgstr ""
+"すべてのメソッド呼び出しは、要素参照が依然として有効であることを確認するために鮮度チェックを行います。"
+"これは基本的に要素がまだDOMに接続されているかどうかを決定します。"
+"このテストが失敗すると、 ``StaleElementReferenceException`` がスローされ、以降のこのインスタンスへの呼び出しはすべて失敗します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.clear:1
 msgid "Clears the text if it's a text entry element."
 msgstr ""
+"テキスト入力要素の場合はテキストをクリアします。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.click:1
 msgid "Clicks the element."
 msgstr ""
+"要素をクリックします。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_class_name:1
 msgid "Finds element within this element's children by class name."
 msgstr ""
+"この要素の子要素内の要素をクラス名で検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_class_name:4
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_class_name:4
 msgid "name - class name to search for."
 msgstr ""
+"name - 検索するクラス名"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_css_selector:1
 msgid "Finds element within this element's children by CSS selector."
 msgstr ""
+"CSSセレクタによってこの要素の子要素内の要素を検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_css_selector:4
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_css_selector:4
 msgid "css_selector - CSS selctor string, ex: 'a.nav#home'"
 msgstr ""
+"css_selector - CSSのセクター文字列。例：'a.nav＃home'"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_id:1
 msgid "Finds element within this element's children by ID."
 msgstr ""
+"この要素の子要素内の要素をIDで検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_id:4
 msgid "id_ - ID of child element to locate."
 msgstr ""
+"id - 検索する子要素のID。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_link_text:1
 msgid "Finds element within this element's children by visible link text."
 msgstr ""
+"この要素の子要素内の要素を可視リンクテキストで検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_link_text:4
@@ -1802,14 +1815,17 @@ msgstr ""
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_partial_link_text:4
 msgid "link_text - Link text string to search for."
 msgstr ""
+"link_text - 検索するテキスト文字列をリンクします。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_name:1
 msgid "Finds element within this element's children by name."
 msgstr ""
+"この要素の子要素内の要素を名前で検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_name:4
 msgid "name - name property of the element to find."
 msgstr ""
+"name - 検索する要素のnameプロパティ。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_partial_link_text:1
@@ -1817,56 +1833,68 @@ msgid ""
 "Finds element within this element's children by partially visible link "
 "text."
 msgstr ""
+"部分的に可視のリンクテキストによって、この要素の子要素内の要素を検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_tag_name:1
 msgid "Finds element within this element's children by tag name."
 msgstr ""
+"この要素の子要素内の要素をタグ名で検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_element_by_tag_name:4
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_tag_name:4
 msgid "name - name of html tag (eg: h1, a, span)"
 msgstr ""
+"name - htmlタグの名前（例：h1、a、span）"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:1
 msgid "Finds element by xpath."
 msgstr ""
+"xpathで要素を検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:4
 msgid "xpath - xpath of element to locate.  \"//input[@class='myelement']\""
 msgstr ""
+"xpath - 見つかる要素のxpath。 "// input [@ class = 'myelement']""
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:6
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:6
 msgid "Note: The base path will be relative to this element's location."
 msgstr ""
+"注意：ベースパスは、この要素の位置からの相対パスになります。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:8
 msgid "This will select the first link under this element."
 msgstr ""
+"この要素の下にある最初のリンクが選択されます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:14
 msgid "However, this will select the first link on the page."
 msgstr ""
+"ただし、ページの最初のリンクが選択されます。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_class_name:1
 msgid "Finds a list of elements within this element's children by class name."
 msgstr ""
+"この要素の子要素内の要素のリストをクラス名で検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_css_selector:1
 msgid "Finds a list of elements within this element's children by CSS selector."
 msgstr ""
+"CSSセレクターによって、この要素の子要素内の要素のリストを検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_id:1
 msgid "Finds a list of elements within this element's children by ID."
 msgstr ""
+"この要素の子要素内の要素のリストをIDで検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_id:4
 msgid "id_ - Id of child element to find."
 msgstr ""
+"id - 検索する子要素のID。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_link_text:1
@@ -1874,44 +1902,54 @@ msgid ""
 "Finds a list of elements within this element's children by visible link "
 "text."
 msgstr ""
+"この要素の子要素内の要素のリストを可視リンクテキストで検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_name:1
 msgid "Finds a list of elements within this element's children by name."
 msgstr ""
+"この要素の子要素内の要素のリストを名前で検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_name:4
 msgid "name - name property to search for."
 msgstr ""
+"name - 検索するnameプロパティ"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_partial_link_text:1
 msgid "Finds a list of elements within this element's children by link text."
 msgstr ""
+"この要素の子要素内の要素のリストをリンクテキストで検索します。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.find_elements_by_tag_name:1
 msgid "Finds a list of elements within this element's children by tag name."
 msgstr ""
+"この要素の子要素内の要素のリストをタグ名で検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:1
 msgid "Finds elements within the element by xpath."
 msgstr ""
+"xpathで要素内の要素を検索します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:4
 msgid "xpath - xpath locator string."
 msgstr ""
+"xpath - xpathロケータ文字列。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:8
 msgid "This will select all links under this element."
 msgstr ""
+"この要素の下のすべてのリンクを選択します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:14
 msgid "However, this will select all links in the page itself."
 msgstr ""
+"ただし、ページ内のすべてのリンクが選択されます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_attribute:1
 msgid "Gets the given attribute or property of the element."
 msgstr ""
+"指定された属性または要素のプロパティを取得します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_attribute:3
 msgid ""
@@ -1920,6 +1958,9 @@ msgid ""
 "value of the attribute with the same name. If there's no attribute with "
 "that name, ``None`` is returned."
 msgstr ""
+"このメソッドは、指定された名前のプロパティの値を最初に返します。"
+"その名前のプロパティが存在しない場合は、同じ名前の属性の値を返します。"
+"その名前の属性がない場合、 ``None`` が返されます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_attribute:8
 msgid ""
@@ -1928,43 +1969,55 @@ msgid ""
 " strings.  For attributes or properties which do not exist, ``None`` is "
 "returned."
 msgstr ""
+"本当であるとみなされる値、すなわち「真」または「偽」と等しい値はブール値として返されます。"
+"他のすべての ``None`` ではない値は文字列として返されます。"
+"存在しない属性またはプロパティの場合、 ``None`` が返されます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_attribute:14
 msgid "name - Name of the attribute/property to retrieve."
 msgstr ""
+"name - 取得する属性/プロパティの名前"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_attribute:16
 #: selenium.webdriver.remote.webelement.WebElement.get_property:6
 msgid "Example::"
 msgstr ""
+"例："
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_property:1
 msgid "Gets the given property of the element."
 msgstr ""
+"要素の指定されたプロパティを取得します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.get_property:4
 msgid "name - Name of the property to retrieve."
 msgstr ""
+"name - 取得するプロパティの名前"
 
 #: of selenium.webdriver.remote.webelement.WebElement.is_displayed:1
 msgid "Whether the element is visible to a user."
 msgstr ""
+"要素がユーザーに表示されるかどうか。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.is_enabled:1
 msgid "Returns whether the element is enabled."
 msgstr ""
+"要素が有効かどうかを返します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.is_selected:1
 msgid "Returns whether the element is selected."
 msgstr ""
+"要素が選択されているかどうかを返します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.is_selected:3
 msgid "Can be used to check if a checkbox or radio button is selected."
 msgstr ""
+"チェックボックスまたはラジオボタンが選択されているかどうかを確認するのに使えます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot:2
 msgid "Gets the screenshot of the current element. Returns False if there is"
 msgstr ""
+"現在の要素のスクリーンショットを取得します。存在する場合はFalseを返します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot:8
 msgid "element.screenshot('/Screenshots/foo.png')"
@@ -1973,44 +2026,55 @@ msgstr ""
 #: of selenium.webdriver.remote.webelement.WebElement.send_keys:1
 msgid "Simulates typing into the element."
 msgstr ""
+"要素への入力をシミュレートします。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.send_keys:4
 msgid "value - A string for typing, or setting form fields.  For setting"
 msgstr ""
+"value - 入力用の文字列、またはフォームフィールドを設定します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.send_keys:5
 msgid "file inputs, this could be a local file path."
 msgstr ""
+"これはローカルファイルパスである可能性があります。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.send_keys:7
 msgid "Use this to send simple key events or to fill out form fields::"
 msgstr ""
+"単純なキーイベントを送信したり、フォームフィールドに入力するには、これを使用します。::"
 
 #: of selenium.webdriver.remote.webelement.WebElement.send_keys:12
 msgid "This can also be used to set file inputs."
 msgstr ""
+"これはファイル入力の設定にも使用できます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.submit:1
 msgid "Submits a form."
 msgstr ""
+"フォームを送信します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.value_of_css_property:1
 msgid "The value of a CSS property."
 msgstr ""
+"CSSプロパティの値。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.id:1
 msgid "Internal ID used by selenium."
 msgstr ""
+"Seleniumが使用する内部ID。
 
 #: of selenium.webdriver.remote.webelement.WebElement.id:3
 msgid ""
 "This is mainly for internal use. Simple use cases such as checking if 2 "
 "webelements refer to the same element, can be done using ``==``::"
 msgstr ""
+"これは主に内部向けです。"
+"2つのWeb要素が同じ要素を参照しているかどうかをチェックするなどの単純な使い方ができます。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.location:1
 msgid "The location of the element in the renderable canvas."
 msgstr ""
+"レンダリング可能なキャンバス内の要素の位置。"
 
 #: of
 #: selenium.webdriver.remote.webelement.WebElement.location_once_scrolled_into_view:1
@@ -2030,14 +2094,17 @@ msgstr ""
 #: of selenium.webdriver.remote.webelement.WebElement.parent:1
 msgid "Internal reference to the WebDriver instance this element was found from."
 msgstr ""
+"この要素が見つかったWebDriverインスタンスへの内部参照。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.rect:1
 msgid "A dictionary with the size and location of the element."
 msgstr ""
+"要素のサイズと位置を持つ辞書。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_base64:1
 msgid "Gets the screenshot of the current element as a base64 encoded string."
 msgstr ""
+"現在の要素のスクリーンショットをbase64でエンコードされた文字列として取得します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_base64:4
 msgid "img_b64 = element.screenshot_as_base64"
@@ -2046,6 +2113,7 @@ msgstr ""
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_png:1
 msgid "Gets the screenshot of the current element as a binary data."
 msgstr ""
+"現在の要素のスクリーンショットをバイナリデータとして取得します。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_png:4
 msgid "element_png = element.screenshot_as_png"
@@ -2054,14 +2122,17 @@ msgstr ""
 #: of selenium.webdriver.remote.webelement.WebElement.size:1
 msgid "The size of the element."
 msgstr ""
+"要素のサイズ。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.tag_name:1
 msgid "This element's ``tagName`` property."
 msgstr ""
+"この要素の ``tagName`` プロパティ。"
 
 #: of selenium.webdriver.remote.webelement.WebElement.text:1
 msgid "The text of the element."
 msgstr ""
+"要素のテキスト。"
 
 #: ../../source/api.rst:186
 msgid "UI Support"
