@@ -270,7 +270,7 @@ msgid ""
 "called \"frameName\".  **All frames are evaluated as if from *top*.**"
 msgstr ""
 "「frameName」と呼ばれるフレームの最初のサブフレームの「child」という名前のフレームに移動します。"
-"すべてのフレームは、*top*からのように評価されます。"
+"すべてのフレームは、*top* からのように評価されます。"
 
 #: ../../source/navigating.rst:182
 msgid ""
