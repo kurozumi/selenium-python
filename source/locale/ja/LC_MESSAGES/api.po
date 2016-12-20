@@ -2175,6 +2175,8 @@ msgid ""
 "Deselect all options that have a value matching the argument. That is, "
 "when given \"foo\" this would deselect an option like:"
 msgstr ""
+"引数に一致する値を持つすべてのオプションの選択を解除します。"
+"つまり、 "foo"を指定すると、次のようなオプションの選択が解除されます。"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_value:4
 #: selenium.webdriver.support.select.Select.deselect_by_visible_text:4
@@ -2187,6 +2189,7 @@ msgstr ""
 #: selenium.webdriver.support.select.Select.select_by_value:7
 msgid "value - The value to match against"
 msgstr ""
+"value - 照合する値"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_value:9
 #: selenium.webdriver.support.select.Select.select_by_value:9
@@ -2194,17 +2197,21 @@ msgid ""
 "throws NoSuchElementException If there is no option with specisied value "
 "in SELECT"
 msgstr ""
+"指定した値を持つオプションがSELECTにない場合、NoSuchElementExceptionをスローします"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_visible_text:1
 msgid ""
 "Deselect all options that display text matching the argument. That is, "
 "when given \"Bar\" this would deselect an option like:"
 msgstr ""
+"引数に一致するテキストを表示するすべてのオプションの選択を解除します。"
+"つまり、 \"Bar\"を指定すると、次のようなオプションの選択が解除されます。"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_visible_text:7
 #: selenium.webdriver.support.select.Select.select_by_visible_text:7
 msgid "text - The visible text to match against"
 msgstr ""
+"text - 一致する目に見えるテキスト"
 
 #: of selenium.webdriver.support.select.Select.select_by_index:1
 msgid ""
