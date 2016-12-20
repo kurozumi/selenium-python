@@ -1136,6 +1136,7 @@ msgstr ""
 #: selenium.webdriver.support.color.Color:3
 msgid "Example:"
 msgstr ""
+"例"
 
 #: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:7
 msgid "with webdriver.file_detector_context(UselessFileDetector):"
@@ -2218,54 +2219,68 @@ msgid ""
 "Select the option at the given index. This is done by examing the "
 "\"index\" attribute of an element, and not merely by counting."
 msgstr ""
+"指定したインデックスでオプションを選択します。"
+"これは要素の\"index\"属性を調べることによって行われます。"
+"単にカウントするだけではありません。"
 
 #: of selenium.webdriver.support.select.Select.select_by_index:5
 msgid "index - The option at this index will be selected"
 msgstr ""
+"index - このインデックスのオプションが選択されます。"
 
 #: of selenium.webdriver.support.select.Select.select_by_value:1
 msgid ""
 "Select all options that have a value matching the argument. That is, when"
 " given \"foo\" this would select an option like:"
 msgstr ""
+"引数に一致する値を持つすべてのオプションを選択します。"
+"つまり、\"foo\"を指定すると、次のようなオプションが選択されます。"
 
 #: of selenium.webdriver.support.select.Select.select_by_visible_text:1
 msgid ""
 "Select all options that display text matching the argument. That is, when"
 " given \"Bar\" this would select an option like:"
 msgstr ""
+"引数に一致するテキストを表示するすべてのオプションを選択します。"
+"つまり、\"Bar\"を指定すると、次のようなオプションが選択されます。"
 
 #: of selenium.webdriver.support.select.Select.select_by_visible_text:9
 msgid ""
 "throws NoSuchElementException If there is no option with specisied text "
 "in SELECT"
 msgstr ""
+"SELECTに指定されたテキストを持つオプションがない場合、NoSuchElementExceptionをスローします"
 
 #: of selenium.webdriver.support.select.Select.all_selected_options:1
 msgid "Returns a list of all selected options belonging to this select tag"
 msgstr ""
+"このselectタグに属するすべての選択されたオプションのリストを返します。"
 
 #: of selenium.webdriver.support.select.Select.first_selected_option:1
 msgid ""
 "The first selected option in this select tag (or the currently selected "
 "option in a normal select)"
 msgstr ""
+"この選択タグ内の最初に選択されたオプション（または通常選択中の現在選択されているオプション）"
 
 #: of selenium.webdriver.support.select.Select.options:1
 msgid "Returns a list of all options belonging to this select tag"
 msgstr ""
+"このselectタグに属するすべてのオプションのリストを返します。"
 
 #: of selenium.webdriver.support.wait.WebDriverWait.until:1
 msgid ""
 "Calls the method provided with the driver as an argument until the"
 "         return value is not False."
 msgstr ""
+"戻り値がFalseでない限り、ドライバで提供されたメソッドを引数として呼び出します。"
 
 #: of selenium.webdriver.support.wait.WebDriverWait.until_not:1
 msgid ""
 "Calls the method provided with the driver as an argument until the"
 "         return value is False."
 msgstr ""
+"戻り値がFalseになるまで、ドライバで提供されたメソッドを引数として呼び出します。"
 
 #: ../../source/api.rst:201
 msgid "Color Support"
