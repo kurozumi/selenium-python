@@ -2144,16 +2144,24 @@ msgid ""
 "multiple selections. throws NotImplementedError If the SELECT does not "
 "support multiple selections"
 msgstr ""
+"選択されたすべてのエントリをクリアします。"
+"これは、SELECTが複数の選択をサポートしている場合にのみ有効です。"
+"SELECTが複数の選択肢をサポートしていない場合、NotImplementedErrorをスローします。"
+msgstr ""
 
 #: of selenium.webdriver.support.select.Select.deselect_by_index:1
 msgid ""
 "Deselect the option at the given index. This is done by examing the "
 "\"index\" attribute of an element, and not merely by counting."
 msgstr ""
+"指定したインデックスのオプションの選択を解除します。"
+"これは要素の\"index\"属性を調べることによって行われます。"
+"単にカウントするだけではありません。"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_index:5
 msgid "index - The option at this index will be deselected"
 msgstr ""
+"index - このインデックスのオプションは選択解除されます。"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_index:7
 #: selenium.webdriver.support.select.Select.select_by_index:7
@@ -2161,6 +2169,7 @@ msgid ""
 "throws NoSuchElementException If there is no option with specisied index "
 "in SELECT"
 msgstr ""
+"指定したインデックスを持つオプションがSELECTにない場合、NoSuchElementExceptionをスローします"
 
 #: of selenium.webdriver.support.select.Select.deselect_by_value:1
 msgid ""
