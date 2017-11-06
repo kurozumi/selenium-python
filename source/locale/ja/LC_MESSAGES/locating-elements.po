@@ -4,33 +4,28 @@
 # Bindings package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-28 14:30+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-11-06 09:18+0900\n"
+"PO-Revision-Date: 2017-11-06 21:21+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../../source/locating-elements.rst:4
 msgid "Locating Elements"
 msgstr "要素の配置"
 
 #: ../../source/locating-elements.rst:6
-msgid ""
-"There are various strategies to locate elements in a page.  You can use "
-"the most appropriate one for your case.  Selenium provides the following "
-"methods to locate elements in a page:"
-msgstr ""
-"あるページに要素を配置するには、さまざまな方法があります。"
-"あなたのケースに最も適したものを使用することができます。"
-"Seleniumは、ページ内の要素を見つけるための以下のメソッドを提供します。:"
+msgid "There are various strategies to locate elements in a page.  You can use the most appropriate one for your case.  Selenium provides the following methods to locate elements in a page:"
+msgstr "あるページに要素を配置するには、さまざまな方法があります。あなたのケースに最も適したものを使用することができます。Seleniumは、ページ内の要素を見つけるための以下のメソッドを提供します。:"
 
 #: ../../source/locating-elements.rst:10
 msgid "`find_element_by_id`"
@@ -97,13 +92,8 @@ msgid "`find_elements_by_css_selector`"
 msgstr ""
 
 #: ../../source/locating-elements.rst:31
-msgid ""
-"Apart from the public methods given above, there are two private methods "
-"which might be useful with locators in page objects.  These are the two "
-"private methods: `find_element` and `find_elements`."
-msgstr ""
-"上記の公開メソッドとは別に、ページオブジェクト内のロケータで便利な2つのプライベートメソッドがあります。"
-"これらは、 `find_element` と `find_elements` の2つのプライベートメソッドです。"
+msgid "Apart from the public methods given above, there are two private methods which might be useful with locators in page objects.  These are the two private methods: `find_element` and `find_elements`."
+msgstr "上記の公開メソッドとは別に、ページオブジェクト内のロケータで便利な2つのプライベートメソッドがあります。これらは、 `find_element` と `find_elements` の2つのプライベートメソッドです。"
 
 #: ../../source/locating-elements.rst:35
 msgid "Example usage::"
@@ -111,8 +101,7 @@ msgstr "使用例::"
 
 #: ../../source/locating-elements.rst:43
 msgid "These are the attributes available for `By` class::"
-msgstr ""
-"これらは `By` クラスで使用できる属性です。::"
+msgstr "これらは `By` クラスで使用できる属性です。::"
 
 #: ../../source/locating-elements.rst:56
 msgid "Locating by Id"
@@ -120,57 +109,36 @@ msgstr "ID属性で探す"
 
 #: ../../source/locating-elements.rst:58
 msgid ""
-"Use this when you know `id` attribute of an element.  With this strategy,"
-" the first element with the `id` attribute value matching the location "
-"will be returned.  If no element has a matching `id` attribute, a "
+"Use this when you know `id` attribute of an element.  With this strategy, the first element with the `id` attribute value matching the location will be returned.  If no element has a matching `id` attribute, a "
 "``NoSuchElementException`` will be raised."
-msgstr ""
-"要素の `id` 属性を知っている場合は使用しましょう。"
-"この戦略では、 `id` 属性値を持つ最初の要素が返されます。"
-"`id` 属性が一致する要素がない場合、 ``NoSuchElementException`` が発生します。"
+msgstr "要素の `id` 属性を知っている場合は使用しましょう。この戦略では、 `id` 属性値を持つ最初の要素が返されます。`id` 属性が一致する要素がない場合、 ``NoSuchElementException`` が発生します。"
 
-#: ../../source/locating-elements.rst:63 ../../source/locating-elements.rst:88
-#: ../../source/locating-elements.rst:136
-#: ../../source/locating-elements.rst:220
-#: ../../source/locating-elements.rst:244
-#: ../../source/locating-elements.rst:266
-#: ../../source/locating-elements.rst:286
+#: ../../source/locating-elements.rst:63 ../../source/locating-elements.rst:88 ../../source/locating-elements.rst:136 ../../source/locating-elements.rst:220 ../../source/locating-elements.rst:244
+#: ../../source/locating-elements.rst:266 ../../source/locating-elements.rst:286
 msgid "For instance, consider this page source::"
-msgstr ""
-"たとえば、以下のページソースを考えてみましょう。::"
+msgstr "たとえば、以下のページソースを考えてみましょう。::"
 
 #: ../../source/locating-elements.rst:75
 msgid "The form element can be located like this::"
-msgstr ""
-"フォーム要素は次のように配置できます。::"
+msgstr "フォーム要素は次のように配置できます。::"
 
 #: ../../source/locating-elements.rst:81
 msgid "Locating by Name"
-msgstr ""
-"name属性で探す"
+msgstr "name属性で探す"
 
 #: ../../source/locating-elements.rst:83
 msgid ""
-"Use this when you know `name` attribute of an element.  With this "
-"strategy, the first element with the `name` attribute value matching the "
-"location will be returned.  If no element has a matching `name` "
-"attribute, a ``NoSuchElementException`` will be raised."
-msgstr ""
-"要素の `name` 属性が分かっている場合に使用します。"
-"この戦略では、 `name` 属性値を持つ最初の要素が返されます。"
-"`name` 属性が一致する要素がない場合、 `NoSuchElementException` が発生します。"
+"Use this when you know `name` attribute of an element.  With this strategy, the first element with the `name` attribute value matching the location will be returned.  If no element has a matching `name` attribute, "
+"a ``NoSuchElementException`` will be raised."
+msgstr "要素の `name` 属性が分かっている場合に使用します。この戦略では、 `name` 属性値を持つ最初の要素が返されます。`name` 属性が一致する要素がない場合、 `NoSuchElementException` が発生します。"
 
 #: ../../source/locating-elements.rst:101
 msgid "The username & password elements can be located like this::"
-msgstr ""
-"ユーザー名とパスワードの要素は、次のように見つけることが出来ます。::"
+msgstr "ユーザー名とパスワードの要素は、次のように見つけることが出来ます。::"
 
 #: ../../source/locating-elements.rst:106
-msgid ""
-"This will give the \"Login\" button as it occurs before the \"Clear\" "
-"button::"
-msgstr ""
-"これにより、「ログイン」ボタンが「クリア」ボタンの前に表示されます。::"
+msgid "This will give the \"Login\" button as it occurs before the \"Clear\" button::"
+msgstr "これにより、「ログイン」ボタンが「クリア」ボタンの前に表示されます。::"
 
 #: ../../source/locating-elements.rst:113
 msgid "Locating by XPath"
@@ -178,44 +146,27 @@ msgstr "XPathによる検索"
 
 #: ../../source/locating-elements.rst:115
 msgid ""
-"XPath is the language used for locating nodes in an XML document.  As "
-"HTML can be an implementation of XML (XHTML), Selenium users can leverage"
-" this powerful language to target elements in their web applications.  "
-"XPath extends beyond (as well as supporting) the simple methods of "
-"locating by id or name attributes, and opens up all sorts of new "
-"possibilities such as locating the third checkbox on the page."
+"XPath is the language used for locating nodes in an XML document.  As HTML can be an implementation of XML (XHTML), Selenium users can leverage this powerful language to target elements in their web applications.  "
+"XPath extends beyond (as well as supporting) the simple methods of locating by id or name attributes, and opens up all sorts of new possibilities such as locating the third checkbox on the page."
 msgstr ""
-"XPathは、XML文書内のノードの位置を特定するために使用される言語です。"
-"HTMLはXML（XHTML）を実装できるため、Seleniumユーザーはこの強力な言語を活用して、"
-"Webアプリケーションの要素をターゲットにすることができます。"
-"XPathは、id属性やname属性で簡単に検索する方法を超えて（サポートするだけでなく）拡張し、"
-"ページ上の3番目のチェックボックスの位置付けなど、あらゆる可能性を開拓します。"
+"XPathは、XML文書内のノードの位置を特定するために使用される言語です。HTMLはXML（XHTML）を実装できるため、Seleniumユーザーはこの強力な言語を活用して、Webアプリケーションの要素をターゲットにすることができます。XPath"
+"は、id属性やname属性で簡単に検索する方法を超えて（サポートするだけでなく）拡張し、ページ上の3番目のチェックボックスの位置付けなど、あらゆる可能性を開拓します。"
 
 #: ../../source/locating-elements.rst:122
 msgid ""
-"One of the main reasons for using XPath is when you don't have a suitable"
-" id or name attribute for the element you wish to locate.  You can use "
-"XPath to either locate the element in absolute terms (not advised), or "
-"relative to an element that does have an id or name attribute.  XPath "
-"locators can also be used to specify elements via attributes other than "
-"id and name."
+"One of the main reasons for using XPath is when you don't have a suitable id or name attribute for the element you wish to locate.  You can use XPath to either locate the element in absolute terms (not advised), "
+"or relative to an element that does have an id or name attribute.  XPath locators can also be used to specify elements via attributes other than id and name."
 msgstr ""
-"XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。"
-"XPathを使用して、要素を絶対的な用語（アドバイスされていない）に配置するか、id属性またはname属性を持つ要素に関連付けることができます。"
-"XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。"
+"XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。XPathを使用して、要素を絶対的な用語（アドバイスされていない）に配置するか、id属性またはname属性を持つ要素に関連付けることができま"
+"す。XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。"
 
 #: ../../source/locating-elements.rst:129
 msgid ""
-"Absolute XPaths contain the location of all elements from the root (html)"
-" and as a result are likely to fail with only the slightest adjustment to"
-" the application.  By finding a nearby element with an id or name "
-"attribute (ideally a parent element) you can locate your target element "
-"based on the relationship.  This is much less likely to change and can "
-"make your tests more robust."
+"Absolute XPaths contain the location of all elements from the root (html) and as a result are likely to fail with only the slightest adjustment to the application.  By finding a nearby element with an id or name "
+"attribute (ideally a parent element) you can locate your target element based on the relationship.  This is much less likely to change and can make your tests more robust."
 msgstr ""
-"絶対XPathにはルート（html）からのすべての要素の位置が含まれているため、アプリケーションにわずかな調整しか加えられずに失敗する可能性があります。"
-"idまたはname属性（理想的には親要素）を持つ近くの要素を見つけることによって、関係に基づいてターゲット要素を見つけることができます。"
-"これは変更する可能性が低く、テストをより堅牢にすることができます。"
+"絶対XPathにはルート（html）からのすべての要素の位置が含まれているため、アプリケーションにわずかな調整しか加えられずに失敗する可能性があります。idまたはname属性（理想的には親要素）を持つ近くの要素を見つけることに"
+"よって、関係に基づいてターゲット要素を見つけることができます。これは変更する可能性が低く、テストをより堅牢にすることができます。"
 
 #: ../../source/locating-elements.rst:149
 msgid "The form elements can be located like this::"
@@ -238,15 +189,11 @@ msgid "The username element can be located like this::"
 msgstr "username要素は次のように見つけることが出来ます。::"
 
 #: ../../source/locating-elements.rst:168
-msgid ""
-"First form element with an input child element with attribute named "
-"`name` and the value `username`"
+msgid "First form element with an input child element with attribute named `name` and the value `username`"
 msgstr "`name` 属性と `username` という値を持つ入力子要素を持つ最初のフォーム要素"
 
 #: ../../source/locating-elements.rst:171
-msgid ""
-"First input child element of the form element with attribute named `id` "
-"and the value `loginForm`"
+msgid "First input child element of the form element with attribute named `id` and the value `loginForm`"
 msgstr "`id` 属性と `loginForm` という値を持つフォーム要素の最初の入力子要素"
 
 #: ../../source/locating-elements.rst:174
@@ -258,28 +205,19 @@ msgid "The \"Clear\" button element can be located like this::"
 msgstr "「クリア」ボタンの要素は、次のように配置できます。::"
 
 #: ../../source/locating-elements.rst:183
-msgid ""
-"Input with attribute named `name` and the value `continue` and attribute "
-"named `type` and the value `button`"
-msgstr ""
-"`name` 属性の値が `continue` のinput要素と `type` 属性の値が `button` のinput要素"
+msgid "Input with attribute named `name` and the value `continue` and attribute named `type` and the value `button`"
+msgstr "`name` 属性の値が `continue` のinput要素と `type` 属性の値が `button` のinput要素"
 
 #: ../../source/locating-elements.rst:186
-msgid ""
-"Fourth input child element of the form element with attribute named `id` "
-"and value `loginForm`"
-msgstr ""
-"`id` 属性と `loginFoem` をもつformのinput要素の4番目の子要素"
+msgid "Fourth input child element of the form element with attribute named `id` and value `loginForm`"
+msgstr "`id` 属性と `loginFoem` をもつformのinput要素の4番目の子要素"
 
 #: ../../source/locating-elements.rst:189
-msgid ""
-"These examples cover some basics, but in order to learn more, the "
-"following references are recommended:"
-msgstr ""
-"これらの例はいくつかの基本をカバーしていますが、詳細を知るために次の参考資料をおすすめします。:"
+msgid "These examples cover some basics, but in order to learn more, the following references are recommended:"
+msgstr "これらの例はいくつかの基本をカバーしていますが、詳細を知るために次の参考資料をおすすめします。:"
 
 #: ../../source/locating-elements.rst:192
-msgid "`W3Schools XPath Tutorial <http://www.w3schools.com/xsl/xpath_intro.asp>`_"
+msgid "`W3Schools XPath Tutorial <https://www.w3schools.com/xml/xpath_intro.asp>`_"
 msgstr ""
 
 #: ../../source/locating-elements.rst:193
@@ -287,37 +225,23 @@ msgid "`W3C XPath Recommendation <http://www.w3.org/TR/xpath>`_"
 msgstr ""
 
 #: ../../source/locating-elements.rst:194
-msgid ""
-"`XPath Tutorial <http://www.zvon.org/comp/r/tut-XPath_1.html>`_ - with "
-"interactive examples."
+msgid "`XPath Tutorial <http://www.zvon.org/comp/r/tut-XPath_1.html>`_ - with interactive examples."
 msgstr ""
 
 #: ../../source/locating-elements.rst:198
-msgid ""
-"There are also a couple of very useful Add-ons that can assist in "
-"discovering the XPath of an element:"
-msgstr ""
-"また、要素のXPathを発見するのに役立つ、非常に便利なアドオンがいくつかあります。:"
+msgid "There are also a couple of very useful Add-ons that can assist in discovering the XPath of an element:"
+msgstr "また、要素のXPathを発見するのに役立つ、非常に便利なアドオンがいくつかあります。:"
 
 #: ../../source/locating-elements.rst:201
-msgid ""
-"`XPath Checker <https://addons.mozilla.org/en-"
-"US/firefox/addon/1095?id=1095>`_ - suggests XPath and can be used to test"
-" XPath results."
+msgid "`XPath Checker <https://addons.mozilla.org/en-US/firefox/addon/xpath-checker/>`_ - suggests XPath and can be used to test XPath results."
 msgstr ""
 
 #: ../../source/locating-elements.rst:204
-msgid ""
-"`Firebug <https://addons.mozilla.org/en-US/firefox/addon/1843>`_ - XPath "
-"suggestions are just one of the many powerful features of this very "
-"useful add-on."
+msgid "`Firebug <https://addons.mozilla.org/en-US/firefox/addon/firebug/>`_ - XPath suggestions are just one of the many powerful features of this very useful add-on."
 msgstr ""
 
 #: ../../source/locating-elements.rst:207
-msgid ""
-"`XPath Helper "
-"<https://chrome.google.com/webstore/detail/hgimnogjllphhhkhlmebbmlgjoejdpjl>`_"
-" - for Google Chrome"
+msgid "`XPath Helper <https://chrome.google.com/webstore/detail/hgimnogjllphhhkhlmebbmlgjoejdpjl>`_ - for Google Chrome"
 msgstr ""
 
 #: ../../source/locating-elements.rst:213
@@ -326,14 +250,11 @@ msgstr "リンクテキストによるハイパーリンクの検索"
 
 #: ../../source/locating-elements.rst:215
 msgid ""
-"Use this when you know link text used within an anchor tag.  With this "
-"strategy, the first element with the link text value matching the "
-"location will be returned.  If no element has a matching link text "
+"Use this when you know link text used within an anchor tag.  With this strategy, the first element with the link text value matching the location will be returned.  If no element has a matching link text "
 "attribute, a ``NoSuchElementException`` will be raised."
 msgstr ""
-"アンカータグ内で使用されているリンクテキストを知っている場合に使用します。"
-"この戦略では、場所に一致するリンクテキスト値を持つ最初の要素が返されます。"
-"要素に一致するリンクテキスト属性がない場合、 ``NoSuchElementException`` が発生します。"
+"アンカータグ内で使用されているリンクテキストを知っている場合に使用します。この戦略では、場所に一致するリンクテキスト値を持つ最初の要素が返されます。要素に一致するリンクテキスト属性がない場合、 "
+"``NoSuchElementException`` が発生します。"
 
 #: ../../source/locating-elements.rst:230
 msgid "The continue.html link can be located like this::"
@@ -345,13 +266,9 @@ msgstr "タグ名による要素の検索"
 
 #: ../../source/locating-elements.rst:239
 msgid ""
-"Use this when you want to locate an element by tag name. With this "
-"strategy, the first element with the given tag name will be returned. If "
-"no element has a matching tag name, a ``NoSuchElementException`` will be "
+"Use this when you want to locate an element by tag name. With this strategy, the first element with the given tag name will be returned. If no element has a matching tag name, a ``NoSuchElementException`` will be "
 "raised."
-msgstr ""
-"タグ名で要素を検索する場合に使用します。この戦略では、指定されたタグ名を持つ最初の要素が返されます。"
-"一致するタグ名を持つエレメントがない場合、 `NoSuchElementException` が発生します。"
+msgstr "タグ名で要素を検索する場合に使用します。この戦略では、指定されたタグ名を持つ最初の要素が返されます。一致するタグ名を持つエレメントがない場合、 `NoSuchElementException` が発生します。"
 
 #: ../../source/locating-elements.rst:253
 msgid "The heading (h1) element can be located like this::"
@@ -363,17 +280,11 @@ msgstr "クラス名による要素の検索"
 
 #: ../../source/locating-elements.rst:261
 msgid ""
-"Use this when you want to locate an element by class attribute name. With"
-" this strategy, the first element with the matching class attribute name "
-"will be returned.  If no element has a matching class attribute name, a "
-"``NoSuchElementException`` will be raised."
-msgstr ""
-"クラス属性名で要素を検索する場合に使用します。"
-"この戦略では、一致するクラス属性名を持つ最初の要素が返されます。"
-"要素に一致するクラス属性名がない場合、 `NoSuchElementException` が発生します。"
+"Use this when you want to locate an element by class attribute name. With this strategy, the first element with the matching class attribute name will be returned.  If no element has a matching class attribute "
+"name, a ``NoSuchElementException`` will be raised."
+msgstr "クラス属性名で要素を検索する場合に使用します。この戦略では、一致するクラス属性名を持つ最初の要素が返されます。要素に一致するクラス属性名がない場合、 `NoSuchElementException` が発生します。"
 
-#: ../../source/locating-elements.rst:274
-#: ../../source/locating-elements.rst:294
+#: ../../source/locating-elements.rst:274 ../../source/locating-elements.rst:294
 msgid "The \"p\" element can be located like this::"
 msgstr "p要素は次のように置くことができます。::"
 
@@ -383,20 +294,10 @@ msgstr "CSSセレクタによる要素の特定"
 
 #: ../../source/locating-elements.rst:281
 msgid ""
-"Use this when you want to locate an element by CSS selector syntax. With "
-"this strategy, the first element with the matching CSS selector will be "
-"returned.  If no element has a matching CSS selector, a "
+"Use this when you want to locate an element by CSS selector syntax. With this strategy, the first element with the matching CSS selector will be returned.  If no element has a matching CSS selector, a "
 "``NoSuchElementException`` will be raised."
-msgstr ""
-"CSSセレクタ構文で要素を検索する場合に使用します。"
-"この戦略では、一致するCSSセレクタを持つ最初の要素が返されます。"
-"要素に一致するCSSセレクタがない場合、 `NoSuchElementException` が発生します。"
+msgstr "CSSセレクタ構文で要素を検索する場合に使用します。この戦略では、一致するCSSセレクタを持つ最初の要素が返されます。要素に一致するCSSセレクタがない場合、 `NoSuchElementException` が発生します。"
 
 #: ../../source/locating-elements.rst:298
-msgid ""
-"`Sauce Labs has good documentation "
-"<http://saucelabs.com/resources/selenium/css-selectors>`_ on CSS "
-"selectors."
-msgstr ""
-"`Sauce Labs <http://saucelabs.com/resources/selenium/css-selectors>`_ には、CSSセレクタに関する優れたドキュメントがあります。"
-
+msgid "`Sauce Labs has good documentation <https://saucelabs.com/resources/articles/selenium-tips-css-selectors>`_ on CSS selectors."
+msgstr "`Sauce Labs <http://saucelabs.com/resources/selenium/css-selectors>`_ には、CSSセレクタに関する優れたドキュメントがあります。"

@@ -4,19 +4,20 @@
 # Bindings package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-28 14:30+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-11-06 09:18+0900\n"
+"PO-Revision-Date: 2017-11-06 21:21+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../../source/installation.rst:4
 msgid "Installation"
@@ -28,22 +29,24 @@ msgstr "イントロダクション"
 
 #: ../../source/installation.rst:9
 msgid ""
-"Selenium Python bindings provides a simple API to write "
-"functional/acceptance tests using Selenium WebDriver.  Through Selenium "
-"Python API you can access all functionalities of Selenium WebDriver in an"
-" intuitive way."
+"Selenium Python bindings provides a simple API to write functional/"
+"acceptance tests using Selenium WebDriver.  Through Selenium Python API "
+"you can access all functionalities of Selenium WebDriver in an intuitive "
+"way."
 msgstr ""
-"Selenium Python バインディングは、Selenium WebDriverを使って機能/受入れテストを書くためのシンプルなAPIを提供します。"
-"Selenium Python APIを使用すると、直感的な方法でSelenium WebDriverのすべての機能にアクセスできます。"
+"Selenium Python バインディングは、Selenium WebDriverを使って機能/受入れテス"
+"トを書くためのシンプルなAPIを提供します。Selenium Python APIを使用すると、"
+"直感的な方法でSelenium WebDriverのすべての機能にアクセスできます。"
 
 #: ../../source/installation.rst:14
 msgid ""
 "Selenium Python bindings provide a convenient API to access Selenium "
 "WebDrivers like Firefox, Ie, Chrome, Remote etc.  The current supported "
-"Python versions are 2.7, 3.2 and above."
+"Python versions are 2.7, 3.5 and above."
 msgstr ""
-"Selenium PythonバインディングはFirefox、IE、Chrome、RemoteなどのSelenium WebDriversにアクセスするための便利なAPIを提供します。"
-"現在サポートされているPythonバージョンは2.7,3.2以上です。"
+"Selenium PythonバインディングはFirefox、IE、Chrome、RemoteなどのSelenium "
+"WebDriversにアクセスするための便利なAPIを提供します。現在サポートされている"
+"Pythonバージョンは2.7、3.2以上です。"
 
 #: ../../source/installation.rst:18
 msgid ""
@@ -61,126 +64,197 @@ msgstr "SeleniumのPythonバインディングをダウンロード"
 msgid ""
 "You can download Python bindings for Selenium from the `PyPI page for "
 "selenium package <https://pypi.python.org/pypi/selenium>`_.  However, a "
-"better approach would be to use `pip "
-"<https://pip.pypa.io/en/latest/installing/>`_ to install the selenium "
-"package.  Python 3.5 has pip available in the `standard library "
-"<https://docs.python.org/3.5/installing/index.html>`_. Using `pip`, you "
-"can install selenium like this::"
+"better approach would be to use `pip <https://pip.pypa.io/en/latest/"
+"installing/>`_ to install the selenium package.  Python 3.6 has pip "
+"available in the `standard library <https://docs.python.org/3.6/installing/"
+"index.html>`_. Using `pip`, you can install selenium like this::"
 msgstr ""
-"SeleniumのPythonバインディングは、`PyPI page for selenium package <https://pypi.python.org/pypi/selenium>`_ からダウンロードできます。"
-"しかし、より良いアプローチは、 `pip <https://pip.pypa.io/en/latest/installing/>`_ を使ってselenium packageをインストールすることです。"
-"Python 3.5には `標準ライブラリ <https://docs.python.org/3.5/installing/index.html>`_ があります。 `pip` を使うと、次のようにseleniumをインストールできます。::"
+"SeleniumのPythonバインディングは、`PyPI page for selenium package <https://"
+"pypi.python.org/pypi/selenium>`_ からダウンロードできます。しかし、より良い"
+"アプローチは、 `pip <https://pip.pypa.io/en/latest/installing/>`_ を使って"
+"selenium packageをインストールすることです。Python 3.6には `標準ライブラリ "
+"<https://docs.python.org/3.6/installing/index.html>`_ があります。 `pip` を"
+"使うと、次のようにseleniumをインストールできます。::"
 
 #: ../../source/installation.rst:35
 msgid ""
-"You may consider using `virtualenv <http://www.virtualenv.org>`_ to "
-"create isolated Python environments.  Python 3.5 has `pyvenv "
-"<https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ which "
-"is almost same as virtualenv."
+"You may consider using `virtualenv <http://www.virtualenv.org>`_ to create "
+"isolated Python environments.  Python 3.6 has `pyvenv <https://docs.python."
+"org/3.6/using/scripts.html#scripts-pyvenv>`_ which is almost same as "
+"virtualenv."
 msgstr ""
-"孤立したPython環境を作るために `virtualenv <http://www.virtualenv.org>`_ を使うことを検討するかもしれません。"
-"Python 3.5には、virtualenvとほとんど同じ `pyvenv <https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ があります。"
+"孤立したPython環境を作るために `virtualenv <http://www.virtualenv.org>`_ を"
+"使うことを検討するかもしれません。Python 3.6には、virtualenvとほとんど同じ "
+"`pyvenv <https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv>`_ "
+"があります。"
 
-#: ../../source/installation.rst:42
-msgid "Detailed instructions for Windows users"
-msgstr "Windowsユーザーの詳細な手順"
+#: ../../source/installation.rst:41
+msgid "Drivers"
+msgstr ""
+
+#: ../../source/installation.rst:43
+msgid ""
+"Selenium requires a driver to interface with the chosen browser. Firefox, "
+"for example, requires `geckodriver <https://github.com/mozilla/geckodriver/"
+"releases>`_, which needs to be installed before the below examples can be "
+"run. Make sure it's in your `PATH`, e. g., place it in `/usr/bin` or `/usr/"
+"local/bin`."
+msgstr ""
 
 #: ../../source/installation.rst:46
-msgid "You should have internet connection to perform this installation."
-msgstr "このインストールを実行するには、インターネット接続が必要です。"
+msgid ""
+"Failure to observe this step will give you an error `selenium.common."
+"exceptions.WebDriverException: Message: 'geckodriver' executable needs to "
+"be in PATH.`"
+msgstr ""
 
 #: ../../source/installation.rst:48
 msgid ""
-"Install Python 3.5 using the `MSI available in python.org download page "
-"<http://www.python.org/download>`_."
+"Other supported browsers will have their own drivers available. Links to "
+"some of the more popular browser drivers follow."
 msgstr ""
-"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが使えるPython 3.5をインストールする 。"
 
 #: ../../source/installation.rst:51
+msgid "**Chrome**:"
+msgstr ""
+
+#: ../../source/installation.rst:51
+msgid "https://sites.google.com/a/chromium.org/chromedriver/downloads"
+msgstr ""
+
+#: ../../source/installation.rst:53
+msgid "**Edge**:"
+msgstr ""
+
+#: ../../source/installation.rst:53
+msgid "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/"
+msgstr ""
+
+#: ../../source/installation.rst:55
+msgid "**Firefox**:"
+msgstr ""
+
+#: ../../source/installation.rst:55
+msgid "https://github.com/mozilla/geckodriver/releases"
+msgstr ""
+
+#: ../../source/installation.rst:57
+msgid "**Safari**:"
+msgstr ""
+
+#: ../../source/installation.rst:57
+msgid "https://webkit.org/blog/6900/webdriver-support-in-safari-10/"
+msgstr ""
+
+#: ../../source/installation.rst:62
+msgid "Detailed instructions for Windows users"
+msgstr "Windowsユーザーの詳細な手順"
+
+#: ../../source/installation.rst:66
+msgid "You should have an internet connection to perform this installation."
+msgstr "このインストールを実行するには、インターネット接続が必要です。"
+
+#: ../../source/installation.rst:68
+msgid ""
+"Install Python 3.6 using the `MSI available in python.org download page "
+"<http://www.python.org/download>`_."
+msgstr ""
+"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが"
+"使えるPython 3.6をインストールする 。"
+
+#: ../../source/installation.rst:71
 msgid ""
 "Start a command prompt using the ``cmd.exe`` program and run the ``pip`` "
 "command as given below to install `selenium`."
 msgstr ""
-"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが使えるPython 3.5をインストールする 。"
+"`python.orgのダウンロードページ <http://www.python.org/download>`_ でMSIが"
+"使えるPython 3.5をインストールする 。"
 
-#: ../../source/installation.rst:58
+#: ../../source/installation.rst:78
 msgid ""
-"Now you can run your test scripts using Python.  For example, if you have"
-" created a Selenium based script and saved it inside "
-"``C:\\my_selenium_script.py``, you can run it like this::"
+"Now you can run your test scripts using Python.  For example, if you have "
+"created a Selenium based script and saved it inside ``C:"
+"\\my_selenium_script.py``, you can run it like this::"
 msgstr ""
-"これでPythonを使用してテストスクリプトを実行できます。"
-"例えば、Seleniumベースのスクリプトを作成して内部に保存した場合"
-"``C：\ my_selenium_script.py`` を実行すると、次のように実行できます::"
+"これでPythonを使用してテストスクリプトを実行できます。例えば、Seleniumベー"
+"スのスクリプトを作成して内部に保存した場合``C：\\ my_selenium_script.py`` "
+"を実行すると、次のように実行できます::"
 
-#: ../../source/installation.rst:66
+#: ../../source/installation.rst:86
 msgid "Downloading Selenium server"
 msgstr "Seleniumサーバーをダウンロード"
 
-#: ../../source/installation.rst:70
+#: ../../source/installation.rst:90
 msgid ""
-"The Selenium server is only required, if you want to use the remote "
-"WebDriver.  See the :ref:`selenium-remote-webdriver` section for more "
+"**The Selenium server is only required if you want to use the remote "
+"WebDriver**.  See the :ref:`selenium-remote-webdriver` section for more "
 "details.  If you are a beginner learning Selenium, you can skip this "
 "section and proceed with next chapter."
 msgstr ""
-"Seleniumサーバーは、リモートWebDriverを使用する場合のみ必要です。"
-"詳細については、「:ref:`selenium-remote-webdriver` 」を参照してください。"
-"初心者の方は、このセクションを飛ばして次の章に進んでください。"
+"**Seleniumサーバーは、リモートWebDriverを使用する場合のみ必要です** 。詳細"
+"については、「:ref:`selenium-remote-webdriver` 」を参照してください。初心者"
+"の方は、このセクションを飛ばして次の章に進んでください。"
 
-#: ../../source/installation.rst:75
+#: ../../source/installation.rst:95
 msgid ""
-"Selenium server is a Java program.  Java Runtime Environment (JRE) 1.6 or"
-" newer version is recommended to run Selenium server."
+"Selenium server is a Java program.  Java Runtime Environment (JRE) 1.6 or "
+"newer version is recommended to run Selenium server."
 msgstr ""
-"SeleniumサーバーはJavaプログラムです。"
-"Seleniumサーバーを実行するにはJava Runtime Environment（JRE）1.6または新しいバージョンをお勧めします。"
+"SeleniumサーバーはJavaプログラムです。Seleniumサーバーを実行するにはJava "
+"Runtime Environment（JRE）1.6または新しいバージョンをお勧めします。"
 
-#: ../../source/installation.rst:78
+#: ../../source/installation.rst:98
 msgid ""
 "You can download Selenium server 2.x from the `download page of selenium "
 "website <http://seleniumhq.org/download/>`_.  The file name should be "
 "something like this: ``selenium-server-standalone-2.x.x.jar``.  You can "
 "always download the latest 2.x version of Selenium server."
 msgstr ""
-"あなたは `Seleniumのウェブサイトのダウンロードページ <http://seleniumhq.org/download/>`_ からSelenium server 2.xをダウンロードできます。"
-"ファイル名はこのようなものでなければなりません：``selenium-server-standalone-2.x.x.jar``。"
-"あなたはいつでも最新の2.xバージョンのSeleniumサーバーをダウンロードすることができます。"
+"あなたは `Seleniumのウェブサイトのダウンロードページ <http://seleniumhq."
+"org/download/>`_ からSelenium server 2.xをダウンロードできます。ファイル名"
+"はこのようなものでなければなりません：``selenium-server-standalone-2.x.x."
+"jar``。あなたはいつでも最新の2.xバージョンのSeleniumサーバーをダウンロード"
+"することができます。"
 
-#: ../../source/installation.rst:84
+#: ../../source/installation.rst:104
 msgid ""
-"If Java Runtime Environment (JRE) is not installed in your system, you "
-"can download the `JRE from the Oracle website "
-"<http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. "
-"If you are using a GNU/Linux system and have root access in your system, "
-"you can also use your operating system instructions to install JRE."
+"If Java Runtime Environment (JRE) is not installed in your system, you can "
+"download the `JRE from the Oracle website <http://www.oracle.com/"
+"technetwork/java/javase/downloads/index.html>`_. If you are using a GNU/"
+"Linux system and have root access in your system, you can also use your "
+"operating system instructions to install JRE."
 msgstr ""
-"Java Runtime Environment（JRE）がシステムにインストールされていない場合は、Oracle Webサイトから `JREをダウンロードできます <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_ 。"
-"GNU / Linuxシステムを使用していて、システムにroot権限を持っている場合は、オペレーティングシステムの指示に従ってJREをインストールすることもできます。"
+"Java Runtime Environment（JRE）がシステムにインストールされていない場合は、"
+"Oracle Webサイトから `JREをダウンロードできます <http://www.oracle.com/"
+"technetwork/java/javase/downloads/index.html>`_ 。GNU / Linuxシステムを使用"
+"していて、システムにroot権限を持っている場合は、オペレーティングシステムの"
+"指示に従ってJREをインストールすることもできます。"
 
-#: ../../source/installation.rst:90
+#: ../../source/installation.rst:110
 msgid ""
-"If `java` command is available in the PATH (environment variable), you "
-"can start the Selenium server using this command::"
+"If `java` command is available in the PATH (environment variable), you can "
+"start the Selenium server using this command::"
 msgstr ""
-"`java` コマンドがPATH（環境変数）で利用可能な場合、次のコマンドを使用してSeleniumサーバーを起動できます::"
+"`java` コマンドがPATH（環境変数）で利用可能な場合、次のコマンドを使用して"
+"Seleniumサーバーを起動できます::"
 
-#: ../../source/installation.rst:95
+#: ../../source/installation.rst:115
 msgid ""
-"Replace `2.x.x` with actual version of Selenium server you downloaded "
+"Replace `2.x.x` with the actual version of Selenium server you downloaded "
 "from the site."
 msgstr ""
-"`2.x.x` をサイトからダウンロードしたSeleniumサーバーの実際のバージョンに置き換えてください。"
+"`2.x.x` をサイトからダウンロードしたSeleniumサーバーの実際のバージョンに置"
+"き換えてください。"
 
-#: ../../source/installation.rst:98
+#: ../../source/installation.rst:118
 msgid ""
 "If JRE is installed as a non-root user and/or if it is not available in "
 "the PATH (environment variable), you can type the relative or absolute "
-"path to the `java` command.  Similarly, you can provide relative or "
+"path to the `java` command.  Similarly, you can provide a relative or "
 "absolute path to Selenium server jar file. Then, the command will look "
 "something like this::"
 msgstr ""
-"JREが非rootユーザーとしてインストールされている場合、またはPATH（環境変数）で使用できない場合は、 `java` コマンドの相対パスまたは絶対パスを入力できます。"
-"同様に、Seleniumサーバーのjarファイルに相対パスまたは絶対パスを指定できます。"
-"コマンドは次のようになります::"
-
+"JREが非rootユーザーとしてインストールされている場合、またはPATH（環境変数）"
+"で使用できない場合は、 `java` コマンドの相対パスまたは絶対パスを入力できま"
+"す。同様に、Seleniumサーバーのjarファイルに相対パスまたは絶対パスを指定でき"
+"ます。コマンドは次のようになります::"

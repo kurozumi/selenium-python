@@ -4,29 +4,28 @@
 # Bindings package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-28 14:30+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-11-06 20:48+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../../source/faq.rst:4
 msgid "Appendix: Frequently Asked Questions"
 msgstr "よくある質問"
 
 #: ../../source/faq.rst:6
-msgid ""
-"Another FAQ: https://github.com/SeleniumHQ/selenium/wiki/Frequently-"
-"Asked-Questions"
-msgstr ""
+msgid "Another FAQ: https://github.com/SeleniumHQ/selenium/wiki/Frequently-Asked-Questions"
+msgstr "別のFAQ: https://github.com/SeleniumHQ/selenium/wiki/Frequently-Asked-Questions"
 
 #: ../../source/faq.rst:9
 msgid "How to use ChromeDriver ?"
@@ -34,187 +33,141 @@ msgstr "ChromeDriverの使い方は?"
 
 #: ../../source/faq.rst:11
 msgid ""
-"Download the latest `chromedriver from download page "
-"<https://sites.google.com/a/chromium.org/chromedriver/downloads>`_.  "
-"Unzip the file::"
+"Download the latest `chromedriver from download page <https://sites.google.com/a/chromium.org/chromedriver/"
+"downloads>`_.  Unzip the file::"
 msgstr ""
-"ダウンロードページから最新の `chromedriver <https://sites.google.com/a/chromium.org/chromedriver/downloads>`_ をダウンロードしてファイルを解凍してください。::"
+"ダウンロードページから最新の `chromedriver <https://sites.google.com/a/chromium.org/chromedriver/downloads>`_ をダウン"
+"ロードしてファイルを解凍してください::"
 
 #: ../../source/faq.rst:17
-msgid ""
-"You should see a ``chromedriver`` executable.  Now you can create an "
-"instance of Chrome WebDriver like this::"
-msgstr ""
-"実行可能な ``chromedriver`` を確認してください。"
-"これでChrome WebDriverのインスタンスを作成できます。::"
+msgid "You should see a ``chromedriver`` executable.  Now you can create an instance of Chrome WebDriver like this::"
+msgstr "実行可能な ``chromedriver`` を確認してください。これでChrome WebDriverのインスタンスを作成できます。::"
 
 #: ../../source/faq.rst:22
 msgid "The rest of the example should work as given in other documentation."
-msgstr ""
-"残りの例は、他のドキュメントに記載されているとおりに動作するはずです。"
+msgstr "残りの例は、他のドキュメントに記載されているとおりに動作するはずです。"
 
 #: ../../source/faq.rst:25
 msgid "Does Selenium 2 support XPath 2.0 ?"
-msgstr ""
-"Selenium2はXPath2.0をサポートしていますか？"
+msgstr "Selenium2はXPath2.0をサポートしていますか？"
 
 #: ../../source/faq.rst:27
-msgid ""
-"Ref: http://seleniumhq.org/docs/03_webdriver.html#how-xpath-works-in-"
-"webdriver"
+msgid "Ref: http://seleniumhq.org/docs/03_webdriver.html#how-xpath-works-in-webdriver"
 msgstr ""
 
 #: ../../source/faq.rst:29
 msgid ""
-"Selenium delegates XPath queries down to the browser's own XPath engine, "
-"so Selenium support XPath supports whatever the browser supports.  In "
-"browsers which don't have native XPath engines (IE 6,7,8), Selenium "
-"supports XPath 1.0 only."
+"Selenium delegates XPath queries down to the browser's own XPath engine, so Selenium support XPath supports whatever the "
+"browser supports.  In browsers which don't have native XPath engines (IE 6,7,8), Selenium supports XPath 1.0 only."
 msgstr ""
-"SeleniumはブラウザのXPathエンジンにXPathクエリを委任しているため、"
-"SeleniumのサポートXPathはブラウザがサポートしているものをサポートしています。"
-"ネイティブXPathエンジン（IE 6,7,8）を持たないブラウザーでは、"
-"SeleniumはXPath 1.0のみをサポートしています。"
+"SeleniumはブラウザのXPathエンジンにXPathクエリを委任しているため、SeleniumのサポートXPathはブラウザがサポートしているもの"
+"をサポートしています。ネイティブXPathエンジン（IE 6,7,8）を持たないブラウザーでは、SeleniumはXPath 1.0のみをサポートして"
+"います。"
 
 #: ../../source/faq.rst:36
 msgid "How to scroll down to the bottom of a page ?"
-msgstr ""
-"ページの一番下にスクロールする方法は？"
+msgstr "ページの一番下にスクロールする方法は？"
 
 #: ../../source/faq.rst:38
-msgid ""
-"Ref: http://blog.varunin.com/2011/08/scrolling-on-pages-using-"
-"selenium.html"
+msgid "Ref: http://blog.varunin.com/2011/08/scrolling-on-pages-using-selenium.html"
 msgstr ""
 
 #: ../../source/faq.rst:40
 msgid ""
-"You can use the `execute_script` method to execute javascript on the "
-"loaded page.  So, you can call the JavaScript API to scroll to the bottom"
-" or any other position of a page."
+"You can use the `execute_script` method to execute javascript on the loaded page.  So, you can call the JavaScript API "
+"to scroll to the bottom or any other position of a page."
 msgstr ""
-"`execute_script` メソッドを使用すると、ロードしたページ上でjavascriptを実行できます。"
-"なので、JavaScript APIを呼び出して、ページの下部または他の位置にスクロールすることができます。"
+"`execute_script` メソッドを使用すると、ロードしたページ上でjavascriptを実行できます。なので、JavaScript APIを呼び出して、"
+"ページの下部または他の位置にスクロールすることができます。"
 
 #: ../../source/faq.rst:44
 msgid "Here is an example to scroll to the bottom of a page::"
-msgstr ""
-"ここではページの一番下にスクロールする例を示します。::"
+msgstr "ここではページの一番下にスクロールする例を示します。::"
 
 #: ../../source/faq.rst:48
 msgid ""
-"The `window <http://www.w3schools.com/jsref/obj_window.asp>`_ object in "
-"DOM has a `scrollTo "
-"<http://www.w3schools.com/jsref/met_win_scrollto.asp>`_ method to scroll "
-"to any position of an opened window.  The `scrollHeight "
-"<http://www.w3schools.com/jsref/dom_obj_all.asp>`_ is a common property "
-"for all elements.  The `document.body.scrollHeight` will give the height "
-"of the entire body of the page."
+"The `window <http://www.w3schools.com/jsref/obj_window.asp>`_ object in DOM has a `scrollTo <http://www.w3schools.com/"
+"jsref/met_win_scrollto.asp>`_ method to scroll to any position of an opened window.  The `scrollHeight <http://www."
+"w3schools.com/jsref/dom_obj_all.asp>`_ is a common property for all elements.  The `document.body.scrollHeight` will "
+"give the height of the entire body of the page."
 msgstr ""
-"DOMの `window <http://www.w3schools.com/jsref/obj_window.asp>`_ オブジェクトには、"
-"開いたウィンドウの任意の位置にスクロールする `scrollTo <http://www.w3schools.com/jsref/met_win_scrollto.asp>`_ メソッドがあります。"
-"`scrollHeight <http://www.w3schools.com/jsref/dom_obj_all.asp>`_ は、すべての要素の共通プロパティです。"
-"`document.body.scrollHeight` は、ページの本文全体の高さを返します。"
+"DOMの `window <http://www.w3schools.com/jsref/obj_window.asp>`_ オブジェクトには、開いたウィンドウの任意の位置にスクロー"
+"ルする `scrollTo <http://www.w3schools.com/jsref/met_win_scrollto.asp>`_ メソッドがあります。`scrollHeight <http://www."
+"w3schools.com/jsref/dom_obj_all.asp>`_ は、すべての要素の共通プロパティです。`document.body.scrollHeight` は、ページの本"
+"文全体の高さを返します。"
 
 #: ../../source/faq.rst:57
 msgid "How to auto save files using custom Firefox profile ?"
-msgstr ""
-"カスタムFirefoxプロファイルを使用してファイルを自動保存する方法は？"
+msgstr "カスタムFirefoxプロファイルを使用してファイルを自動保存する方法は？"
 
 #: ../../source/faq.rst:59
-msgid ""
-"Ref: http://stackoverflow.com/questions/1176348/access-to-file-download-"
-"dialog-in-firefox"
+msgid "Ref: http://stackoverflow.com/questions/1176348/access-to-file-download-dialog-in-firefox"
 msgstr ""
 
 #: ../../source/faq.rst:61
-msgid ""
-"Ref: http://blog.codecentric.de/en/2010/07/file-downloads-with-selenium-"
-"mission-impossible/"
+msgid "Ref: http://blog.codecentric.de/en/2010/07/file-downloads-with-selenium-mission-impossible/"
 msgstr ""
 
 #: ../../source/faq.rst:63
 msgid "The first step is to identify the type of file you want to auto save."
-msgstr ""
-"最初のステップは、自動保存するファイルの種類を特定することです。"
+msgstr "最初のステップは、自動保存するファイルの種類を特定することです。"
 
 #: ../../source/faq.rst:65
-msgid ""
-"To identify the content type you want to download automatically, you can "
-"use `curl <http://curl.haxx.se/>`_::"
-msgstr ""
-"自動的にダウンロードするコンテンツタイプを特定するには、 `curl <http://curl.haxx.se/>`_ を使用します>。::"
+msgid "To identify the content type you want to download automatically, you can use `curl <http://curl.haxx.se/>`_::"
+msgstr "自動的にダウンロードするコンテンツタイプを特定するには、 `curl <http://curl.haxx.se/>`_ を使用します>。::"
 
 #: ../../source/faq.rst:70
 msgid ""
-"Another way to find content type is using the `requests <http://python-"
-"requests.org>`_ module, you can use it like this::"
+"Another way to find content type is using the `requests <http://python-requests.org>`_ module, you can use it like this::"
 msgstr ""
 "コンテンツタイプを見つける別の方法は、 `request <http://python-requests.org>`_ モジュールを使用することでも可能です。::"
 
 #: ../../source/faq.rst:77
 msgid ""
-"Once the content type is identified, you can use it to set the firefox "
-"profile preference: ``browser.helperApps.neverAsk.saveToDisk``"
+"Once the content type is identified, you can use it to set the firefox profile preference: ``browser.helperApps.neverAsk."
+"saveToDisk``"
 msgstr ""
-"コンテンツタイプが特定されたら、それを使ってfirefoxプロファイル設定を設定することができます。"
-": ``browser.helperApps.neverAsk.saveToDisk``"
+"コンテンツタイプが特定されたら、それを使ってfirefoxプロファイル設定を設定することができます。: ``browser.helperApps."
+"neverAsk.saveToDisk``"
 
 #: ../../source/faq.rst:80
 msgid "Here is an example::"
-msgstr ""
-"次に例を示します。::"
+msgstr "次に例を示します::"
 
 #: ../../source/faq.rst:97
-msgid ""
-"In the above example, ``application/octet-stream`` is used as the content"
-" type."
-msgstr ""
-"上記の例では、 ``application / octet-stream`` がコンテンツタイプとして使用されています。"
+msgid "In the above example, ``application/octet-stream`` is used as the content type."
+msgstr "上記の例では、 ``application / octet-stream`` がコンテンツタイプとして使用されています。"
 
 #: ../../source/faq.rst:100
-msgid ""
-"The ``browser.download.dir`` option specify the directory where you want "
-"to download the files."
-msgstr ""
-"``browser.download.dir`` オプションは、ファイルをダウンロードするディレクトリを指定します。"
+msgid "The ``browser.download.dir`` option specify the directory where you want to download the files."
+msgstr "``browser.download.dir`` オプションは、ファイルをダウンロードするディレクトリを指定します。"
 
 #: ../../source/faq.rst:104
 msgid "How to upload files into file inputs ?"
-msgstr ""
-"ファイルをファイル入力にアップロードする方法は？"
+msgstr "ファイルをファイル入力にアップロードする方法は？"
 
 #: ../../source/faq.rst:106
 msgid ""
-"Select the ``<input type=\"file\">`` element and call the ``send_keys()``"
-" method passing the file path, either the path relative to the test "
-"script, or an absolute path. Keep in mind the differences in path names "
-"between Windows and Unix systems."
+"Select the ``<input type=\"file\">`` element and call the ``send_keys()`` method passing the file path, either the path "
+"relative to the test script, or an absolute path. Keep in mind the differences in path names between Windows and Unix "
+"systems."
 msgstr ""
-"``<input type = "file">`` 要素を選択し、ファイルパス、テストスクリプトの相対パス、"
-"絶対パスのいずれか>を渡して ``send_keys()`` メソッドを呼び出します。"
-"WindowsとUnixシステム間のパス名の違いに注意してください。"
+"``<input type = \"file\">`` 要素を選択し、ファイルパス、テストスクリプトの相対パス、絶対パスのいずれか>を渡して "
+"``send_keys()`` メソッドを呼び出します。WindowsとUnixシステム間のパス名の違いに注意してください。"
 
 #: ../../source/faq.rst:111
 msgid "How to use firebug with Firefox ?"
-msgstr ""
-"FirebugをFirefoxで使うには？"
+msgstr "FirebugをFirefoxで使うには？"
 
 #: ../../source/faq.rst:113
 msgid ""
-"First download the Firebug XPI file, later you call the ``add_extension``"
-" method available for the firefox profile::"
-msgstr ""
-"最初にFirebug XPIファイルをダウンロードし、firefoxプロファイル用の"
-"``add_extension`` メソッドを呼び出します。::"
+"First download the Firebug XPI file, later you call the ``add_extension`` method available for the firefox profile::"
+msgstr "最初にFirebug XPIファイルをダウンロードし、firefoxプロファイル用の``add_extension`` メソッドを呼び出します。::"
 
 #: ../../source/faq.rst:125
 msgid "How to take screenshot of the current window ?"
-msgstr ""
-"現在のウィンドウのスクリーンショットを取る方法は？"
+msgstr "現在のウィンドウのスクリーンショットを取る方法は？"
 
 #: ../../source/faq.rst:127
 msgid "Use the `save_screenshot` method provided by the webdriver::"
-msgstr ""
-"webdriverが提供する `save_screenshot` メソッドを使用します。::"
-
+msgstr "webdriverが提供する `save_screenshot` メソッドを使用します。::"

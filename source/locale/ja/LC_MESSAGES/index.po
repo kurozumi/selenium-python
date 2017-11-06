@@ -9,21 +9,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-28 14:30+0900\n"
+"POT-Creation-Date: 2017-11-06 09:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../source/index.rst:3
 msgid "Selenium with Python"
 msgstr "PythonでSeleniumを操作する"
 
+#: ../../source/index.rst
+msgid "Author"
+msgstr ""
+
 #: ../../source/index.rst:5
 msgid "`Baiju Muthukadan <https://muthukadan.net>`_"
+msgstr ""
+
+#: ../../source/index.rst
+msgid "License"
 msgstr ""
 
 #: ../../source/index.rst:6
@@ -32,32 +40,43 @@ msgid ""
 "ShareAlike 4.0 International License <http://creativecommons.org/licenses"
 "/by-sa/4.0/>`_."
 msgstr ""
-"このドキュメントは `Creative Commons Attribution-"
-"ShareAlike 4.0 International License <http://creativecommons.org/licenses"
-"/by-sa/4.0/>`_ のもとに配布されています。"
+"このドキュメントは `Creative Commons Attribution-ShareAlike 4.0 International "
+"License <http://creativecommons.org/licenses/by-sa/4.0/>`_ のもとに配布されています。"
 
 #: ../../source/index.rst:11
 msgid ""
-"This is not an official documentation.  Official API documentation is "
-"available `here "
-"<https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_."
+"This is not an official documentation.  If you would like to contribute "
+"to this documentation, you can `fork this project in Github and send pull"
+" requests <https://github.com/baijum/selenium-python>`_.  You can also "
+"send your feedback to my email: baiju.m.mail AT gmail DOT com.  So far "
+"around 40 community members have contributed to this project (See the "
+"closed pull requests).  I encourage contributors to add more sections and"
+" make it a good documentation!"
 msgstr ""
-"これは公式ドキュメントではありません。 公式APIドキュメントは"
-" `こちら <https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_ で入手できます。"
 
-#: ../../source/index.rst:29
+#: ../../source/index.rst:35
 msgid "Indices and tables"
 msgstr "索引と表"
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:37
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:32
+#: ../../source/index.rst:38
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/index.rst:33
+#: ../../source/index.rst:39
 msgid ":ref:`search`"
 msgstr ""
+
+#~ msgid ""
+#~ "This is not an official documentation."
+#~ "  Official API documentation is available"
+#~ " `here "
+#~ "<https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_."
+#~ msgstr ""
+#~ "これは公式ドキュメントではありません。 公式APIドキュメントは `こちら "
+#~ "<https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_ "
+#~ "で入手できます。"
 

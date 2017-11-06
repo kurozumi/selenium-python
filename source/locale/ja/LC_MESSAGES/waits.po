@@ -4,51 +4,42 @@
 # Bindings package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-28 14:30+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-11-06 09:18+0900\n"
+"PO-Revision-Date: 2017-11-06 22:09+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../../source/waits.rst:4
 msgid "Waits"
-msgstr "Wait機能"
+msgstr "Waits"
 
 #: ../../source/waits.rst:6
 msgid ""
-"These days most of the web apps are using AJAX techniques.  When a page "
-"is loaded to browser, the elements within that page may load at different"
-" time intervals.  This makes locating elements difficult, if the element "
-"is not present in the DOM, it will raise `ElementNotVisibleException` "
-"exception.  Using waits, we can solve this issue.  Waiting provides some "
-"time interval between actions performed - mostly locating element or any "
-"other operation with the element."
+"These days most of the web apps are using AJAX techniques.  When a page is loaded by the browser, the elements within that page may load at different time intervals.  This makes locating elements difficult: if an "
+"element is not yet present in the DOM, a locate function will raise an `ElementNotVisibleException` exception.  Using waits, we can solve this issue.  Waiting provides some slack between actions performed - mostly "
+"locating an element or any other operation with the element."
 msgstr ""
-"最近、ほとんどのWebアプリケーションでAJAX技術が使用されています。"
-"ページがブラウザに読み込まれると、そのページ内の要素が異なる時間間隔で読み込まれることがあります。"
-"これは、要素がDOMに存在しない場合、 `ElementNotVisibleException` 例外を発生させます。"
-"待機を使用して、この問題を解決できます。 Waitingは、実行されたアクション間の時間間隔を提供します。"
-"ほとんどの場合、要素または他のすべての操作を要素に配置します。"
+"最近のWebアプリケーションのほとんどはAJAX技術を使用しています。ブラウザによってページが読み込まれると、そのページ内の要素が異なる時間間隔で読み込まれることがあります。これにより、要素を見つけるkとが難しくなります。要"
+"素がDOMにまだ存在しない場合、locate関数は `ElementNotVisibleException` 例外を発生させます。Waitsを使用して、この問題を解決できます。待つことは、実行されるアクションの間にある程度の余裕を提供します。ほとんどの場合、要"
+"素または要素とのその他の操作が検索されます。"
 
 #: ../../source/waits.rst:15
 msgid ""
-"Selenium Webdriver provides two types of waits - implicit & explicit. An "
-"explicit wait makes WebDriver to wait for a certain condition to occur "
-"before proceeding further with executions.  An implicit wait makes "
-"WebDriver to poll the DOM for a certain amount of time when trying to "
-"locate an element."
+"Selenium Webdriver provides two types of waits - implicit & explicit. An explicit wait makes WebDriver wait for a certain condition to occur before proceeding further with execution.  An implicit wait makes "
+"WebDriver poll the DOM for a certain amount of time when trying to locate an element."
 msgstr ""
-"Selenium Webdriverは暗黙的と明示的の2種類の待機を提供します。"
-"WebDriverを明示的に待機させると、WebDriverは特定の条件が発生するのを待ってからさらに処理を進めます。"
-"暗黙的な待機により、WebDriverは、要素の場所を特定しようとすると、一定時間DOMをポーリングします。"
+"Selenium Webdriverは暗黙的と明示的の2種類の待機を提供します。WebDriverを明示的に待機させると、WebDriverは特定の条件が発生するのを待ってからさらに処理を進めます。暗黙的な待機により、WebDriverは、要素の場所を特定しよう"
+"とすると、一定時間DOMをポーリングします。"
 
 #: ../../source/waits.rst:23
 msgid "Explicit Waits"
@@ -56,31 +47,19 @@ msgstr "明示的なWait機能"
 
 #: ../../source/waits.rst:25
 msgid ""
-"An explicit wait is code you define to wait for a certain condition to "
-"occur before proceeding further in the code.  The worst case of this is "
-"time.sleep(), which sets the condition to an exact time period to wait.  "
-"There are some convenience methods provided that help you write code that"
-" will wait only as long as required.  WebDriverWait in combination with "
-"ExpectedCondition is one way this can be accomplished."
+"An explicit wait is a code you define to wait for a certain condition to occur before proceeding further in the code.  The extreme case of this is time.sleep(), which sets the condition to an exact time period to "
+"wait.  There are some convenience methods provided that help you write code that will wait only as long as required.  WebDriverWait in combination with ExpectedCondition is one way this can be accomplished."
 msgstr ""
-"明示的待機とは、特定の条件が発生するのを待ってからコードを進めるコードです。"
-"これの最悪の場合は、time.sleep（）であり、条件を待機する正確な時間に設定します。"
-"必要な時間だけ待つコードを書くのに役立つ便利なメソッドがいくつか用意されています。"
-"WebDriverWaitとExpectedConditionを組み合わせることで、これを実現できます。"
+"明示的待機とは、特定の条件が発生するのを待ってからコードを進めるコードです。これの最悪の場合は、time.sleep()であり、条件を待機する正確な時間に設定します。必要な時間だけ待つコードを書くのに役立つ便利なメソッドがいくつ"
+"か用意されています。WebDriverWaitとExpectedConditionを組み合わせることで、これを実現できます。"
 
 #: ../../source/waits.rst:50
 msgid ""
-"This waits up to 10 seconds before throwing a TimeoutException or if it "
-"finds the element will return it in 0 - 10 seconds.  WebDriverWait by "
-"default calls the ExpectedCondition every 500 milliseconds until it "
-"returns successfully.  A successful return is for ExpectedCondition type "
-"is Boolean return true or not null return value for all other "
-"ExpectedCondition types."
+"This waits up to 10 seconds before throwing a TimeoutException unless it finds the element to return within 10 seconds.  WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns "
+"successfully.  A successful return is for ExpectedCondition type is Boolean return true or not null return value for all other ExpectedCondition types."
 msgstr ""
-"これは、TimeoutExceptionをスローする前に最大10秒間待機するか、要素が0〜10秒で返すことがわかった場合に待機します。"
-"WebDriverWaitは、デフォルトで正常に返されるまで500ミリ秒ごとにExpectedConditionを呼び出します。"
-"成功した戻り値はExpectedCondition型です。"
-"ブール型の場合はtrue、それ以外のExpectedCondition型の場合はnull戻り値です"
+"これは、TimeoutExceptionをスローする前に最大10秒間待機するか、要素が0〜10秒で返すことがわかった場合に待機します。WebDriverWaitは、デフォルトで正常に返されるまで500ミリ秒ごとにExpectedConditionを呼び出します。成功した"
+"戻り値はExpectedCondition型です。ブール型の場合はtrue、それ以外のExpectedCondition型の場合はnull戻り値です。"
 
 #: ../../source/waits.rst:57
 msgid "**Expected Conditions**"
@@ -88,17 +67,11 @@ msgstr "**期待される条件**"
 
 #: ../../source/waits.rst:59
 msgid ""
-"There are some common conditions that are frequent when automating web "
-"browsers.  Listed below are Implementations of each. Selenium Python "
-"binding provides some convienence methods so you don't have to code an "
-"expected_condition class yourself or create your own utility package for "
-"them."
+"There are some common conditions that are frequently of use when automating web browsers.  Listed below are the names of each. Selenium Python binding provides some `convenience methods <http://selenium-python."
+"readthedocs.io/api.html#module-selenium.webdriver.support.expected_conditions>`_ so you don't have to code an expected_condition class yourself or create your own utility package for them."
 msgstr ""
-"Webブラウザを自動化する際に頻繁に発生する一般的な条件がいくつかあります。"
-"以下に、それぞれの実装を示します。"
-"Selenium Pythonバインディングにはconvienenceメソッドがいくつか用意されていますので、"
-"expected_conditionクラスを自分でコーディングしたり、"
-"独自のユーティリティパッケージを作成したりする必要はありません。"
+"Webブラウザを自動化する際に頻繁に発生する一般的な条件がいくつかあります。以下に、それぞれの実装を示します。Selenium Pythonバインディングにはconvienenceメソッドがいくつか用意されていますので、expected_conditionクラス"
+"を自分でコーディングしたり、独自のユーティリティパッケージを作成したりする必要はありません。"
 
 #: ../../source/waits.rst:65
 msgid "title_is"
@@ -141,7 +114,7 @@ msgid "invisibility_of_element_located"
 msgstr ""
 
 #: ../../source/waits.rst:75
-msgid "element_to_be_clickable - it is Displayed and Enabled."
+msgid "element_to_be_clickable"
 msgstr ""
 
 #: ../../source/waits.rst:76
@@ -169,20 +142,33 @@ msgid "alert_is_present"
 msgstr ""
 
 #: ../../source/waits.rst:90
-msgid ""
-"The expected_conditions module contains a set of predefined conditions to"
-" use with WebDriverWait."
+msgid "The expected_conditions module contains a set of predefined conditions to use with WebDriverWait."
 msgstr ""
 
+#: ../../source/waits.rst:93
+msgid "**Custom Wait Conditions**"
+msgstr "**カスタム待機条件**"
+
 #: ../../source/waits.rst:95
+msgid ""
+"You can also create custom wait conditions when none of the previous convenience methods fit your requirements.  A custom wait condition can be created using a class with `__call__` method which returns `False` when "
+"the condition doesn't match."
+msgstr ""
+
+#: ../../source/waits.rst:126
 msgid "Implicit Waits"
 msgstr ""
 
-#: ../../source/waits.rst:97
+#: ../../source/waits.rst:128
 msgid ""
-"An implicit wait is to tell WebDriver to poll the DOM for a certain "
-"amount of time when trying to find an element or elements if they are not"
-" immediately available.  The default setting is 0.  Once set, the "
-"implicit wait is set for the life of the WebDriver object instance."
+"An implicit wait tells WebDriver to poll the DOM for a certain amount of time when trying to find any element (or elements) not immediately available.  The default setting is 0.  Once set, the implicit wait is set "
+"for the life of the WebDriver object."
 msgstr ""
 
+#~ msgid ""
+#~ "These days most of the web apps are using AJAX techniques.  When a page is loaded to browser, the elements within that page may load at different time intervals.  This makes locating elements difficult, if the "
+#~ "element is not present in the DOM, it will raise `ElementNotVisibleException` exception.  Using waits, we can solve this issue.  Waiting provides some time interval between actions performed - mostly locating "
+#~ "element or any other operation with the element."
+#~ msgstr ""
+#~ "最近、ほとんどのWebアプリケーションでAJAX技術が使用されています。ページがブラウザに読み込まれると、そのページ内の要素が異なる時間間隔で読み込まれることがあります。これは、要素がDOMに存在しない場合、 "
+#~ "`ElementNotVisibleException` 例外を発生させます。待機を使用して、この問題を解決できます。 Waitingは、実行されたアクション間の時間間隔を提供します。ほとんどの場合、要素または他のすべての操作を要素に配置します。"
