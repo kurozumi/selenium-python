@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PythonでSeleniumを操作する &mdash; Selenium Python Bindings 2 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="genindex.html"/>
+        <link rel="search" title="検索" href="search.html"/>
+    <link rel="top" title="Selenium Python Bindings 2 ドキュメント" href="#"/>
+        <link rel="next" title="1. インストール" href="installation.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Selenium Python Bindings
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. インストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a></li>
+<li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="locating-elements.html">4. 要素の配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waits.html">5. Waits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page-objects.html">6. ページオブジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">7. WebDriver API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">8. よくある質問</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Selenium Python Bindings</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>PythonでSeleniumを操作する</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kurozumi.github.io/selenium-python 336*280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="4949251192"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="selenium-with-python">
+<h1>PythonでSeleniumを操作する<a class="headerlink" href="#selenium-with-python" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body"><a class="reference external" href="https://muthukadan.net">Baiju Muthukadan</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body">このドキュメントは <a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> のもとに配布されています。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">This is not an official documentation.  If you would like to
+contribute to this documentation, you can <a class="reference external" href="https://github.com/baijum/selenium-python">fork this project in
+Github and send pull requests</a>.  You can also send
+your feedback to my email: baiju.m.mail AT gmail DOT com.  So far
+around 40 community members have contributed to this project
+(See the closed pull requests).  I encourage contributors to add
+more sections and make it a good documentation!</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. インストール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#introduction">1.1. イントロダクション</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#downloading-python-bindings-for-selenium">1.2. SeleniumのPythonバインディングをダウンロード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#drivers">1.3. Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#detailed-instructions-for-windows-users">1.4. Windowsユーザーの詳細な手順</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#downloading-selenium-server">1.5. Seleniumサーバーをダウンロード</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#simple-usage">2.1. 簡単な使い方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#example-explained">2.2. 使い方の説明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#using-selenium-to-write-tests">2.3. Seleniumを使ってテストを書く</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#walk-through-of-the-example">2.4. 例を見てみましょう</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#using-selenium-with-remote-webdriver">2.5. リモートWebDriverでSeleniumを使用する</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#interacting-with-the-page">3.1. ページとのやりとり</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#filling-in-forms">3.2. フォームの記入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#drag-and-drop">3.3. ドラッグアンドドロップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#moving-between-windows-and-frames">3.4. ウィンドウとフレームの間を移動する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#popup-dialogs">3.5. ポップアップダイアログ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#navigation-history-and-location">3.6. ナビゲーション: 履歴と場所</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigating.html#cookies">3.7. クッキー</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="locating-elements.html">4. 要素の配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-by-id">4.1. ID属性で探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-by-name">4.2. name属性で探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-by-xpath">4.3. XPathによる検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-hyperlinks-by-link-text">4.4. リンクテキストによるハイパーリンクの検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-elements-by-tag-name">4.5. タグ名による要素の検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-elements-by-class-name">4.6. クラス名による要素の検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locating-elements.html#locating-elements-by-css-selectors">4.7. CSSセレクタによる要素の特定</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="waits.html">5. Waits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="waits.html#explicit-waits">5.1. 明示的なWait機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waits.html#implicit-waits">5.2. Implicit Waits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page-objects.html">6. ページオブジェクト</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="page-objects.html#test-case">6.1. テストケース</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page-objects.html#page-object-classes">6.2. ページオブジェクトクラス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page-objects.html#page-elements">6.3. ページ要素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page-objects.html#locators">6.4. ロケータ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">7. WebDriver API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.common.exceptions">7.1. 例外</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.common.action_chains">7.2. Action Chains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.common.alert">7.3. アラート</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.common.keys">7.4. 特殊キー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#locate-elements-by">7.5. 要素を検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#desired-capabilities">7.6. Desired Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.common.utils">7.7. ユーティリティ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.firefox.webdriver">7.8. Firefox WebDriver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.chrome.webdriver">7.9. Chrome WebDriver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.remote.webdriver">7.10. リモートWebDriver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.remote.webelement">7.11. WebElement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.support.select">7.12. UIサポート</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.support.color">7.13. カラーサポート</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#module-selenium.webdriver.support.expected_conditions">7.14. 期待される条件サポート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">8. よくある質問</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-use-chromedriver">8.1. ChromeDriverの使い方は?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#does-selenium-2-support-xpath-2-0">8.2. Selenium2はXPath2.0をサポートしていますか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-scroll-down-to-the-bottom-of-a-page">8.3. ページの一番下にスクロールする方法は？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-auto-save-files-using-custom-firefox-profile">8.4. カスタムFirefoxプロファイルを使用してファイルを自動保存する方法は？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-upload-files-into-file-inputs">8.5. ファイルをファイル入力にアップロードする方法は？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-use-firebug-with-firefox">8.6. FirebugをFirefoxで使うには？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-take-screenshot-of-the-current-window">8.7. 現在のウィンドウのスクリーンショットを取る方法は？</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="indices-and-tables">
+<h2>索引と表<a class="headerlink" href="#indices-and-tables" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">モジュール索引</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">検索ページ</span></a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="1. インストール" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2017, Baiju Muthukadan.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>

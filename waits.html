@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Waits &mdash; Selenium Python Bindings 2 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="genindex.html"/>
+        <link rel="search" title="検索" href="search.html"/>
+    <link rel="top" title="Selenium Python Bindings 2 ドキュメント" href="index.html"/>
+        <link rel="next" title="6. ページオブジェクト" href="page-objects.html"/>
+        <link rel="prev" title="4. 要素の配置" href="locating-elements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Selenium Python Bindings
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. インストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a></li>
+<li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="locating-elements.html">4. 要素の配置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Waits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#explicit-waits">5.1. 明示的なWait機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implicit-waits">5.2. Implicit Waits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page-objects.html">6. ページオブジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">7. WebDriver API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">8. よくある質問</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Selenium Python Bindings</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>5. Waits</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kurozumi.github.io/selenium-python 336*280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="4949251192"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="waits">
+<span id="id1"></span><h1>5. Waits<a class="headerlink" href="#waits" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>最近のWebアプリケーションのほとんどはAJAX技術を使用しています。ブラウザによってページが読み込まれると、そのページ内の要素が異なる時間間隔で読み込まれることがあります。これにより、要素を見つけるkとが難しくなります。要素がDOMにまだ存在しない場合、locate関数は <cite>ElementNotVisibleException</cite> 例外を発生させます。Waitsを使用して、この問題を解決できます。待つことは、実行されるアクションの間にある程度の余裕を提供します。ほとんどの場合、要素または要素とのその他の操作が検索されます。</p>
+<p>Selenium Webdriverは暗黙的と明示的の2種類の待機を提供します。WebDriverを明示的に待機させると、WebDriverは特定の条件が発生するのを待ってからさらに処理を進めます。暗黙的な待機により、WebDriverは、要素の場所を特定しようとすると、一定時間DOMをポーリングします。</p>
+<div class="section" id="explicit-waits">
+<h2>5.1. 明示的なWait機能<a class="headerlink" href="#explicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>明示的待機とは、特定の条件が発生するのを待ってからコードを進めるコードです。これの最悪の場合は、time.sleep()であり、条件を待機する正確な時間に設定します。必要な時間だけ待つコードを書くのに役立つ便利なメソッドがいくつか用意されています。WebDriverWaitとExpectedConditionを組み合わせることで、これを実現できます。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium</span> <span class="k">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="k">import</span> <span class="n">By</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.support.ui</span> <span class="k">import</span> <span class="n">WebDriverWait</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="k">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://somedomain/url_that_delays_loading&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">element</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">until</span><span class="p">(</span>
+        <span class="n">EC</span><span class="o">.</span><span class="n">presence_of_element_located</span><span class="p">((</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;myDynamicElement&quot;</span><span class="p">))</span>
+    <span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>これは、TimeoutExceptionをスローする前に最大10秒間待機するか、要素が0〜10秒で返すことがわかった場合に待機します。WebDriverWaitは、デフォルトで正常に返されるまで500ミリ秒ごとにExpectedConditionを呼び出します。成功した戻り値はExpectedCondition型です。ブール型の場合はtrue、それ以外のExpectedCondition型の場合はnull戻り値です。</p>
+<p><strong>期待される条件</strong></p>
+<p>Webブラウザを自動化する際に頻繁に発生する一般的な条件がいくつかあります。以下に、それぞれの実装を示します。Selenium Pythonバインディングにはconvienenceメソッドがいくつか用意されていますので、expected_conditionクラスを自分でコーディングしたり、独自のユーティリティパッケージを作成したりする必要はありません。</p>
+<ul class="simple">
+<li>title_is</li>
+<li>title_contains</li>
+<li>presence_of_element_located</li>
+<li>visibility_of_element_located</li>
+<li>visibility_of</li>
+<li>presence_of_all_elements_located</li>
+<li>text_to_be_present_in_element</li>
+<li>text_to_be_present_in_element_value</li>
+<li>frame_to_be_available_and_switch_to_it</li>
+<li>invisibility_of_element_located</li>
+<li>element_to_be_clickable</li>
+<li>staleness_of</li>
+<li>element_to_be_selected</li>
+<li>element_located_to_be_selected</li>
+<li>element_selection_state_to_be</li>
+<li>element_located_selection_state_to_be</li>
+<li>alert_is_present</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="k">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+
+<span class="n">wait</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">wait</span><span class="o">.</span><span class="n">until</span><span class="p">(</span><span class="n">EC</span><span class="o">.</span><span class="n">element_to_be_clickable</span><span class="p">((</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s1">&#39;someid&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>The expected_conditions module contains a set of predefined conditions
+to use with WebDriverWait.</p>
+<p><strong>カスタム待機条件</strong></p>
+<p>You can also create custom wait conditions when none of the previous convenience
+methods fit your requirements.  A custom wait condition can be created using a class
+with <cite>__call__</cite> method which returns <cite>False</cite> when the condition doesn’t match.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">element_has_css_class</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;An expectation for checking that an element has a particular css class.</span>
+
+<span class="sd">  locator - used to find the element</span>
+<span class="sd">  returns the WebElement once it has the particular css class</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">locator</span><span class="p">,</span> <span class="n">css_class</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">locator</span> <span class="o">=</span> <span class="n">locator</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">css_class</span> <span class="o">=</span> <span class="n">css_class</span>
+
+  <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">driver</span><span class="p">):</span>
+    <span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">locator</span><span class="p">)</span>   <span class="c1"># Finding the referenced element</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">css_class</span> <span class="ow">in</span> <span class="n">element</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">element</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+<span class="c1"># Wait until an element with id=&#39;myNewInput&#39; has class &#39;myCSSClass&#39;</span>
+<span class="n">wait</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">wait</span><span class="o">.</span><span class="n">until</span><span class="p">(</span><span class="n">element_has_css_class</span><span class="p">((</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s1">&#39;myNewInput&#39;</span><span class="p">),</span> <span class="s2">&quot;myCSSClass&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="implicit-waits">
+<h2>5.2. Implicit Waits<a class="headerlink" href="#implicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>An implicit wait tells WebDriver to poll the DOM for a certain
+amount of time when trying to find any element (or elements)
+not immediately available.  The default setting is 0.  Once set, the
+implicit wait is set for the life of the WebDriver object.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium</span> <span class="k">import</span> <span class="n">webdriver</span>
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># seconds</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://somedomain/url_that_delays_loading&quot;</span><span class="p">)</span>
+<span class="n">myDynamicElement</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">&quot;myDynamicElement&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="page-objects.html" class="btn btn-neutral float-right" title="6. ページオブジェクト" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="locating-elements.html" class="btn btn-neutral" title="4. 要素の配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2017, Baiju Muthukadan.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>

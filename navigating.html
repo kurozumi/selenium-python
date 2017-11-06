@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. ナビゲート &mdash; Selenium Python Bindings 2 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="genindex.html"/>
+        <link rel="search" title="検索" href="search.html"/>
+    <link rel="top" title="Selenium Python Bindings 2 ドキュメント" href="index.html"/>
+        <link rel="next" title="4. 要素の配置" href="locating-elements.html"/>
+        <link rel="prev" title="2. 入門" href="getting-started.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Selenium Python Bindings
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. インストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. ナビゲート</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interacting-with-the-page">3.1. ページとのやりとり</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filling-in-forms">3.2. フォームの記入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#drag-and-drop">3.3. ドラッグアンドドロップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moving-between-windows-and-frames">3.4. ウィンドウとフレームの間を移動する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#popup-dialogs">3.5. ポップアップダイアログ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#navigation-history-and-location">3.6. ナビゲーション: 履歴と場所</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cookies">3.7. クッキー</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="locating-elements.html">4. 要素の配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waits.html">5. Waits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page-objects.html">6. ページオブジェクト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">7. WebDriver API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">8. よくある質問</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Selenium Python Bindings</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. ナビゲート</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kurozumi.github.io/selenium-python 336*280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="4949251192"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="navigating">
+<span id="id1"></span><h1>3. ナビゲート<a class="headerlink" href="#navigating" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>WebDriverで最初にやりたいことは、リンクに移動することです。これを行う通常の方法は <cite>get</cite> メソッドを呼び出すことです:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://www.google.com&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>WebDriverは、テストまたはスクリプトに制御を戻す前に、ページが完全にロードされる（つまり、<cite>onload</cite> イベントの発生）まで待機します。あなたのページが大量のAJAXを使用している場合、WebDriverは完全にロードされたかわかりません。そのようなページが完全にロードされていることを確認する必要がある場合は、<a class="reference internal" href="waits.html#waits"><span class="std std-ref">waits</span></a> を使用しましょう。</p>
+<div class="section" id="interacting-with-the-page">
+<h2>3.1. ページとのやりとり<a class="headerlink" href="#interacting-with-the-page" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>正しい場所に行くことができることが重要ではありません。私たちが本当にやりたいことは、ページ、あるいは具体的にはページ内のHTML要素とやりとりすることです。まず、私たちはひとつの要素を見つける必要があります。WebDriverは、要素を見つけるためのさまざまな方法を提供します。例えば、以下のように定義された要素:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;passwd&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;passwd-id&quot;</span> <span class="o">/&gt;</span>
+</pre></div>
+</div>
+<p>次のいずれかを使用して見つけることができます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">&quot;passwd-id&quot;</span><span class="p">)</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s2">&quot;passwd&quot;</span><span class="p">)</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s2">&quot;//input[@id=&#39;passwd-id&#39;]&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>テキストでリンクを探すこともできますが、注意してください！テキストは完全一致でなければなりません！WebDriverで <cite>XPATH</cite> を使用する際も注意が必要です。クエリに一致する要素が複数ある場合は、最初の要素だけが返されます。何も見つからない場合は、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> という例外が発生します。</p>
+<p>WebDriverには「オブジェクトベース」のAPIがあります。同じインターフェースを使用して、すべてのタイプの要素を表します。つまり、IDEのオートコンプリートキーの組み合わせをヒットしたときに呼び出すことのできるメソッドがたくさんあるかもしれませんが、それらのすべてが意味をなさないか、有効であるとは限りません。心配しないでください！WebDriverは正しいことをしようとします。意味のないメソッド（例えば、 metaタグにsetSelected()）を呼び出した場合、例外が発生します。</p>
+<p>だから、あなたは要素を持っています。あなたはそれで何がしたいですか？まず、テキストフィールドにテキストを入力したいかもしれませんね。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s2">&quot;some text&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>「Key」クラスを使用して矢印キーを押すことをシミュレートすることができます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s2">&quot; and some&quot;</span><span class="p">,</span> <span class="n">Keys</span><span class="o">.</span><span class="n">ARROW_DOWN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>任意の要素に対して <cite>send_keys</cite> を呼び出すことができます。これにより、Gmailで使用されているようなキーボードショートカットをテストすることができます。これの副作用は、テキストフィールドに何かを入力しても自動的にクリアされないということです。代わりに、あなたが入力したものはすでに入力されたものに追記されます。テキストフィールドまたはテキストエリアの内容は <cite>clear</cite> メソッドで簡単にクリアすることができます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="filling-in-forms">
+<h2>3.2. フォームの記入<a class="headerlink" href="#filling-in-forms" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>テキストエリアやテキストフィールドにテキストを入力する方法はすでに見てきましたが、他の要素についてはどうでしょうか？Seleniumはドロップダウンの状態を「切り替える」こともできます。また、「setSelected」を使用して、 <cite>OPTION</cite> タグのようなものを選択することもできます。<cite>SELECT</cite> タグを扱うことはそれほど難しくありません:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s2">&quot;//select[@name=&#39;name&#39;]&quot;</span><span class="p">)</span>
+<span class="n">all_options</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">find_elements_by_tag_name</span><span class="p">(</span><span class="s2">&quot;option&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">all_options</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value is: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">option</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">))</span>
+    <span class="n">option</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>これは、ページ上の最初の」SELECT」要素を見つけ出し、OPTIONを順番に見て回って、その値を出力し順番に選択します。:</p>
+<p>ご覧のとおり、これはSELECT要素を処理する最も効率的な方法ではありません。WebDriverのサポートクラスには、「Select」と呼ばれるインタラクティブに作用する便利なメソッドがあります。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium.webdriver.support.ui</span> <span class="k">import</span> <span class="n">Select</span>
+<span class="n">select</span> <span class="o">=</span> <span class="n">Select</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">))</span>
+<span class="n">select</span><span class="o">.</span><span class="n">select_by_index</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="n">select</span><span class="o">.</span><span class="n">select_by_visible_text</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">select</span><span class="o">.</span><span class="n">select_by_value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>WebDriverには、選択したすべてのオプションの選択を解除する機能もあります。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">select</span> <span class="o">=</span> <span class="n">Select</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">))</span>
+<span class="n">select</span><span class="o">.</span><span class="n">deselect_all</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>これにより、ページの最初のSELECTからすべてのOPTIONが選択解除されます</p>
+<p>テストで、すべてのデフォルト選択されたオプションのリストが必要であるとします。Selectクラスは、リストを返すプロパティメソッドを提供します。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">select</span> <span class="o">=</span> <span class="n">Select</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s2">&quot;xpath&quot;</span><span class="p">))</span>
+<span class="n">all_selected_options</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">all_selected_options</span>
+</pre></div>
+</div>
+<p>利用可能なすべてのオプションを取得するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">options</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">options</span>
+</pre></div>
+</div>
+<p>フォームの記入が終わったら、おそらく送信したいでしょう。これを行う方法は、「Submit」ボタンを見つけてクリックすることです。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Assume the button has the ID &quot;submit&quot; :)</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>あるいは、WebDriverには、すべての要素に対して「submit」する便利なメソッドがあります。これをフォーム内の要素で呼び出すと、WebDriverはフォームを見つけてそのフォームを呼び出すまでDOMを検索します。要素がフォームにない場合は、 <cite>NoSuchElementException</cite> が発生します。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="drag-and-drop">
+<h2>3.3. ドラッグアンドドロップ<a class="headerlink" href="#drag-and-drop" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>特定の量で要素を移動するか、別の要素に移動するかのいずれかで、ドラッグアンドドロップを使用できます</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s2">&quot;source&quot;</span><span class="p">)</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s2">&quot;target&quot;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">selenium.webdriver</span> <span class="k">import</span> <span class="n">ActionChains</span>
+<span class="n">action_chains</span> <span class="o">=</span> <span class="n">ActionChains</span><span class="p">(</span><span class="n">driver</span><span class="p">)</span>
+<span class="n">action_chains</span><span class="o">.</span><span class="n">drag_and_drop</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="moving-between-windows-and-frames">
+<h2>3.4. ウィンドウとフレームの間を移動する<a class="headerlink" href="#moving-between-windows-and-frames" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>最新のWebアプリケーションはフレームを持たない、または単一のウィンドウに制約されることはまれです。WebDriverは、「switch_to_window」メソッドを使用して、名前付きウィンドウ間の移動をサポートしています。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">switch_to_window</span><span class="p">(</span><span class="s2">&quot;windowName&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><cite>driver</cite> へのすべての呼び出しは、特定のウィンドウに向けられたものとして解釈されます。しかし、どのようにしてウィンドウの名前をを知るでしょうか？ウィンドウを開いたjavascriptまたはリンクを見てみましょう。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;somewhere.html&quot;</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;windowName&quot;</span><span class="o">&gt;</span><span class="n">Click</span> <span class="n">here</span> <span class="n">to</span> <span class="nb">open</span> <span class="n">a</span> <span class="n">new</span> <span class="n">window</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>「window handle」を 「switch_to_window()」メソッドに渡すこともできます。これを知っていると、開いているすべてのウィンドウを繰り返し処理することができます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">handle</span> <span class="ow">in</span> <span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">:</span>
+    <span class="n">driver</span><span class="o">.</span><span class="n">switch_to_window</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>フレームからフレーム（またはiframeの中）に切り替えることもできます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">switch_to_frame</span><span class="p">(</span><span class="s2">&quot;frameName&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ドットのパスで区切っているサブフレームにアクセスすることも可能です。インデックスでフレームを指定することもできます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">switch_to_frame</span><span class="p">(</span><span class="s2">&quot;frameName.0.child&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>「frameName」と呼ばれるフレームの最初のサブフレームの「child」という名前のフレームに移動します。すべてのフレームは、<em>top</em> からのように評価されます。</p>
+<p>フレーム上での作業が終わったら、親フレームに戻ってくる必要があります。これは、以下を使用して行うことができます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">switch_to_default_content</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="popup-dialogs">
+<h2>3.5. ポップアップダイアログ<a class="headerlink" href="#popup-dialogs" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Selenium WebDriverには、ポップアップダイアログボックスの処理が組み込まれています。ポップアップを開くアクションを実行したら、次のようにしてアラートにアクセスできます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">alert</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">switch_to_alert</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>これにより、現在開いているアラートオブジェクトが返されます。このオブジェクトを使用すると、その内容を受け入れたり、却下したり、内容を読み込んだり、プロンプトに入力したりすることができます。このインターフェイスは、アラート、確認、プロンプトに対しても同様に機能します。詳細については、APIドキュメントを参照してください。</p>
+</div>
+<div class="section" id="navigation-history-and-location">
+<h2>3.6. ナビゲーション: 履歴と場所<a class="headerlink" href="#navigation-history-and-location" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>前に」get」コマンド (<code class="docutils literal"><span class="pre">driver.get（&quot;http://www.example.com&quot;)</span></code>)を使用してページを移動する方法について説明しました。ページに移動するには、getメソッドを使用します。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://www.example.com&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ブラウザの履歴の前後を移動するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">forward</span><span class="p">()</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">back</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>この機能は、基本となるドライバに完全に依存することに注意してください。あるブラウザの動作に慣れている場合、これらのメソッドを呼び出すと予期しないことが起こる可能性があります。</p>
+</div>
+<div class="section" id="cookies">
+<h2>3.7. クッキー<a class="headerlink" href="#cookies" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>これらの次のステップを終える前に、Cookieの使い方を理解したいかもしれません。最初にクッキーが有効になるドメイン上にいる必要があります。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Go to the correct domain
+driver.get(&quot;http://www.example.com&quot;)
+
+# Now set the cookie. This one&#39;s valid for the entire domain
+cookie = {‘name’ : ‘foo’, ‘value’ : ‘bar’}
+driver.add_cookie(cookie)
+
+# And now output all the available cookies for the current URL
+driver.get_cookies()
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="locating-elements.html" class="btn btn-neutral float-right" title="4. 要素の配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting-started.html" class="btn btn-neutral" title="2. 入門" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2017, Baiju Muthukadan.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>
