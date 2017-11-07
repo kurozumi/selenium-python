@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5. Waits &mdash; Selenium Python Bindings 2 ドキュメント</title>
+  <title>5. 待機 &mdash; Selenium Python Bindings 2 ドキュメント</title>
   
 
   
@@ -97,9 +97,9 @@
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a></li>
 <li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a></li>
 <li class="toctree-l1"><a class="reference internal" href="locating-elements.html">4. 要素の配置</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Waits</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#explicit-waits">5.1. 明示的なWait機能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#implicit-waits">5.2. Implicit Waits</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. 待機</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#explicit-waits">5.1. 明示的な待機機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implicit-waits">5.2. 暗黙のWaits</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="page-objects.html">6. ページオブジェクト</a></li>
@@ -149,7 +149,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>5. Waits</li>
+      <li>5. 待機</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -179,11 +179,11 @@
 </div>
 
 <div class="section" id="waits">
-<span id="id1"></span><h1>5. Waits<a class="headerlink" href="#waits" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<span id="id1"></span><h1>5. 待機<a class="headerlink" href="#waits" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>最近のWebアプリケーションのほとんどはAJAX技術を使用しています。ブラウザによってページが読み込まれると、そのページ内の要素が異なる時間間隔で読み込まれることがあります。これにより、要素を見つけるkとが難しくなります。要素がDOMにまだ存在しない場合、locate関数は <cite>ElementNotVisibleException</cite> 例外を発生させます。Waitsを使用して、この問題を解決できます。待つことは、実行されるアクションの間にある程度の余裕を提供します。ほとんどの場合、要素または要素とのその他の操作が検索されます。</p>
 <p>Selenium Webdriverは暗黙的と明示的の2種類の待機を提供します。WebDriverを明示的に待機させると、WebDriverは特定の条件が発生するのを待ってからさらに処理を進めます。暗黙的な待機により、WebDriverは、要素の場所を特定しようとすると、一定時間DOMをポーリングします。</p>
 <div class="section" id="explicit-waits">
-<h2>5.1. 明示的なWait機能<a class="headerlink" href="#explicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>5.1. 明示的な待機機能<a class="headerlink" href="#explicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>明示的待機とは、特定の条件が発生するのを待ってからコードを進めるコードです。これの最悪の場合は、time.sleep()であり、条件を待機する正確な時間に設定します。必要な時間だけ待つコードを書くのに役立つ便利なメソッドがいくつか用意されています。WebDriverWaitとExpectedConditionを組み合わせることで、これを実現できます。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium</span> <span class="k">import</span> <span class="n">webdriver</span>
 <span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="k">import</span> <span class="n">By</span>
@@ -229,7 +229,7 @@
 </pre></div>
 </div>
 <p>expected_conditionsモジュールには、WebDriverWaitで使用する一連の定義済み条件が含まれています。</p>
-<p><strong>カスタム待機条件</strong></p>
+<p><strong>Wait条件をカスタマイズ</strong></p>
 <p>以前の簡易メソッドが要件に合致しない場合でも、カスタム待機条件を作成することができます。条件が一致しない場合に <cite>False</cite> を返す <cite>__call__</cite> メソッドを持つクラスを使用してカスタム待機条件を作成できます。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">element_has_css_class</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   <span class="sd">&quot;&quot;&quot;An expectation for checking that an element has a particular css class.</span>
@@ -255,11 +255,8 @@
 </div>
 </div>
 <div class="section" id="implicit-waits">
-<h2>5.2. Implicit Waits<a class="headerlink" href="#implicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>An implicit wait tells WebDriver to poll the DOM for a certain
-amount of time when trying to find any element (or elements)
-not immediately available.  The default setting is 0.  Once set, the
-implicit wait is set for the life of the WebDriver object.</p>
+<h2>5.2. 暗黙のWaits<a class="headerlink" href="#implicit-waits" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>暗黙の待機はすぐに利用できない要素(または複数要素)を見つけようとする時、WebDriverにDOMを一定時間ポーリングするように指示します。デフォルトの設定は0です。一度設定されると、暗黙の待機がWebDriverオブジェクトの有効期間に設定されます。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium</span> <span class="k">import</span> <span class="n">webdriver</span>
 
 <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
