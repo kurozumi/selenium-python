@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Selenium Python Bindings 2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-06 09:18+0900\n"
-"PO-Revision-Date: 2017-11-06 22:09+0900\n"
+"PO-Revision-Date: 2017-11-07 20:20+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../source/waits.rst:90
 msgid "The expected_conditions module contains a set of predefined conditions to use with WebDriverWait."
-msgstr ""
+msgstr "expected_conditionsモジュールには、WebDriverWaitで使用する一連の定義済み条件が含まれています。"
 
 #: ../../source/waits.rst:93
 msgid "**Custom Wait Conditions**"
@@ -153,7 +153,7 @@ msgstr "**カスタム待機条件**"
 msgid ""
 "You can also create custom wait conditions when none of the previous convenience methods fit your requirements.  A custom wait condition can be created using a class with `__call__` method which returns `False` when "
 "the condition doesn't match."
-msgstr ""
+msgstr "以前の簡易メソッドが要件に合致しない場合でも、カスタム待機条件を作成することができます。条件が一致しない場合に `False` を返す `__call__` メソッドを持つクラスを使用してカスタム待機条件を作成できます。"
 
 #: ../../source/waits.rst:126
 msgid "Implicit Waits"
