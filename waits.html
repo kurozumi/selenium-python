@@ -228,12 +228,9 @@
 <span class="n">element</span> <span class="o">=</span> <span class="n">wait</span><span class="o">.</span><span class="n">until</span><span class="p">(</span><span class="n">EC</span><span class="o">.</span><span class="n">element_to_be_clickable</span><span class="p">((</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s1">&#39;someid&#39;</span><span class="p">)))</span>
 </pre></div>
 </div>
-<p>The expected_conditions module contains a set of predefined conditions
-to use with WebDriverWait.</p>
+<p>expected_conditionsモジュールには、WebDriverWaitで使用する一連の定義済み条件が含まれています。</p>
 <p><strong>カスタム待機条件</strong></p>
-<p>You can also create custom wait conditions when none of the previous convenience
-methods fit your requirements.  A custom wait condition can be created using a class
-with <cite>__call__</cite> method which returns <cite>False</cite> when the condition doesn’t match.</p>
+<p>以前の簡易メソッドが要件に合致しない場合でも、カスタム待機条件を作成することができます。条件が一致しない場合に <cite>False</cite> を返す <cite>__call__</cite> メソッドを持つクラスを使用してカスタム待機条件を作成できます。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">element_has_css_class</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   <span class="sd">&quot;&quot;&quot;An expectation for checking that an element has a particular css class.</span>
 
