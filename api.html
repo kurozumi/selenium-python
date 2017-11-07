@@ -400,17 +400,14 @@ with that element will hit another element do to paint order</p>
 <dt id="selenium.common.exceptions.StaleElementReferenceException">
 <em class="property">exception </em><code class="descclassname">selenium.common.exceptions.</code><code class="descname">StaleElementReferenceException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>screen=None</em>, <em>stacktrace=None</em><span class="sig-paren">)</span><a class="headerlink" href="#selenium.common.exceptions.StaleElementReferenceException" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#selenium.common.exceptions.WebDriverException" title="selenium.common.exceptions.WebDriverException"><code class="xref py py-class docutils literal"><span class="pre">selenium.common.exceptions.WebDriverException</span></code></a></p>
-<p>要素への参照が」失効した」ときにスローされます。</p>
+<p>要素への参照が “失効した” ときにスローされます。</p>
 <p>失効とは、要素がページのDOMに表示されなくなったことを意味します。</p>
 <dl class="docutils">
 <dt>StaleElementReferenceExceptionの原因としては次のものがありますが、これに限定されません。</dt>
 <dd><ul class="first last simple">
 <li>同じページにいないか、要素が更新されている可能性があります。</li>
-<li>The element may have been removed and re-added to the screen, since it was located.
-Such as an element being relocated.
-This can happen typically with a javascript framework when values are updated and the
-node is rebuilt.</li>
-<li>Element may have been inside an iframe or another context which was refreshed.</li>
+<li>エレメントは削除され、スクリーンに配置されている可能性があります。要素の再配置など。これは値が更新されてノードが再構築されるときにjavascriptフレームワークで発生します。</li>
+<li>要素はiframeやリフレッシュされた別のコンテキスト内にあった可能性があります。</li>
 </ul>
 </dd>
 </dl>
@@ -701,7 +698,7 @@ node is rebuilt.</li>
 <dl class="method">
 <dt id="selenium.webdriver.common.action_chains.ActionChains.pause">
 <code class="descname">pause</code><span class="sig-paren">(</span><em>seconds</em><span class="sig-paren">)</span><a class="headerlink" href="#selenium.webdriver.common.action_chains.ActionChains.pause" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Pause all inputs for the specified duration in seconds</p>
+<dd><p>秒単位で指定した時間ですべての入力を一時停止します</p>
 </dd></dl>
 
 <dl class="method">
