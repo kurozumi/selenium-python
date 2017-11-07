@@ -96,7 +96,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. インストール</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">1.1. イントロダクション</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-python-bindings-for-selenium">1.2. SeleniumのPythonバインディングをダウンロード</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#drivers">1.3. Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#drivers">1.3. ドライバー</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#detailed-instructions-for-windows-users">1.4. Windowsユーザーの詳細な手順</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-selenium-server">1.5. Seleniumサーバーをダウンロード</a></li>
 </ul>
@@ -198,9 +198,8 @@
 <p>孤立したPython環境を作るために <a class="reference external" href="http://www.virtualenv.org">virtualenv</a> を使うことを検討するかもしれません。Python 3.6には、virtualenvとほとんど同じ <a class="reference external" href="https://docs.python.org/3.5/using/scripts.html#scripts-pyvenv">pyvenv</a> があります。</p>
 </div>
 <div class="section" id="drivers">
-<h2>1.3. Drivers<a class="headerlink" href="#drivers" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Selenium requires a driver to interface with the chosen browser. Firefox,
-for example, requires <a class="reference external" href="https://github.com/mozilla/geckodriver/releases">geckodriver</a>, which needs to be installed before the below examples can be run. Make sure it’s in your <cite>PATH</cite>, e. g., place it in <cite>/usr/bin</cite> or <cite>/usr/local/bin</cite>.</p>
+<h2>1.3. ドライバー<a class="headerlink" href="#drivers" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Seleniumでは選択したブラウザのインターフェイスドライバが必要です。例えば、Firefoxは以下の例を実行する前に <a class="reference external" href="https://github.com/mozilla/geckodriver/releases">geckodriver</a>, をインストールする必要があります。<cite>PATH</cite> 例えば <cite>/usr/bin</cite> や <cite>/usr/local/bin</cite> にあることを確認して下さい。</p>
 <p>Failure to observe this step will give you an error <cite>selenium.common.exceptions.WebDriverException: Message: 『geckodriver』 executable needs to be in PATH.</cite></p>
 <p>Other supported browsers will have their own drivers available. Links to some of the more popular browser drivers follow.</p>
 <table border="1" class="docutils">
