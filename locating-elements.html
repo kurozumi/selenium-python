@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. 要素の配置 &mdash; Selenium Python Bindings 2 ドキュメント</title>
+  <title>4. 要素を見つける &mdash; Selenium Python Bindings 2 ドキュメント</title>
   
 
   
@@ -96,7 +96,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">1. インストール</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">2. 入門</a></li>
 <li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">4. 要素の配置</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. 要素を見つける</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-id">4.1. ID属性で探す</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-name">4.2. name属性で探す</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-xpath">4.3. XPathによる検索</a></li>
@@ -154,7 +154,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>4. 要素の配置</li>
+      <li>4. 要素を見つける</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,8 +184,8 @@
 </div>
 
 <div class="section" id="locating-elements">
-<span id="id1"></span><h1>4. 要素の配置<a class="headerlink" href="#locating-elements" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>あるページに要素を配置するには、さまざまな方法があります。あなたのケースに最も適したものを使用することができます。Seleniumは、ページ内の要素を見つけるための以下のメソッドを提供します。:</p>
+<span id="id1"></span><h1>4. 要素を見つける<a class="headerlink" href="#locating-elements" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>あるページ内の要素を見つけるには、さまざまな方法があります。あなたのケースに最も適したものを使用することができます。Seleniumは、ページ内の要素を見つけるための以下のメソッドを提供します。:</p>
 <ul class="simple">
 <li><cite>find_element_by_id</cite></li>
 <li><cite>find_element_by_name</cite></li>
@@ -196,7 +196,7 @@
 <li><cite>find_element_by_class_name</cite></li>
 <li><cite>find_element_by_css_selector</cite></li>
 </ul>
-<p><strong>To find multiple elements (these methods will return a list):</strong></p>
+<p><strong>複数の要素を見つけつには(これらのメソッドはリストを返します)</strong></p>
 <ul class="simple">
 <li><cite>find_elements_by_name</cite></li>
 <li><cite>find_elements_by_xpath</cite></li>
@@ -206,7 +206,7 @@
 <li><cite>find_elements_by_class_name</cite></li>
 <li><cite>find_elements_by_css_selector</cite></li>
 </ul>
-<p>上記の公開メソッドとは別に、ページオブジェクト内のロケータで便利な2つのプライベートメソッドがあります。これらは、 <cite>find_element</cite> と <cite>find_elements</cite> の2つのプライベートメソッドです。</p>
+<p>上記のパブリックメソッドとは別に、ページオブジェクト内のロケータで役立つかもしれない2つのプライベートメソッドがあります。<cite>find_element</cite> と <cite>find_elements</cite> の2つのプライベートメソッドです。</p>
 <p>使用例:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="k">import</span> <span class="n">By</span>
 
