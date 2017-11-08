@@ -229,7 +229,7 @@
 </pre></div>
 </div>
 <p>expected_conditionsモジュールには、WebDriverWaitで使用する一連の定義済み条件が含まれています。</p>
-<p><strong>Wait条件をカスタマイズ</strong></p>
+<p><strong>待機条件をカスタマイズ</strong></p>
 <p>以前の簡易メソッドが要件に合致しない場合でも、カスタム待機条件を作成することができます。条件が一致しない場合に <cite>False</cite> を返す <cite>__call__</cite> メソッドを持つクラスを使用してカスタム待機条件を作成できます。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">element_has_css_class</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   <span class="sd">&quot;&quot;&quot;An expectation for checking that an element has a particular css class.</span>
