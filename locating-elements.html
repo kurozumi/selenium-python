@@ -274,7 +274,7 @@
 <div class="section" id="locating-by-xpath">
 <h2>4.3. XPathで探す<a class="headerlink" href="#locating-by-xpath" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>XPathは、XML文書内のノードの位置を特定するために使用される言語です。HTMLはXML（XHTML）を実装できるため、Seleniumユーザーはこの強力な言語を活用して、Webアプリケーションの要素をターゲットにすることができます。XPathは、id属性やname属性で簡単に検索する方法を超えて（サポートするだけでなく）拡張し、ページ上の3番目のチェックボックスの位置付けなど、あらゆる可能性を開拓します。</p>
-<p>XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。XPathを使用して、要素を絶対的な用語（アドバイスされていない）に配置するか、id属性またはname属性を持つ要素に関連付けることができます。XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。</p>
+<p>XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。XPathを使用すると、絶対的な用語（アドバイスされていない）で要素を見つけることも、idまたはname属性を持つ要素に関連付けることができます。XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。</p>
 <p>絶対XPathにはルート（html）からのすべての要素の位置が含まれているため、アプリケーションにわずかな調整しか加えられずに失敗する可能性があります。idまたはname属性（理想的には親要素）を持つ近くの要素を見つけることによって、関係に基づいてターゲット要素を見つけることができます。これは変更する可能性が低く、テストをより堅牢にすることができます。</p>
 <p>たとえば、このページソースを考えてみましょう:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
@@ -351,7 +351,7 @@ for Google Chrome</li>
 &lt;html&gt;
 </pre></div>
 </div>
-<p>continue.htmlリンクは次のように配置できます。:</p>
+<p>continue.htmlリンクはこのように見つけることが出来ます:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_link_text</span><span class="p">(</span><span class="s1">&#39;Continue&#39;</span><span class="p">)</span>
 <span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_partial_link_text</span><span class="p">(</span><span class="s1">&#39;Conti&#39;</span><span class="p">)</span>
 </pre></div>
@@ -369,7 +369,7 @@ for Google Chrome</li>
 <span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>見出し（h1）要素は次のように配置できます。:</p>
+<p>見出し(h1)要素はこのように見つけることが出来ます:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">heading1</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_tag_name</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
