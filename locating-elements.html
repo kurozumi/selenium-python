@@ -228,7 +228,7 @@
 <div class="section" id="locating-by-id">
 <h2>4.1. ID属性で探す<a class="headerlink" href="#locating-by-id" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>要素の <cite>id</cite> 属性を知っている場合は使用しましょう。この戦略では、 位置に一致する <cite>id</cite> 属性値を持つ最初の要素が返されます。<cite>id</cite> 属性が一致する要素がない場合、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">form</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;loginForm&quot;</span><span class="o">&gt;</span>
@@ -240,7 +240,7 @@
 <span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>フォーム要素は次のように配置できます。:</p>
+<p>フォーム要素はこのように見つけることが出来ます:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">login_form</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;loginForm&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -248,7 +248,7 @@
 <div class="section" id="locating-by-name">
 <h2>4.2. Name属性で探す<a class="headerlink" href="#locating-by-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>要素の <cite>name</cite> 属性が分かっている場合に使用します。この戦略では、 <cite>name</cite> 属性値を持つ最初の要素が返されます。<cite>name</cite> 属性が一致する要素がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">form</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;loginForm&quot;</span><span class="o">&gt;</span>
@@ -276,7 +276,7 @@
 <p>XPathは、XML文書内のノードの位置を特定するために使用される言語です。HTMLはXML（XHTML）を実装できるため、Seleniumユーザーはこの強力な言語を活用して、Webアプリケーションの要素をターゲットにすることができます。XPathは、id属性やname属性で簡単に検索する方法を超えて（サポートするだけでなく）拡張し、ページ上の3番目のチェックボックスの位置付けなど、あらゆる可能性を開拓します。</p>
 <p>XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。XPathを使用して、要素を絶対的な用語（アドバイスされていない）に配置するか、id属性またはname属性を持つ要素に関連付けることができます。XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。</p>
 <p>絶対XPathにはルート（html）からのすべての要素の位置が含まれているため、アプリケーションにわずかな調整しか加えられずに失敗する可能性があります。idまたはname属性（理想的には親要素）を持つ近くの要素を見つけることによって、関係に基づいてターゲット要素を見つけることができます。これは変更する可能性が低く、テストをより堅牢にすることができます。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">form</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;loginForm&quot;</span><span class="o">&gt;</span>
@@ -341,7 +341,7 @@ for Google Chrome</li>
 <div class="section" id="locating-hyperlinks-by-link-text">
 <h2>4.4. リンクテキストでハイパーリンクを探す<a class="headerlink" href="#locating-hyperlinks-by-link-text" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>アンカータグ内で使用されているリンクテキストを知っている場合に使用します。この戦略では、場所に一致するリンクテキスト値を持つ最初の要素が返されます。要素に一致するリンクテキスト属性がない場合、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>&lt;html&gt;
  &lt;body&gt;
   &lt;p&gt;Are you sure you want to do this?&lt;/p&gt;
@@ -360,7 +360,7 @@ for Google Chrome</li>
 <div class="section" id="locating-elements-by-tag-name">
 <h2>4.5. タグ名で要素を探す<a class="headerlink" href="#locating-elements-by-tag-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>タグ名で要素を検索する場合に使用します。この戦略では、指定されたタグ名を持つ最初の要素が返されます。一致するタグ名を持つエレメントがない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
@@ -377,7 +377,7 @@ for Google Chrome</li>
 <div class="section" id="locating-elements-by-class-name">
 <h2>4.6. クラス名で要素を探す<a class="headerlink" href="#locating-elements-by-class-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>クラス属性名で要素を検索する場合に使用します。この戦略では、一致するクラス属性名を持つ最初の要素が返されます。要素に一致するクラス属性名がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">p</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;content&quot;</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
@@ -393,7 +393,7 @@ for Google Chrome</li>
 <div class="section" id="locating-elements-by-css-selectors">
 <h2>4.7. CSSセレクタで要素を探す<a class="headerlink" href="#locating-elements-by-css-selectors" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>CSSセレクタ構文で要素を検索する場合に使用します。この戦略では、一致するCSSセレクタを持つ最初の要素が返されます。要素に一致するCSSセレクタがない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
-<p>たとえば、以下のページソースを考えてみましょう。:</p>
+<p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">p</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;content&quot;</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
