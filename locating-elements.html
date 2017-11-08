@@ -98,8 +98,8 @@
 <li class="toctree-l1"><a class="reference internal" href="navigating.html">3. ナビゲート</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">4. 要素を見つける</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-id">4.1. ID属性で探す</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-by-name">4.2. name属性で探す</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-by-xpath">4.3. XPathによる検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-by-name">4.2. Name属性で探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-by-xpath">4.3. XPathで探す</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-hyperlinks-by-link-text">4.4. リンクテキストによるハイパーリンクの検索</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-tag-name">4.5. タグ名による要素の検索</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-class-name">4.6. クラス名による要素の検索</a></li>
@@ -206,7 +206,7 @@
 <li><cite>find_elements_by_class_name</cite></li>
 <li><cite>find_elements_by_css_selector</cite></li>
 </ul>
-<p>上記のパブリックメソッドとは別に、ページオブジェクト内のロケータで役立つかもしれない2つのプライベートメソッドがあります。<cite>find_element</cite> と <cite>find_elements</cite> の2つのプライベートメソッドです。</p>
+<p>上記のパブリックメソッドとは別に、ページオブジェクト内で要素を見つけるのに役立つかもしれない2つのプライベートメソッドがあります。<cite>find_element</cite> と <cite>find_elements</cite> の2つのプライベートメソッドです。</p>
 <p>使用例:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="k">import</span> <span class="n">By</span>
 
@@ -214,7 +214,7 @@
 <span class="n">driver</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">XPATH</span><span class="p">,</span> <span class="s1">&#39;//button&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>これらは <cite>By</cite> クラスで使用できる属性です。:</p>
+<p><cite>By</cite> クラスで使用できる属性は次のとおりです:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ID</span> <span class="o">=</span> <span class="s2">&quot;id&quot;</span>
 <span class="n">XPATH</span> <span class="o">=</span> <span class="s2">&quot;xpath&quot;</span>
 <span class="n">LINK_TEXT</span> <span class="o">=</span> <span class="s2">&quot;link text&quot;</span>
@@ -227,7 +227,7 @@
 </div>
 <div class="section" id="locating-by-id">
 <h2>4.1. ID属性で探す<a class="headerlink" href="#locating-by-id" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>要素の <cite>id</cite> 属性を知っている場合は使用しましょう。この戦略では、 <cite>id</cite> 属性値を持つ最初の要素が返されます。<cite>id</cite> 属性が一致する要素がない場合、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> が発生します。</p>
+<p>要素の <cite>id</cite> 属性を知っている場合は使用しましょう。この戦略では、 位置に一致する <cite>id</cite> 属性値を持つ最初の要素が返されます。<cite>id</cite> 属性が一致する要素がない場合、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
@@ -246,7 +246,7 @@
 </div>
 </div>
 <div class="section" id="locating-by-name">
-<h2>4.2. name属性で探す<a class="headerlink" href="#locating-by-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.2. Name属性で探す<a class="headerlink" href="#locating-by-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>要素の <cite>name</cite> 属性が分かっている場合に使用します。この戦略では、 <cite>name</cite> 属性値を持つ最初の要素が返されます。<cite>name</cite> 属性が一致する要素がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
@@ -272,7 +272,7 @@
 </div>
 </div>
 <div class="section" id="locating-by-xpath">
-<h2>4.3. XPathによる検索<a class="headerlink" href="#locating-by-xpath" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.3. XPathで探す<a class="headerlink" href="#locating-by-xpath" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>XPathは、XML文書内のノードの位置を特定するために使用される言語です。HTMLはXML（XHTML）を実装できるため、Seleniumユーザーはこの強力な言語を活用して、Webアプリケーションの要素をターゲットにすることができます。XPathは、id属性やname属性で簡単に検索する方法を超えて（サポートするだけでなく）拡張し、ページ上の3番目のチェックボックスの位置付けなど、あらゆる可能性を開拓します。</p>
 <p>XPathを使用する主な理由の1つは、探したい要素に適切なIDまたは名前属性がない場合です。XPathを使用して、要素を絶対的な用語（アドバイスされていない）に配置するか、id属性またはname属性を持つ要素に関連付けることができます。XPathロケータを使用して、idやname以外の属性を使用して要素を指定することもできます。</p>
 <p>絶対XPathにはルート（html）からのすべての要素の位置が含まれているため、アプリケーションにわずかな調整しか加えられずに失敗する可能性があります。idまたはname属性（理想的には親要素）を持つ近くの要素を見つけることによって、関係に基づいてターゲット要素を見つけることができます。これは変更する可能性が低く、テストをより堅牢にすることができます。</p>
