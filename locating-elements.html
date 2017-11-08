@@ -100,10 +100,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-id">4.1. ID属性で探す</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-name">4.2. Name属性で探す</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#locating-by-xpath">4.3. XPathで探す</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-hyperlinks-by-link-text">4.4. リンクテキストによるハイパーリンクの検索</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-tag-name">4.5. タグ名による要素の検索</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-class-name">4.6. クラス名による要素の検索</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-css-selectors">4.7. CSSセレクタによる要素の特定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-hyperlinks-by-link-text">4.4. リンクテキストでハイパーリンクを探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-tag-name">4.5. タグ名で要素を探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-class-name">4.6. クラス名で要素を探す</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locating-elements-by-css-selectors">4.7. CSSセレクタで要素を探す</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="waits.html">5. 待機</a></li>
@@ -339,7 +339,7 @@ for Google Chrome</li>
 </ul>
 </div>
 <div class="section" id="locating-hyperlinks-by-link-text">
-<h2>4.4. リンクテキストによるハイパーリンクの検索<a class="headerlink" href="#locating-hyperlinks-by-link-text" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.4. リンクテキストでハイパーリンクを探す<a class="headerlink" href="#locating-hyperlinks-by-link-text" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>アンカータグ内で使用されているリンクテキストを知っている場合に使用します。この戦略では、場所に一致するリンクテキスト値を持つ最初の要素が返されます。要素に一致するリンクテキスト属性がない場合、 <code class="docutils literal"><span class="pre">NoSuchElementException</span></code> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>&lt;html&gt;
@@ -358,7 +358,7 @@ for Google Chrome</li>
 </div>
 </div>
 <div class="section" id="locating-elements-by-tag-name">
-<h2>4.5. タグ名による要素の検索<a class="headerlink" href="#locating-elements-by-tag-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.5. タグ名で要素を探す<a class="headerlink" href="#locating-elements-by-tag-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>タグ名で要素を検索する場合に使用します。この戦略では、指定されたタグ名を持つ最初の要素が返されます。一致するタグ名を持つエレメントがない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
@@ -375,7 +375,7 @@ for Google Chrome</li>
 </div>
 </div>
 <div class="section" id="locating-elements-by-class-name">
-<h2>4.6. クラス名による要素の検索<a class="headerlink" href="#locating-elements-by-class-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.6. クラス名で要素を探す<a class="headerlink" href="#locating-elements-by-class-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>クラス属性名で要素を検索する場合に使用します。この戦略では、一致するクラス属性名を持つ最初の要素が返されます。要素に一致するクラス属性名がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
@@ -391,7 +391,7 @@ for Google Chrome</li>
 </div>
 </div>
 <div class="section" id="locating-elements-by-css-selectors">
-<h2>4.7. CSSセレクタによる要素の特定<a class="headerlink" href="#locating-elements-by-css-selectors" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>4.7. CSSセレクタで要素を探す<a class="headerlink" href="#locating-elements-by-css-selectors" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>CSSセレクタ構文で要素を検索する場合に使用します。この戦略では、一致するCSSセレクタを持つ最初の要素が返されます。要素に一致するCSSセレクタがない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
 <p>たとえば、以下のページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
