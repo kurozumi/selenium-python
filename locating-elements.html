@@ -247,7 +247,7 @@
 </div>
 <div class="section" id="locating-by-name">
 <h2>4.2. Name属性で探す<a class="headerlink" href="#locating-by-name" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>要素の <cite>name</cite> 属性が分かっている場合に使用します。この戦略では、 <cite>name</cite> 属性値を持つ最初の要素が返されます。<cite>name</cite> 属性が一致する要素がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
+<p>要素の <cite>name</cite> 属性が分かっている場合に使用します。この戦略では、 位置に一致する <cite>name</cite> 属性値を持つ最初の要素が返されます。<cite>name</cite> 属性が一致する要素がない場合、 <cite>NoSuchElementException</cite> が発生します。</p>
 <p>たとえば、こののページソースを考えてみましょう。:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
@@ -261,12 +261,12 @@
 <span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>ユーザー名とパスワードの要素は、次のように見つけることが出来ます。:</p>
+<p>ユーザー名とパスワードの要素は、このように見つけることが出来ます:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">username</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">)</span>
 <span class="n">password</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>これにより、「ログイン」ボタンが「クリア」ボタンの前に表示されます。:</p>
+<p>これは “ログイン” ボタンが “クリア” ボタンの前に取得されます:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">continue</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;continue&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
