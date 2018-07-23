@@ -1,0 +1,2213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Baiju Muthukadan
+# This file is distributed under the same license as the Selenium Python
+# Bindings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Selenium Python Bindings 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-06 09:18+0900\n"
+"PO-Revision-Date: 2017-11-06 19:37+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: ../../source/api.rst:4
+msgid "WebDriver API"
+msgstr ""
+
+#: ../../source/api.rst:8
+msgid ""
+"This is not an official documentation.  Official API documentation is available `here <https://seleniumhq.github.io/selenium/docs/api/py/api."
+"html>`_."
+msgstr ""
+"これは公式なドキュメントではありません。公式のAPIドキュメントは `こちら <http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html>`_ から入"
+"手できます。"
+
+#: ../../source/api.rst:12
+msgid "This chapter covers all the interfaces of Selenium WebDriver."
+msgstr "この章ではSelenium WebDriverのすべてのインターフェイスについて説明します。"
+
+#: ../../source/api.rst:15
+msgid "**Recommended Import Style**"
+msgstr "**推奨するインポートスタイル**"
+
+#: ../../source/api.rst:17
+msgid "The API definitions in this chapter show the absolute location of classes. However, the recommended import style is as given below::"
+msgstr "この章のAPI定義には、クラスの絶対位置が示されています。ただし、推奨されるインポートスタイルは次のとおりです。::"
+
+#: ../../source/api.rst:22
+msgid "Then, you can access the classes like this::"
+msgstr "次に、このようなクラスにアクセスできます。::"
+
+#: ../../source/api.rst:37
+msgid "The special keys class (``Keys``) can be imported like this::"
+msgstr "特別なキークラス(``Keys``)は次のようにインポートできます。::"
+
+#: ../../source/api.rst:41
+msgid "The exception classes can be imported like this (Replace the ``TheNameOfTheExceptionClass`` with the actual class name given below)::"
+msgstr "例外クラスは次のようにインポートできます(``TheNameOfTheExceptionClass`` を実際のクラス名で置き換えてください)::"
+
+#: ../../source/api.rst:46
+msgid "**Conventions used in the API**"
+msgstr "**APIで使用される表記規則**"
+
+#: ../../source/api.rst:48
+msgid ""
+"Some attributes are callable (or methods) and others are non-callable (properties).  All the callable attributes are ending with round brackets."
+msgstr ""
+"いくつかの属性は呼び出し可能（またはメソッド）であり、他の属性は呼び出し不能（プロパティ）です。すべての呼び出し可能属性は丸括弧で終わります。"
+
+#: ../../source/api.rst:52
+msgid "Here is an example for property:"
+msgstr "プロパティの例を次に示します。:"
+
+#: ../../source/api.rst:54
+msgid "current_url"
+msgstr ""
+
+#: ../../source/api.rst:56
+msgid "URL of the currently loaded page."
+msgstr "現在読み込まれているページのURL。"
+
+#: ../../source/api.rst:58 ../../source/api.rst:68
+msgid "Usage::"
+msgstr ""
+
+#: ../../source/api.rst:62
+msgid "Here is an example of a method:"
+msgstr "メソッドの例を次に示します:"
+
+#: ../../source/api.rst:64
+msgid "close()"
+msgstr ""
+
+#: ../../source/api.rst:66 of selenium.webdriver.remote.webdriver.WebDriver.close:1
+msgid "Closes the current window."
+msgstr "現在のウィンドウを閉じます。"
+
+#: ../../source/api.rst:74
+msgid "Exceptions"
+msgstr "例外"
+
+#: of selenium.common.exceptions:1
+msgid "Exceptions that may happen in all the webdriver code."
+msgstr "すべてのwebdriverコードで発生する可能性のある例外。"
+
+#: of selenium.common.exceptions.ElementNotInteractableException:1 selenium.common.exceptions.ElementNotSelectableException:1
+#: selenium.common.exceptions.ElementNotVisibleException:1
+msgid "ベースクラス: :class:`selenium.common.exceptions.InvalidElementStateException`"
+msgstr ""
+
+#: of selenium.common.exceptions.ElementNotInteractableException:1
+msgid "Thrown when an element is present in the DOM but interactions with that element will hit another element do to paint order"
+msgstr ""
+
+#: of selenium.common.exceptions.ElementNotSelectableException:1
+msgid "Thrown when trying to select an unselectable element."
+msgstr "選択できない要素を選択しようとするとスローされます。"
+
+#: of selenium.common.exceptions.ElementNotSelectableException:3
+msgid "For example, selecting a 'script' element."
+msgstr "たとえば、 'script'要素を選択するとき発生します。"
+
+#: of selenium.common.exceptions.ElementNotVisibleException:1
+msgid "Thrown when an element is present on the DOM, but it is not visible, and so is not able to be interacted with."
+msgstr "要素がDOM上に存在するが、要素が表示されないため対話できないときにスローされます。"
+
+#: of selenium.common.exceptions.ElementNotVisibleException:4
+msgid "Most commonly encountered when trying to click or read text of an element that is hidden from view."
+msgstr "表示されていない要素のテキストをクリックまたは読み取ろうとするときに最もよく発生します。"
+
+#: of selenium.common.exceptions.ErrorInResponseException:1 selenium.common.exceptions.ImeActivationFailedException:1
+#: selenium.common.exceptions.ImeNotAvailableException:1 selenium.common.exceptions.InvalidArgumentException:1
+#: selenium.common.exceptions.InvalidCookieDomainException:1 selenium.common.exceptions.InvalidElementStateException:1
+#: selenium.common.exceptions.InvalidSwitchToTargetException:1 selenium.common.exceptions.MoveTargetOutOfBoundsException:1
+#: selenium.common.exceptions.NoAlertPresentException:1 selenium.common.exceptions.NoSuchAttributeException:1
+#: selenium.common.exceptions.NoSuchElementException:1 selenium.common.exceptions.RemoteDriverServerException:1
+#: selenium.common.exceptions.StaleElementReferenceException:1 selenium.common.exceptions.TimeoutException:1
+#: selenium.common.exceptions.UnableToSetCookieException:1 selenium.common.exceptions.UnexpectedAlertPresentException:1
+#: selenium.common.exceptions.UnexpectedTagNameException:1
+msgid "ベースクラス: :class:`selenium.common.exceptions.WebDriverException`"
+msgstr ""
+
+#: of selenium.common.exceptions.ErrorInResponseException:1
+msgid "Thrown when an error has occurred on the server side."
+msgstr "サーバー側でエラーが発生した場合にスローされます。"
+
+#: of selenium.common.exceptions.ErrorInResponseException:3
+msgid "This may happen when communicating with the firefox extension or the remote driver server."
+msgstr "これはfirefox拡張機能またはリモートドライバサーバと通信するときに発生する可能性があります。"
+
+#: of selenium.common.exceptions.ImeActivationFailedException:1
+msgid "Thrown when activating an IME engine has failed."
+msgstr "IMEエンジンのアクティブ化が失敗したときにスローされます。"
+
+#: of selenium.common.exceptions.ImeNotAvailableException:1
+msgid ""
+"Thrown when IME support is not available. This exception is thrown for every IME-related method call if IME support is not available on the "
+"machine."
+msgstr ""
+"IMEサポートが利用できない場合にスローされます。この例外はIMEサポートがマシン上で利用できない場合、すべてのIME関連メソッド呼び出しでスローされます。"
+
+#: of selenium.common.exceptions.InvalidArgumentException:1
+msgid "The arguments passed to a command are either invalid or malformed."
+msgstr ""
+
+#: of selenium.common.exceptions.InvalidCookieDomainException:1
+msgid "Thrown when attempting to add a cookie under a different domain than the current URL."
+msgstr "現在のURLとは異なるドメインにCookieを追加しようとするとスローされます。"
+
+#: of selenium.common.exceptions.InvalidSelectorException:1
+msgid "ベースクラス: :class:`selenium.common.exceptions.NoSuchElementException`"
+msgstr ""
+
+#: of selenium.common.exceptions.InvalidSelectorException:1
+msgid ""
+"Thrown when the selector which is used to find an element does not return a WebElement. Currently this only happens when the selector is an xpath "
+"expression and it is either syntactically invalid (i.e. it is not a xpath expression) or the expression does not select WebElements (e.g. "
+"\"count(//input)\")."
+msgstr ""
+"要素を見つけるために使用されるセレクタがWebElementを返さないときにスローされます。現在のところセレクタがxpath式であり構文的に無効(xpath式ではない)"
+"か、式でWebElements(\"count(//input)\"など）を選択していない場合にのみ発生します。"
+
+#: of selenium.common.exceptions.InvalidSwitchToTargetException:1
+msgid "Thrown when frame or window target to be switched doesn't exist."
+msgstr "切り替えられるフレームまたはウィンドウのターゲットが存在しない場合にスローされます。"
+
+#: of selenium.common.exceptions.MoveTargetOutOfBoundsException:1
+msgid "Thrown when the target provided to the `ActionsChains` move() method is invalid, i.e. out of document."
+msgstr "`ActionsChains move()` メソッドに提供されたターゲットが無効な場合、つまりドキュメントの外にある場合にスローされます。"
+
+#: of selenium.common.exceptions.NoAlertPresentException:1
+msgid "Thrown when switching to no presented alert."
+msgstr "提示されていないアラートに切り替えるとスローされます。"
+
+#: of selenium.common.exceptions.NoAlertPresentException:3
+msgid "This can be caused by calling an operation on the Alert() class when an alert is not yet on the screen."
+msgstr "これはアラートがまだ画面に表示されていないときに、Alert()クラスの操作を呼び出すことによって発生する可能性があります。"
+
+#: of selenium.common.exceptions.NoSuchAttributeException:1
+msgid "Thrown when the attribute of element could not be found."
+msgstr "要素の属性が見つからなかった場合にスローされます。"
+
+#: of selenium.common.exceptions.NoSuchAttributeException:3
+msgid ""
+"You may want to check if the attribute exists in the particular browser you are testing against.  Some browsers may have different property names "
+"for the same property.  (IE8's .innerText vs. Firefox .textContent)"
+msgstr ""
+"テストしている特定のブラウザに属性が存在するかどうかを確認することができます。一部のブラウザでは、同じプロパティのプロパティ名が異なる場合がありま"
+"す。(IE8の.innerTextとFirefoxの.textContent)"
+
+#: of selenium.common.exceptions.NoSuchElementException:1
+msgid "Thrown when element could not be found."
+msgstr "要素が見つからなかった場合にスローされます。"
+
+#: of selenium.common.exceptions.NoSuchElementException:6
+msgid "If you encounter this exception, you may want to check the following:"
+msgstr "この例外が発生した場合は、次の点を確認してください。"
+
+#: of selenium.common.exceptions.NoSuchElementException:4
+msgid "Check your selector used in your find_by..."
+msgstr "find_byで使用されているセレクターをチェック..."
+
+#: of selenium.common.exceptions.NoSuchElementException:5
+msgid ""
+"Element may not yet be on the screen at the time of the find operation, (webpage is still loading) see selenium.webdriver.support.wait."
+"WebDriverWait() for how to write a wait wrapper to wait for an element to appear."
+msgstr ""
+"検索操作時に要素がまだ画面に要素が表示されていない可能性があります（Webページがまだ読み込まれています）。要素が表示されるまで待機する待機ラッパーの"
+"記述方法については、selenium.webdriver.support.wait.WebDriverWait()を参照してください。"
+
+#: of selenium.common.exceptions.NoSuchFrameException:1 selenium.common.exceptions.NoSuchWindowException:1
+msgid "ベースクラス: :class:`selenium.common.exceptions.InvalidSwitchToTargetException`"
+msgstr ""
+
+#: of selenium.common.exceptions.NoSuchFrameException:1
+msgid "Thrown when frame target to be switched doesn't exist."
+msgstr "切り替えられるフレームターゲットが存在しない場合にスローされます。"
+
+#: of selenium.common.exceptions.NoSuchWindowException:1
+msgid "Thrown when window target to be switched doesn't exist."
+msgstr "切り替えられるウィンドウのターゲットが存在しない場合にスローされます。"
+
+#: of selenium.common.exceptions.NoSuchWindowException:3
+msgid "To find the current set of active window handles, you can get a list of the active window handles in the following way::"
+msgstr "アクティブなウィンドウハンドルを見つけるには、次の方法でアクティブなウィンドウハンドルのリストを取得します。"
+
+#: of selenium.common.exceptions.StaleElementReferenceException:1
+msgid "Thrown when a reference to an element is now \"stale\"."
+msgstr "要素への参照が\"失効した\"ときにスローされます。"
+
+#: of selenium.common.exceptions.StaleElementReferenceException:3
+msgid "Stale means the element no longer appears on the DOM of the page."
+msgstr "失効とは、要素がページのDOMに表示されなくなったことを意味します。"
+
+#: of selenium.common.exceptions.StaleElementReferenceException:12
+msgid "Possible causes of StaleElementReferenceException include, but not limited to:"
+msgstr "StaleElementReferenceExceptionの原因としては次のものがありますが、これに限定されません。"
+
+#: of selenium.common.exceptions.StaleElementReferenceException:7
+msgid "You are no longer on the same page, or the page may have refreshed since the element was located."
+msgstr "同じページにいないか、要素が更新されている可能性があります。"
+
+#: of selenium.common.exceptions.StaleElementReferenceException:9
+msgid ""
+"The element may have been removed and re-added to the screen, since it was located. Such as an element being relocated. This can happen typically "
+"with a javascript framework when values are updated and the node is rebuilt."
+msgstr ""
+
+#: of selenium.common.exceptions.StaleElementReferenceException:13
+msgid "Element may have been inside an iframe or another context which was refreshed."
+msgstr ""
+
+#: of selenium.common.exceptions.TimeoutException:1
+msgid "Thrown when a command does not complete in enough time."
+msgstr "コマンドが十分な時間内に完了しなかった場合にスローされます。"
+
+#: of selenium.common.exceptions.UnableToSetCookieException:1
+msgid "Thrown when a driver fails to set a cookie."
+msgstr "ドライバがクッキーを設定しなかった場合にスローされます。"
+
+#: of selenium.common.exceptions.UnexpectedAlertPresentException:1
+msgid "Thrown when an unexpected alert is appeared."
+msgstr "予期しない警告が表示されたときにスローされます。"
+
+#: of selenium.common.exceptions.UnexpectedAlertPresentException:3
+msgid "Usually raised when when an expected modal is blocking webdriver form executing any more commands."
+msgstr "通常、予想されるモーダルがWebdriverフォームをブロックして、多くのコマンドが実行しているときに発生します。"
+
+#: of selenium.common.exceptions.UnexpectedTagNameException:1
+msgid "Thrown when a support class did not get an expected web element."
+msgstr "サポートクラスが期待されるWeb要素を取得しなかった場合にスローされます。"
+
+#: of selenium.common.exceptions.WebDriverException:1
+msgid "ベースクラス: :class:`Exception`"
+msgstr ""
+
+#: of selenium.common.exceptions.WebDriverException:1
+msgid "Base webdriver exception."
+msgstr "Base webdriverの例外"
+
+#: ../../source/api.rst:84
+msgid "Action Chains"
+msgstr "Action Chains"
+
+#: of selenium.webdriver.common.action_chains:1
+msgid "The ActionChains implementation,"
+msgstr "ActionChainsの実装"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:1 selenium.webdriver.common.alert.Alert:1 selenium.webdriver.common.by.By:1
+#: selenium.webdriver.common.desired_capabilities.DesiredCapabilities:1 selenium.webdriver.common.keys.Keys:1
+#: selenium.webdriver.remote.webdriver.WebDriver:1 selenium.webdriver.remote.webelement.WebElement:1 selenium.webdriver.support.color.Color:1
+#: selenium.webdriver.support.expected_conditions.alert_is_present:1
+#: selenium.webdriver.support.expected_conditions.element_located_selection_state_to_be:1
+#: selenium.webdriver.support.expected_conditions.element_located_to_be_selected:1
+#: selenium.webdriver.support.expected_conditions.element_selection_state_to_be:1
+#: selenium.webdriver.support.expected_conditions.element_to_be_clickable:1 selenium.webdriver.support.expected_conditions.element_to_be_selected:1
+#: selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it:1
+#: selenium.webdriver.support.expected_conditions.invisibility_of_element_located:1
+#: selenium.webdriver.support.expected_conditions.new_window_is_opened:1 selenium.webdriver.support.expected_conditions.number_of_windows_to_be:1
+#: selenium.webdriver.support.expected_conditions.presence_of_all_elements_located:1
+#: selenium.webdriver.support.expected_conditions.presence_of_element_located:1 selenium.webdriver.support.expected_conditions.staleness_of:1
+#: selenium.webdriver.support.expected_conditions.text_to_be_present_in_element:1
+#: selenium.webdriver.support.expected_conditions.text_to_be_present_in_element_value:1
+#: selenium.webdriver.support.expected_conditions.title_contains:1 selenium.webdriver.support.expected_conditions.title_is:1
+#: selenium.webdriver.support.expected_conditions.url_changes:1 selenium.webdriver.support.expected_conditions.url_contains:1
+#: selenium.webdriver.support.expected_conditions.url_matches:1 selenium.webdriver.support.expected_conditions.url_to_be:1
+#: selenium.webdriver.support.expected_conditions.visibility_of:1 selenium.webdriver.support.expected_conditions.visibility_of_all_elements_located:1
+#: selenium.webdriver.support.expected_conditions.visibility_of_any_elements_located:1
+#: selenium.webdriver.support.expected_conditions.visibility_of_element_located:1 selenium.webdriver.support.select.Select:1
+#: selenium.webdriver.support.wait.WebDriverWait:1
+msgid "ベースクラス: :class:`object`"
+msgstr ""
+
+#: of selenium.webdriver.common.action_chains.ActionChains:1
+msgid ""
+"ActionChains are a way to automate low level interactions such as mouse movements, mouse button actions, key press, and context menu interactions. "
+"This is useful for doing more complex actions like hover over and drag and drop."
+msgstr ""
+"ActionChains、マウスの動き、マウスボタンの操作、キーの押下、コンテキストメニューの操作など、低レベルのやりとりを自動化する方法です。これは、ホバー"
+"オーバーやドラッグアンドドロップなどのより複雑なアクションを実行する場合に便利です。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:9
+msgid "Generate user actions."
+msgstr "ユーザーアクションを生成"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:6
+msgid ""
+"When you call methods for actions on the ActionChains object, the actions are stored in a queue in the ActionChains object. When you call "
+"perform(), the events are fired in the order they are queued up."
+msgstr ""
+"ActionChainsオブジェクトのアクションのメソッドを呼び出すと、アクションはActionChainsオブジェクトのキューに格納されます。perform()を呼び出すと、イベ"
+"ントはキューに入れられた順に発生します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:11
+msgid "ActionChains can be used in a chain pattern::"
+msgstr "ActionChainsはチェーンパターンで使用できます。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:18
+msgid "Or actions can be queued up one by one, then performed.::"
+msgstr "あるいは、アクションを1つずつキューに入れて実行することもできます。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains:28
+msgid "Either way, the actions are performed in the order they are called, one after another."
+msgstr "どちらの方法でも、アクションは順番に呼び出され、順番に実行されます。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.click:1
+msgid "Clicks an element."
+msgstr "要素をクリックします。"
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions selenium.webdriver.common.action_chains.ActionChains.click
+#: selenium.webdriver.common.action_chains.ActionChains.click_and_hold selenium.webdriver.common.action_chains.ActionChains.context_click
+#: selenium.webdriver.common.action_chains.ActionChains.double_click selenium.webdriver.common.action_chains.ActionChains.drag_and_drop
+#: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset selenium.webdriver.common.action_chains.ActionChains.key_down
+#: selenium.webdriver.common.action_chains.ActionChains.key_up selenium.webdriver.common.action_chains.ActionChains.move_by_offset
+#: selenium.webdriver.common.action_chains.ActionChains.move_to_element
+#: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset selenium.webdriver.common.action_chains.ActionChains.release
+#: selenium.webdriver.common.action_chains.ActionChains.send_keys selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element
+#: selenium.webdriver.common.alert.Alert.authenticate selenium.webdriver.common.alert.Alert.send_keys
+#: selenium.webdriver.common.utils.find_connectable_ip selenium.webdriver.common.utils.is_connectable
+#: selenium.webdriver.common.utils.is_url_connectable selenium.webdriver.common.utils.join_host_port
+#: selenium.webdriver.remote.webdriver.WebDriver.add_cookie selenium.webdriver.remote.webdriver.WebDriver.execute
+#: selenium.webdriver.remote.webdriver.WebDriver.execute_async_script selenium.webdriver.remote.webdriver.WebDriver.execute_script
+#: selenium.webdriver.remote.webdriver.WebDriver.file_detector_context selenium.webdriver.remote.webdriver.WebDriver.find_element_by_class_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_css_selector selenium.webdriver.remote.webdriver.WebDriver.find_element_by_id
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_link_text selenium.webdriver.remote.webdriver.WebDriver.find_element_by_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_partial_link_text
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_tag_name selenium.webdriver.remote.webdriver.WebDriver.find_element_by_xpath
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_class_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_css_selector selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_id
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_link_text selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_partial_link_text
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_tag_name selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_xpath
+#: selenium.webdriver.remote.webdriver.WebDriver.get_log selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file
+#: selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait selenium.webdriver.remote.webdriver.WebDriver.save_screenshot
+#: selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout
+#: selenium.webdriver.remote.webdriver.WebDriver.set_window_position selenium.webdriver.remote.webdriver.WebDriver.set_window_size
+#: selenium.webdriver.remote.webdriver.WebDriver.start_session selenium.webdriver.remote.webelement.WebElement.find_element_by_class_name
+#: selenium.webdriver.remote.webelement.WebElement.find_element_by_css_selector selenium.webdriver.remote.webelement.WebElement.find_element_by_id
+#: selenium.webdriver.remote.webelement.WebElement.find_element_by_link_text selenium.webdriver.remote.webelement.WebElement.find_element_by_name
+#: selenium.webdriver.remote.webelement.WebElement.find_element_by_partial_link_text
+#: selenium.webdriver.remote.webelement.WebElement.find_element_by_tag_name selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_class_name
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_css_selector selenium.webdriver.remote.webelement.WebElement.find_elements_by_id
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_link_text selenium.webdriver.remote.webelement.WebElement.find_elements_by_name
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_partial_link_text
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_tag_name selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath
+#: selenium.webdriver.remote.webelement.WebElement.get_attribute selenium.webdriver.remote.webelement.WebElement.get_property
+#: selenium.webdriver.remote.webelement.WebElement.screenshot selenium.webdriver.remote.webelement.WebElement.send_keys
+#: selenium.webdriver.support.select.Select.deselect_by_index selenium.webdriver.support.select.Select.deselect_by_value
+#: selenium.webdriver.support.select.Select.deselect_by_visible_text selenium.webdriver.support.select.Select.select_by_index
+#: selenium.webdriver.support.select.Select.select_by_value selenium.webdriver.support.select.Select.select_by_visible_text
+msgid "Args"
+msgstr ""
+
+#: of selenium.webdriver.common.action_chains.ActionChains.click:4
+msgid "on_element: The element to click. If None, clicks on current mouse position."
+msgstr "on_element：クリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.click_and_hold:1
+msgid "Holds down the left mouse button on an element."
+msgstr "要素上でマウスの左ボタンを押したままにします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.click_and_hold:4
+msgid "on_element: The element to mouse down. If None, clicks on current mouse position."
+msgstr "on_element：マウスを押下する要素。 Noneの場合、現在のマウス位置をクリックします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.context_click:1
+msgid "Performs a context-click (right click) on an element."
+msgstr "要素をコンテキストクリック（右クリック）します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.context_click:4
+msgid "on_element: The element to context-click. If None, clicks on current mouse position."
+msgstr "on_element：コンテキストをクリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.double_click:1
+msgid "Double-clicks an element."
+msgstr "要素をダブルクリックします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.double_click:4
+msgid "on_element: The element to double-click. If None, clicks on current mouse position."
+msgstr "on_element：ダブルクリックする要素。 Noneの場合、現在のマウス位置をクリックします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:2
+#: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:2
+msgid "Holds down the left mouse button on the source element,"
+msgstr "ソース上の要素をマウスの左ボタンで押したままにします。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:2
+msgid "then moves to the target element and releases the mouse button."
+msgstr "ターゲット要素に移動してマウスボタンを離します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:5
+#: selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:5
+msgid "source: The element to mouse down."
+msgstr "source：マウスキーを押下する要素"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop:6
+msgid "target: The element to mouse up."
+msgstr "target：マウスキーを離す要素"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:2
+msgid "then moves to the target offset and releases the mouse button."
+msgstr "ターゲットオフセットに移動し、マウスボタンを離します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:6
+#: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:6
+msgid "xoffset: X offset to move to."
+msgstr "xoffset：移動するためのXオフセット"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.drag_and_drop_by_offset:7
+#: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:7
+msgid "yoffset: Y offset to move to."
+msgstr "yoffset：移動するためのYオフセット"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_down:2
+msgid "Sends a key press only, without releasing it."
+msgstr "キーを離すことなく、キーを押すだけで送信します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_down:2
+msgid "Should only be used with modifier keys (Control, Alt and Shift)."
+msgstr "修飾キー（Controlキー、Altキー、Shiftキー）でのみ使用して下さい。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_down:5
+msgid "value: The modifier key to send. Values are defined in `Keys` class."
+msgstr "value：送信する修飾キー。値はKeysクラスで定義されます。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_down:6 selenium.webdriver.common.action_chains.ActionChains.key_up:5
+msgid "element: The element to send keys. If None, sends a key to current focused element."
+msgstr "element：キーを送信する要素。Noneの場合、現在フォーカスされている要素にキーを送信します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_down:9 selenium.webdriver.common.action_chains.ActionChains.key_up:8
+msgid "Example, pressing ctrl+c::"
+msgstr "例、ctrl+cを押す："
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_up:1
+msgid "Releases a modifier key."
+msgstr "修飾キーを解放します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.key_up:4
+msgid "value: The modifier key to send. Values are defined in Keys class."
+msgstr "value：送信する修飾キー。値はKeysクラスで定義されます。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:1
+msgid "Moving the mouse to an offset from current mouse position."
+msgstr "マウスを現在の位置からのオフセットに移動します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:4
+msgid "xoffset: X offset to move to, as a positive or negative integer."
+msgstr "xoffset：正または負の整数として移動するXオフセット。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_by_offset:5
+msgid "yoffset: Y offset to move to, as a positive or negative integer."
+msgstr "yoffset：正または負の整数として移動するYオフセット。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_to_element:1
+msgid "Moving the mouse to the middle of an element."
+msgstr "マウスを要素の中央に移動する。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_to_element:4
+#: selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:5
+msgid "to_element: The WebElement to move to."
+msgstr "to_element：移動先のWebElementです。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:2
+msgid "Move the mouse by an offset of the specified element."
+msgstr "指定された要素のオフセットだけマウスを移動します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.move_to_element_with_offset:2
+msgid "Offsets are relative to the top-left corner of the element."
+msgstr "オフセットは要素の左上隅を基準にしています。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.pause:1
+msgid "Pause all inputs for the specified duration in seconds"
+msgstr ""
+
+#: of selenium.webdriver.common.action_chains.ActionChains.perform:1
+msgid "Performs all stored actions."
+msgstr "すべてのストアド・アクションを実行します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.release:1
+msgid "Releasing a held mouse button on an element."
+msgstr "保持されているマウスボタンを要素に解放します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.release:4
+msgid "on_element: The element to mouse up. If None, releases on current mouse position."
+msgstr "on_element：マウスを押し上げる要素。Noneの場合、現在のマウス位置を解放します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.reset_actions:1
+msgid "Clears actions that are already stored on the remote end."
+msgstr ""
+
+#: of selenium.webdriver.common.action_chains.ActionChains.send_keys:1
+msgid "Sends keys to current focused element."
+msgstr "現在フォーカスされている要素にキーを送信します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.send_keys:4 selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:5
+msgid "keys_to_send: The keys to send.  Modifier keys constants can be found in the 'Keys' class."
+msgstr "keys_to_send：送信キー。修飾キーの定数は ‘Keys’クラスにあります。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:1
+msgid "Sends keys to an element."
+msgstr "要素にキーを送信します。"
+
+#: of selenium.webdriver.common.action_chains.ActionChains.send_keys_to_element:4
+msgid "element: The element to send keys."
+msgstr "element：キーを送信する要素。"
+
+#: ../../source/api.rst:94
+msgid "Alerts"
+msgstr "アラート"
+
+#: of selenium.webdriver.common.alert:1
+msgid "The Alert implementation."
+msgstr "アラートの実装。"
+
+#: of selenium.webdriver.common.alert.Alert:1
+msgid "Allows to work with alerts."
+msgstr "アラートを扱うことができます。"
+
+#: of selenium.webdriver.common.alert.Alert:3
+msgid ""
+"Use this class to interact with alert prompts.  It contains methods for dismissing, accepting, inputting, and getting text from alert prompts."
+msgstr ""
+"このクラスを使用して、アラートのプロンプトと対話します。アラートのプロンプトから却下、受け入れ、入力、テキスト取得するためのメソッドが含まれていま"
+"す。"
+
+#: of selenium.webdriver.common.alert.Alert:6
+msgid "Accepting / Dismissing alert prompts::"
+msgstr "アラートプロンプトの受け入れ/却下："
+
+#: of selenium.webdriver.common.alert.Alert:11
+msgid "Inputting a value into an alert prompt:"
+msgstr "アラートプロンプトへの値の入力："
+
+#: of selenium.webdriver.common.alert.Alert:13
+msgid "name_prompt = Alert(driver) name_prompt.send_keys(\"Willian Shakesphere\") name_prompt.accept()"
+msgstr ""
+
+#: of selenium.webdriver.common.alert.Alert:18
+msgid "Reading a the text of a prompt for verification:"
+msgstr "確認のためにプロンプトのテキストを読む："
+
+#: of selenium.webdriver.common.alert.Alert:20
+msgid "alert_text = Alert(driver).text self.assertEqual(\"Do you wish to quit?\", alert_text)"
+msgstr ""
+
+#: of selenium.webdriver.common.alert.Alert.accept:1
+msgid "Accepts the alert available."
+msgstr "利用可能なアラートを受け入れます。"
+
+#: of selenium.webdriver.common.alert.Alert.accept:3
+msgid "Usage:: Alert(driver).accept() # Confirm a alert dialog."
+msgstr ""
+
+#: of selenium.webdriver.common.alert.Alert.authenticate:1
+msgid "Send the username / password to an Authenticated dialog (like with Basic HTTP Auth). Implicitly 'clicks ok'"
+msgstr "認証ダイアログにユーザー名とパスワードを送信します(Basic HTTP Authのように)。暗黙的にOKをクリックします。"
+
+#: of selenium.webdriver.common.alert.Alert.authenticate:4
+msgid "Usage:: driver.switch_to.alert.authenticate('cheese', 'secretGouda')"
+msgstr ""
+
+#: of selenium.webdriver.common.alert.Alert.authenticate:8
+msgid "-username: string to be set in the username section of the dialog -password: string to be set in the password section of the dialog"
+msgstr ""
+
+#: of selenium.webdriver.common.alert.Alert.dismiss:1
+msgid "Dismisses the alert available."
+msgstr "利用可能なアラートを閉じます。"
+
+#: of selenium.webdriver.common.alert.Alert.send_keys:1
+msgid "Send Keys to the Alert."
+msgstr "アラートにキーを送信します。"
+
+#: of selenium.webdriver.common.alert.Alert.send_keys:4
+msgid "keysToSend: The text to be sent to Alert."
+msgstr "keysToSend：Alertに送信されるテキスト。"
+
+#: of selenium.webdriver.common.alert.Alert.text:1
+msgid "Gets the text of the Alert."
+msgstr "Alertのテキストを取得します。"
+
+#: ../../source/api.rst:104
+msgid "Special Keys"
+msgstr "特殊キー"
+
+#: of selenium.webdriver.common.keys:1
+msgid "The Keys implementation."
+msgstr "Key実装"
+
+#: of selenium.webdriver.common.keys.Keys:1
+msgid "Set of special keys codes."
+msgstr "特別なキーコードのセット。"
+
+#: ../../source/api.rst:114
+msgid "Locate elements By"
+msgstr "要素を検索"
+
+#: ../../source/api.rst:116
+msgid "These are the attributes which can be used to locate elements.  See the :ref:`locating-elements` chapter for example usages."
+msgstr "これらは、要素の位置を特定するために使用できる属性です。使用例については、 :ref:`locating-elements` の章を参照してください。"
+
+#: of selenium.webdriver.common.by:1
+msgid "The By implementation."
+msgstr "By実装"
+
+#: of selenium.webdriver.common.by.By:1
+msgid "Set of supported locator strategies."
+msgstr "サポートされているロケーター戦略のセット。"
+
+#: ../../source/api.rst:127
+msgid "Desired Capabilities"
+msgstr ""
+
+#: ../../source/api.rst:129
+msgid "See the :ref:`selenium-remote-webdriver` section for example usages of desired capabilities."
+msgstr "Desired Capabilitiesの使用例については、:ref:`selenium-remote-webdriver` を参照してください。"
+
+#: of selenium.webdriver.common.desired_capabilities:1
+msgid "The Desired Capabilities implementation."
+msgstr "Desired Capabilities実装"
+
+#: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:1
+msgid "Set of default supported desired capabilities."
+msgstr "デフォルトでサポートされている必要な機能のセット。"
+
+#: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:3
+msgid ""
+"Use this as a starting point for creating a desired capabilities object for requesting remote webdrivers for connecting to selenium server or "
+"selenium grid."
+msgstr ""
+"SeleniumサーバーまたはSeleniumグリッドに接続するためのリモートwebdriverを要求するためのDesired Capabilitiesオブジェクトを作成するための出発点として"
+"使用します。"
+
+#: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:6
+msgid "Usage Example::"
+msgstr "使用例::"
+
+#: of selenium.webdriver.common.desired_capabilities.DesiredCapabilities:21
+msgid "Note: Always use '.copy()' on the DesiredCapabilities object to avoid the side effects of altering the Global class instance."
+msgstr ""
+
+#: ../../source/api.rst:139
+msgid "Utilities"
+msgstr "ユーティリティ"
+
+#: of selenium.webdriver.common.utils:1
+msgid "The Utils methods."
+msgstr "ユーティリティメソッド"
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:1
+msgid "Resolve a hostname to an IP, preferring IPv4 addresses."
+msgstr "ホスト名をIPに解決します。IPv4アドレスを優先します。"
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:3
+msgid ""
+"We prefer IPv4 so that we don't change behavior from previous IPv4-only implementations, and because some drivers (e.g., FirefoxDriver) do not "
+"support IPv6 connections."
+msgstr "以前のIPv4のみの実装からの動作やFirefoxDriverなどの一部のドライバがIPv6接続をサポートしていないため、IPv4を推奨しています。"
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:7
+msgid "If the optional port number is provided, only IPs that listen on the given port are considered."
+msgstr "オプションのポート番号が指定されている場合、指定されたポートでlistenするIPだけが考慮されます。"
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:11 selenium.webdriver.common.utils.join_host_port:7
+msgid "host - A hostname."
+msgstr "host - ホスト名"
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:12
+msgid "port - Optional port number."
+msgstr "port - オプションのポート番号"
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.get_network_conditions selenium.webdriver.common.utils.find_connectable_ip
+#: selenium.webdriver.remote.webdriver.WebDriver.execute
+msgid "Returns"
+msgstr ""
+
+#: of selenium.webdriver.common.utils.find_connectable_ip:15
+msgid ""
+"A single IP address, as a string. If any IPv4 address is found, one is returned. Otherwise, if any IPv6 address is found, one is returned. If "
+"neither, then None is returned."
+msgstr ""
+"文字列としての単一のIPアドレス。IPv4アドレスが見つかった場合は、そのアドレスが返されます。それ以外の場合は、IPv6アドレスが見つかった場合は1が返され"
+"ます。どちらも指定されていない場合、Noneが返されます。"
+
+#: of selenium.webdriver.common.utils.free_port:1
+msgid "Determines a free port using sockets."
+msgstr "ソケットを使用して空きポートを決定します。"
+
+#: of selenium.webdriver.common.utils.is_connectable:1
+msgid "Tries to connect to the server at port to see if it is running."
+msgstr "ポートでサーバーに接続して、実行中かどうかを調べます。"
+
+#: of selenium.webdriver.common.utils.is_connectable:4 selenium.webdriver.common.utils.is_url_connectable:5
+msgid "port - The port to connect."
+msgstr "port - 接続するポート。"
+
+#: of selenium.webdriver.common.utils.is_url_connectable:1
+msgid "Tries to connect to the HTTP server at /status path and specified port to see if it responds successfully."
+msgstr "/ status pathと指定されたポートのHTTPサーバーに接続して正常に応答するかどうかを調べます。"
+
+#: of selenium.webdriver.common.utils.join_host_port:1
+msgid "Joins a hostname and port together."
+msgstr "ホスト名とポートを結合します。"
+
+#: of selenium.webdriver.common.utils.join_host_port:3
+msgid "This is a minimal implementation intended to cope with IPv6 literals. For example, _join_host_port('::1', 80) == '[::1]:80'."
+msgstr "これは、IPv6リテラルに対処するための最小限の実装です。たとえば、_join_host_port（ ':: 1'、80）== '[:: 1]：80'となります。"
+
+#: of selenium.webdriver.common.utils.join_host_port:8
+msgid "port - An integer port."
+msgstr "port - 整数ポート"
+
+#: of selenium.webdriver.common.utils.keys_to_typing:1
+msgid "Processes the values that will be typed in the element."
+msgstr "要素に入力される値を処理します。"
+
+#: ../../source/api.rst:149
+msgid "Firefox WebDriver"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver:1 selenium.webdriver.firefox.webdriver.WebDriver:1
+msgid "ベースクラス: :class:`selenium.webdriver.remote.webdriver.WebDriver`"
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.context:1
+msgid ""
+"Sets the context that Selenium commands are running in using a `with` statement. The state of the context on the server is saved before entering "
+"the block, and restored upon exiting it."
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.context selenium.webdriver.firefox.webdriver.WebDriver.install_addon
+msgid "パラメータ"
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.context:5
+msgid "Context, may be one of the class properties `CONTEXT_CHROME` or `CONTEXT_CONTENT`."
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.context:8
+msgid "Usage example::"
+msgstr "使用例::"
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.install_addon:1
+msgid "Installs Firefox addon."
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.install_addon:3
+msgid "Returns identifier of installed addon. This identifier can later be used to uninstall addon."
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.install_addon:6
+msgid "Absolute path to the addon that will be installed."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions selenium.webdriver.firefox.webdriver.WebDriver.install_addon
+#: selenium.webdriver.firefox.webdriver.WebDriver.uninstall_addon selenium.webdriver.remote.webdriver.WebDriver.back
+#: selenium.webdriver.remote.webdriver.WebDriver.close selenium.webdriver.remote.webdriver.WebDriver.current_url
+#: selenium.webdriver.remote.webdriver.WebDriver.current_window_handle selenium.webdriver.remote.webdriver.WebDriver.delete_all_cookies
+#: selenium.webdriver.remote.webdriver.WebDriver.delete_cookie selenium.webdriver.remote.webdriver.WebDriver.execute_async_script
+#: selenium.webdriver.remote.webdriver.WebDriver.execute_script selenium.webdriver.remote.webdriver.WebDriver.find_element
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_class_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_css_selector selenium.webdriver.remote.webdriver.WebDriver.find_element_by_id
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_link_text selenium.webdriver.remote.webdriver.WebDriver.find_element_by_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_partial_link_text
+#: selenium.webdriver.remote.webdriver.WebDriver.find_element_by_tag_name selenium.webdriver.remote.webdriver.WebDriver.find_element_by_xpath
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_class_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_css_selector selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_id
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_link_text selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_name
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_partial_link_text
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_tag_name selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_xpath
+#: selenium.webdriver.remote.webdriver.WebDriver.forward selenium.webdriver.remote.webdriver.WebDriver.get_cookie
+#: selenium.webdriver.remote.webdriver.WebDriver.get_cookies selenium.webdriver.remote.webdriver.WebDriver.get_log
+#: selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_base64 selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file
+#: selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_png selenium.webdriver.remote.webdriver.WebDriver.get_window_position
+#: selenium.webdriver.remote.webdriver.WebDriver.get_window_rect selenium.webdriver.remote.webdriver.WebDriver.get_window_size
+#: selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait selenium.webdriver.remote.webdriver.WebDriver.log_types
+#: selenium.webdriver.remote.webdriver.WebDriver.name selenium.webdriver.remote.webdriver.WebDriver.orientation
+#: selenium.webdriver.remote.webdriver.WebDriver.page_source selenium.webdriver.remote.webdriver.WebDriver.quit
+#: selenium.webdriver.remote.webdriver.WebDriver.refresh selenium.webdriver.remote.webdriver.WebDriver.save_screenshot
+#: selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout
+#: selenium.webdriver.remote.webdriver.WebDriver.set_window_position selenium.webdriver.remote.webdriver.WebDriver.set_window_rect
+#: selenium.webdriver.remote.webdriver.WebDriver.set_window_size selenium.webdriver.remote.webdriver.WebDriver.title
+#: selenium.webdriver.remote.webdriver.WebDriver.window_handles selenium.webdriver.remote.webelement.WebElement.screenshot
+#: selenium.webdriver.remote.webelement.WebElement.screenshot_as_base64 selenium.webdriver.remote.webelement.WebElement.screenshot_as_png
+msgid "Usage"
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.install_addon:9
+msgid "driver.install_addon('/path/to/firebug.xpi')"
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.quit:1
+msgid "Quits the driver and close every associated window."
+msgstr "ドライバを終了し、関連するすべてのウィンドウを閉じます。"
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.uninstall_addon:1
+msgid "Uninstalls Firefox addon using its identifier."
+msgstr ""
+
+#: of selenium.webdriver.firefox.webdriver.WebDriver.uninstall_addon:4
+msgid "driver.uninstall_addon('addon@foo.com')"
+msgstr ""
+
+#: ../../source/api.rst:158
+msgid "Chrome WebDriver"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver:1
+msgid "Controls the ChromeDriver and allows you to drive the browser."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver:3
+msgid "You will need to download the ChromeDriver executable from http://chromedriver.storage.googleapis.com/index.html"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.get_network_conditions:1
+msgid "Gets Chrome network emulation settings."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.get_network_conditions:4
+msgid "A dict. For example:"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.get_network_conditions:6
+msgid "{'latency': 4, 'download_throughput': 2, 'upload_throughput': 2, 'offline': False}"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.launch_app:1
+msgid "Launches Chrome app specified by id."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.quit:1
+msgid "Closes the browser and shuts down the ChromeDriver executable that is started when starting the ChromeDriver"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions:1
+msgid "Sets Chrome network emulation settings."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions:4
+msgid "network_conditions: A dict with conditions specification."
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions:11
+msgid "driver.set_network_conditions("
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions:8
+msgid ""
+"offline=False, latency=5,  # additional latency (ms) download_throughput=500 * 1024,  # maximal throughput upload_throughput=500 * 1024)  # "
+"maximal throughput"
+msgstr ""
+
+#: of selenium.webdriver.chrome.webdriver.WebDriver.set_network_conditions:13
+msgid "Note: 'throughput' can be used to set both (for download and upload)."
+msgstr ""
+
+#: ../../source/api.rst:168
+msgid "Remote WebDriver"
+msgstr "リモートWebDriver"
+
+#: of selenium.webdriver.remote.webdriver:1
+msgid "The WebDriver implementation."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:1
+msgid ""
+"Controls a browser by sending commands to a remote server. This server is expected to be running the WebDriver wire protocol as defined at https://"
+"github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver
+msgid "Attributes"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:7
+msgid "session_id - String ID of the browser session started and controlled by this WebDriver."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:8
+msgid "capabilities - Dictionaty of effective capabilities of this browser session as returned"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:9
+msgid "by the remote server. See https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:10
+msgid "command_executor - remote_connection.RemoteConnection object used to execute commands."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver:11
+msgid "error_handler - errorhandler.ErrorHandler object used to handle errors."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.add_cookie:1
+msgid "Adds a cookie to your current session."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.add_cookie:5
+msgid "cookie_dict: A dictionary object, with required keys - \"name\" and \"value\";"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.add_cookie:5
+msgid "optional keys - \"path\", \"domain\", \"secure\", \"expiry\""
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.add_cookie:9
+msgid "Usage:"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.add_cookie:8
+msgid ""
+"driver.add_cookie({'name' : 'foo', 'value' : 'bar'}) driver.add_cookie({'name' : 'foo', 'value' : 'bar', 'path' : '/'}) driver."
+"add_cookie({'name' : 'foo', 'value' : 'bar', 'path' : '/', 'secure':True})"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.back:1
+msgid "Goes one step backward in the browser history."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.back:4
+msgid "driver.back()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.close:4
+msgid "driver.close()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.create_web_element:1
+msgid "Creates a web element with the specified `element_id`."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.delete_all_cookies:1
+msgid "Delete all cookies in the scope of the session."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.delete_all_cookies:4
+msgid "driver.delete_all_cookies()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.delete_cookie:1
+msgid "Deletes a single cookie with the given name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.delete_cookie:4
+msgid "driver.delete_cookie('my_cookie')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute:1
+msgid "Sends a command to be executed by a command.CommandExecutor."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute:4
+msgid "driver_command: The name of the command to execute as a string."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute:5
+msgid "params: A dictionary of named parameters to send with the command."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute:8
+msgid "The command's JSON response loaded into a dictionary object."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_async_script:1
+msgid "Asynchronously Executes JavaScript in the current window/frame."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_async_script:4 selenium.webdriver.remote.webdriver.WebDriver.execute_script:4
+msgid "script: The JavaScript to execute."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_async_script:5 selenium.webdriver.remote.webdriver.WebDriver.execute_script:5
+msgid "\\*args: Any applicable arguments for your JavaScript."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_async_script:8
+msgid "driver.execute_async_script('document.title')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_script:1
+msgid "Synchronously Executes JavaScript in the current window/frame."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.execute_script:8
+msgid "driver.execute_script('document.title')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:1
+msgid "Overrides the current file detector (if necessary) in limited context. Ensures the original file detector is set afterwards."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:4 selenium.webdriver.support.color.Color:3
+msgid "Example:"
+msgstr "例"
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:7
+msgid "with webdriver.file_detector_context(UselessFileDetector):"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:7
+msgid "someinput.send_keys('/etc/hosts')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:11
+msgid "file_detector_class - Class of the desired file detector. If the class is different"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:11
+msgid ""
+"from the current file_detector, then the class is instantiated with args and kwargs and used as a file detector during the duration of the context "
+"manager."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:13
+msgid "args - Optional arguments that get passed to the file detector class during"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:14
+msgid "instantiation."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.file_detector_context:15
+msgid "kwargs - Keyword arguments, passed the same way as args."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element:1
+msgid "'Private' method used by the find_element_by_* methods."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element:4
+msgid "Use the corresponding find_element_by_* instead of this."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element selenium.webdriver.remote.webdriver.WebDriver.find_elements
+msgid "戻り値の型"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_class_name:1
+msgid "Finds an element by class name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_class_name:4
+msgid "name: The class name of the element to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_class_name:7
+msgid "driver.find_element_by_class_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_css_selector:1
+msgid "Finds an element by css selector."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_css_selector:4
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_css_selector:4
+msgid "css_selector: The css selector to use when finding elements."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_css_selector:7
+msgid "driver.find_element_by_css_selector('#foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_id:1
+msgid "Finds an element by id."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_id:4
+msgid "id\\_ - The id of the element to be found."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_id:7
+msgid "driver.find_element_by_id('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_link_text:1
+msgid "Finds an element by link text."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_link_text:4
+msgid "link_text: The text of the element to be found."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_link_text:7
+msgid "driver.find_element_by_link_text('Sign In')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_name:1
+msgid "Finds an element by name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_name:4
+msgid "name: The name of the element to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_name:7
+msgid "driver.find_element_by_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_partial_link_text:1
+msgid "Finds an element by a partial match of its link text."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_partial_link_text:4
+msgid "link_text: The text of the element to partially match on."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_partial_link_text:7
+#: selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_partial_link_text:7
+msgid "driver.find_element_by_partial_link_text('Sign')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_tag_name:1
+msgid "Finds an element by tag name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_tag_name:4
+msgid "name: The tag name of the element to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_tag_name:7
+msgid "driver.find_element_by_tag_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_xpath:1
+msgid "Finds an element by xpath."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_xpath:4
+msgid "xpath - The xpath locator of the element to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_element_by_xpath:7
+msgid "driver.find_element_by_xpath('//div/td[1]')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements:1
+msgid "'Private' method used by the find_elements_by_* methods."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements:4
+msgid "Use the corresponding find_elements_by_* instead of this."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_class_name:1
+msgid "Finds elements by class name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_class_name:4
+msgid "name: The class name of the elements to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_class_name:7
+msgid "driver.find_elements_by_class_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_css_selector:1
+msgid "Finds elements by css selector."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_css_selector:7
+msgid "driver.find_elements_by_css_selector('.foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_id:1
+msgid "Finds multiple elements by id."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_id:4
+msgid "id\\_ - The id of the elements to be found."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_id:7
+msgid "driver.find_elements_by_id('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_link_text:1
+msgid "Finds elements by link text."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_link_text:4
+msgid "link_text: The text of the elements to be found."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_link_text:7
+msgid "driver.find_elements_by_link_text('Sign In')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_name:1
+msgid "Finds elements by name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_name:4
+msgid "name: The name of the elements to find."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_name:7
+msgid "driver.find_elements_by_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_partial_link_text:1
+msgid "Finds elements by a partial match of their link text."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_partial_link_text:4
+msgid "link_text: The text of the element to partial match on."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_tag_name:1
+msgid "Finds elements by tag name."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_tag_name:4
+msgid "name: The tag name the use when finding elements."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_tag_name:7
+msgid "driver.find_elements_by_tag_name('foo')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_xpath:1
+msgid "Finds multiple elements by xpath."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_xpath:4
+msgid "xpath - The xpath locator of the elements to be found."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.find_elements_by_xpath:7
+msgid "driver.find_elements_by_xpath(\"//div[contains(@class, 'foo')]\")"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.forward:1
+msgid "Goes one step forward in the browser history."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.forward:4
+msgid "driver.forward()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.fullscreen_window:1
+msgid "Invokes the window manager-specific 'full screen' operation"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get:1
+msgid "Loads a web page in the current browser session."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_cookie:1
+msgid "Get a single cookie by name. Returns the cookie if found, None if not."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_cookie:4
+msgid "driver.get_cookie('my_cookie')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_cookies:1
+msgid "Returns a set of dictionaries, corresponding to cookies visible in the current session."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_cookies:4
+msgid "driver.get_cookies()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_log:1
+msgid "Gets the log for a given log type"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_log:4
+msgid "log_type: type of log that which will be returned"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_log:7
+msgid "driver.get_log('browser') driver.get_log('driver') driver.get_log('client') driver.get_log('server')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_base64:2
+msgid "Gets the screenshot of the current window as a base64 encoded string"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_base64:2
+msgid "which is useful in embedded images in HTML."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_base64:5
+msgid "driver.get_screenshot_as_base64()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file:3 selenium.webdriver.remote.webdriver.WebDriver.save_screenshot:3
+msgid "Saves a screenshot of the current window to a PNG image file. Returns"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file:2 selenium.webdriver.remote.webdriver.WebDriver.save_screenshot:2
+#: selenium.webdriver.remote.webelement.WebElement.screenshot:2
+msgid "False if there is any IOError, else returns True. Use full paths in your filename."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file:6 selenium.webdriver.remote.webdriver.WebDriver.save_screenshot:6
+#: selenium.webdriver.remote.webelement.WebElement.screenshot:6
+msgid "filename: The full path you wish to save your screenshot to. This should end with a `.png` extension."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_file:10
+msgid "driver.get_screenshot_as_file('/Screenshots/foo.png')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_png:1
+msgid "Gets the screenshot of the current window as a binary data."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_screenshot_as_png:4
+msgid "driver.get_screenshot_as_png()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_position:1
+msgid "Gets the x,y position of the current window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_position:4
+msgid "driver.get_window_position()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_rect:1
+msgid "Gets the x, y coordinates of the window as well as height and width of the current window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_rect:5
+msgid "driver.get_window_rect()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_size:1
+msgid "Gets the width and height of the current window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.get_window_size:4
+msgid "driver.get_window_size()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait:4
+msgid "Sets a sticky timeout to implicitly wait for an element to be found,"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait:2
+msgid ""
+"or a command to complete. This method only needs to be called one time per session. To set the timeout for calls to execute_async_script, see "
+"set_script_timeout."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait:7
+msgid "time_to_wait: Amount of time to wait (in seconds)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.implicitly_wait:10
+msgid "driver.implicitly_wait(30)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.maximize_window:1
+msgid "Maximizes the current window that webdriver is using"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.minimize_window:1
+msgid "Invokes the window manager-specific 'minimize' operation"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.quit:1
+msgid "Quits the driver and closes every associated window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.quit:4
+msgid "driver.quit()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.refresh:1
+msgid "Refreshes the current page."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.refresh:4
+msgid "driver.refresh()"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.save_screenshot:10
+msgid "driver.save_screenshot('/Screenshots/foo.png')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout:2
+msgid "Set the amount of time to wait for a page load to complete"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout:2
+msgid "before throwing an error."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout:5
+msgid "time_to_wait: The amount of time to wait"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_page_load_timeout:8
+msgid "driver.set_page_load_timeout(30)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout:2
+msgid "Set the amount of time that the script should wait during an"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout:2
+msgid "execute_async_script call before throwing an error."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout:5
+msgid "time_to_wait: The amount of time to wait (in seconds)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_script_timeout:8
+msgid "driver.set_script_timeout(30)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_position:1
+msgid "Sets the x,y position of the current window. (window.moveTo)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_position:4
+msgid "x: the x-coordinate in pixels to set the window position"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_position:5
+msgid "y: the y-coordinate in pixels to set the window position"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_position:8
+msgid "driver.set_window_position(0,0)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_rect:1
+msgid "Sets the x, y coordinates of the window as well as height and width of the current window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_rect:5
+msgid "driver.set_window_rect(x=10, y=10) driver.set_window_rect(width=100, height=200) driver.set_window_rect(x=10, y=10, width=100, height=200)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_size:1
+msgid "Sets the width and height of the current window. (window.resizeTo)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_size:4
+msgid "width: the width in pixels to set the window to"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_size:5
+msgid "height: the height in pixels to set the window to"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.set_window_size:8
+msgid "driver.set_window_size(800,600)"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_client:1
+msgid "Called before starting a new session. This method may be overridden to define custom startup behavior."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:1
+msgid "Creates a new session with the desired capabilities."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:4
+msgid "browser_name - The name of the browser to request."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:5
+msgid "version - Which browser version to request."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:6
+msgid "platform - Which platform to request the browser on."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:7
+msgid "javascript_enabled - Whether the new session should support JavaScript."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.start_session:8
+msgid "browser_profile - A selenium.webdriver.firefox.firefox_profile.FirefoxProfile object. Only used if Firefox is requested."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.stop_client:1
+msgid "Called after executing a quit command. This method may be overridden to define custom shutdown behavior."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.switch_to_active_element:1
+msgid "Deprecated use driver.switch_to.active_element"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.switch_to_alert:1
+msgid "Deprecated use driver.switch_to.alert"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.switch_to_default_content:1
+msgid "Deprecated use driver.switch_to.default_content"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.switch_to_frame:1
+msgid "Deprecated use driver.switch_to.frame"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.switch_to_window:1
+msgid "Deprecated use driver.switch_to.window"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.application_cache:1
+msgid "Returns a ApplicationCache Object to interact with the browser app cache"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.current_url:1
+msgid "Gets the URL of the current page."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.current_url:4
+msgid "driver.current_url"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.current_window_handle:1
+msgid "Returns the handle of the current window."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.current_window_handle:4
+msgid "driver.current_window_handle"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.desired_capabilities:1
+msgid "returns the drivers current desired capabilities being used"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.log_types:1
+msgid "Gets a list of the available log types"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.log_types:4
+msgid "driver.log_types"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.name:1
+msgid "Returns the name of the underlying browser for this instance."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.name:4
+msgid "driver.name"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.orientation:1
+msgid "Gets the current orientation of the device"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.orientation:4
+msgid "orientation = driver.orientation"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.page_source:1
+msgid "Gets the source of the current page."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.page_source:4
+msgid "driver.page_source"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.title:1
+msgid "Returns the title of the current page."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.title:4
+msgid "driver.title"
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.window_handles:1
+msgid "Returns the handles of all windows within the current session."
+msgstr ""
+
+#: of selenium.webdriver.remote.webdriver.WebDriver.window_handles:4
+msgid "driver.window_handles"
+msgstr ""
+
+#: ../../source/api.rst:178
+msgid "WebElement"
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement:1
+msgid "Represents a DOM element."
+msgstr "DOM要素を表します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement:3
+msgid "Generally, all interesting operations that interact with a document will be performed through this interface."
+msgstr "一般に、ドキュメントとやりとりするすべて操作はこのインターフェイスを通じて実行されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement:6
+msgid ""
+"All method calls will do a freshness check to ensure that the element reference is still valid.  This essentially determines whether or not the "
+"element is still attached to the DOM.  If this test fails, then an ``StaleElementReferenceException`` is thrown, and all future calls to this "
+"instance will fail."
+msgstr ""
+"すべてのメソッド呼び出しは、要素参照が依然として有効であることを確認するために鮮度チェックを行います。これは基本的に要素がまだDOMに接続されているか"
+"どうかを決定します。このテストが失敗すると、 ``StaleElementReferenceException`` がスローされ、以降のこのインスタンスへの呼び出しはすべて失敗しま"
+"す。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.clear:1
+msgid "Clears the text if it's a text entry element."
+msgstr "テキスト入力要素の場合はテキストをクリアします。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.click:1
+msgid "Clicks the element."
+msgstr "要素をクリックします。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_class_name:1
+msgid "Finds element within this element's children by class name."
+msgstr "この要素の子要素内の要素をクラス名で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_class_name:4
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_class_name:4
+msgid "name - class name to search for."
+msgstr "name - 検索するクラス名"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_css_selector:1
+msgid "Finds element within this element's children by CSS selector."
+msgstr "CSSセレクタによってこの要素の子要素内の要素を検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_css_selector:4
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_css_selector:4
+msgid "css_selector - CSS selctor string, ex: 'a.nav#home'"
+msgstr "css_selector - CSSのセクター文字列。例：'a.nav＃home'"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_id:1
+msgid "Finds element within this element's children by ID."
+msgstr "この要素の子要素内の要素をIDで検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_id:4
+msgid "id\\_ - ID of child element to locate."
+msgstr "id_ - 検索する子要素のID。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_link_text:1
+msgid "Finds element within this element's children by visible link text."
+msgstr "この要素の子要素内の要素を可視リンクテキストで検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_link_text:4
+#: selenium.webdriver.remote.webelement.WebElement.find_element_by_partial_link_text:4
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_link_text:4
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_partial_link_text:4
+msgid "link_text - Link text string to search for."
+msgstr "link_text - 検索するテキスト文字列をリンクします。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_name:1
+msgid "Finds element within this element's children by name."
+msgstr "この要素の子要素内の要素を名前で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_name:4
+msgid "name - name property of the element to find."
+msgstr "name - 検索する要素のnameプロパティ。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_partial_link_text:1
+msgid "Finds element within this element's children by partially visible link text."
+msgstr "部分的に可視のリンクテキストによって、この要素の子要素内の要素を検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_tag_name:1
+msgid "Finds element within this element's children by tag name."
+msgstr "この要素の子要素内の要素をタグ名で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_tag_name:4
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_tag_name:4
+msgid "name - name of html tag (eg: h1, a, span)"
+msgstr "name - htmlタグの名前（例：h1、a、span）"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:1
+msgid "Finds element by xpath."
+msgstr "xpathで要素を検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:4
+msgid "xpath - xpath of element to locate.  \"//input[@class='myelement']\""
+msgstr "xpath - 見つかる要素のxpath。 \"// input [@ class = 'myelement']\""
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:6
+#: selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:6
+msgid "Note: The base path will be relative to this element's location."
+msgstr "注意：ベースパスは、この要素の位置からの相対パスになります。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:8
+msgid "This will select the first link under this element."
+msgstr "この要素の下にある最初のリンクが選択されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_element_by_xpath:14
+msgid "However, this will select the first link on the page."
+msgstr "ただし、ページの最初のリンクが選択されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_class_name:1
+msgid "Finds a list of elements within this element's children by class name."
+msgstr "この要素の子要素内の要素のリストをクラス名で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_css_selector:1
+msgid "Finds a list of elements within this element's children by CSS selector."
+msgstr "CSSセレクターによって、この要素の子要素内の要素のリストを検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_id:1
+msgid "Finds a list of elements within this element's children by ID."
+msgstr "この要素の子要素内の要素のリストをIDで検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_id:4
+msgid "id\\_ - Id of child element to find."
+msgstr "id_ - 検索する子要素のID。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_link_text:1
+msgid "Finds a list of elements within this element's children by visible link text."
+msgstr "この要素の子要素内の要素のリストを可視リンクテキストで検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_name:1
+msgid "Finds a list of elements within this element's children by name."
+msgstr "この要素の子要素内の要素のリストを名前で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_name:4
+msgid "name - name property to search for."
+msgstr "name - 検索するnameプロパティ"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_partial_link_text:1
+msgid "Finds a list of elements within this element's children by link text."
+msgstr "この要素の子要素内の要素のリストをリンクテキストで検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_tag_name:1
+msgid "Finds a list of elements within this element's children by tag name."
+msgstr "この要素の子要素内の要素のリストをタグ名で検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:1
+msgid "Finds elements within the element by xpath."
+msgstr "xpathで要素内の要素を検索します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:4
+msgid "xpath - xpath locator string."
+msgstr "xpath - xpathロケータ文字列。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:8
+msgid "This will select all links under this element."
+msgstr "この要素の下のすべてのリンクを選択します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.find_elements_by_xpath:14
+msgid "However, this will select all links in the page itself."
+msgstr "ただし、ページ内のすべてのリンクが選択されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_attribute:1
+msgid "Gets the given attribute or property of the element."
+msgstr "指定された属性または要素のプロパティを取得します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_attribute:3
+msgid ""
+"This method will first try to return the value of a property with the given name. If a property with that name doesn't exist, it returns the value "
+"of the attribute with the same name. If there's no attribute with that name, ``None`` is returned."
+msgstr ""
+"このメソッドは、指定された名前のプロパティの値を最初に返します。その名前のプロパティが存在しない場合は、同じ名前の属性の値を返します。その名前の属"
+"性がない場合、 ``None`` が返されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_attribute:8
+msgid ""
+"Values which are considered truthy, that is equals \"true\" or \"false\", are returned as booleans.  All other non-``None`` values are returned as "
+"strings.  For attributes or properties which do not exist, ``None`` is returned."
+msgstr ""
+"本当であるとみなされる値、すなわち「真」または「偽」と等しい値はブール値として返されます。他のすべての ``None`` ではない値は文字列として返されま"
+"す。存在しない属性またはプロパティの場合、 ``None`` が返されます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_attribute:14
+msgid "name - Name of the attribute/property to retrieve."
+msgstr "name - 取得する属性/プロパティの名前"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_attribute:16 selenium.webdriver.remote.webelement.WebElement.get_property:6
+msgid "Example::"
+msgstr "例："
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_property:1
+msgid "Gets the given property of the element."
+msgstr "要素の指定されたプロパティを取得します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.get_property:4
+msgid "name - Name of the property to retrieve."
+msgstr "name - 取得するプロパティの名前"
+
+#: of selenium.webdriver.remote.webelement.WebElement.is_displayed:1
+msgid "Whether the element is visible to a user."
+msgstr "要素がユーザーに表示されるかどうか。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.is_enabled:1
+msgid "Returns whether the element is enabled."
+msgstr "要素が有効かどうかを返します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.is_selected:1
+msgid "Returns whether the element is selected."
+msgstr "要素が選択されているかどうかを返します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.is_selected:3
+msgid "Can be used to check if a checkbox or radio button is selected."
+msgstr "チェックボックスまたはラジオボタンが選択されているかどうかを確認するのに使えます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot:3
+msgid "Saves a screenshot of the current element to a PNG image file. Returns"
+msgstr "現在の要素のスクリーンショットをPNG画像ファイルとして保存します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot:10
+msgid "element.screenshot('/Screenshots/foo.png')"
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement.send_keys:1
+msgid "Simulates typing into the element."
+msgstr "要素への入力をシミュレートします。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.send_keys:4
+msgid "value - A string for typing, or setting form fields.  For setting file inputs, this could be a local file path."
+msgstr "value - 入力用の文字列、またはフォームフィールドを設定します。ファイル入力を設定するには、これはローカルファイルパスである可能性があります。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.send_keys:7
+msgid "Use this to send simple key events or to fill out form fields::"
+msgstr "単純なキーイベントを送信したり、フォームフィールドに入力するには、これを使用します。::"
+
+#: of selenium.webdriver.remote.webelement.WebElement.send_keys:12
+msgid "This can also be used to set file inputs."
+msgstr "これはファイル入力の設定にも使用できます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.submit:1
+msgid "Submits a form."
+msgstr "フォームを送信します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.value_of_css_property:1
+msgid "The value of a CSS property."
+msgstr "CSSプロパティの値。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.id:1
+msgid "Internal ID used by selenium."
+msgstr "Seleniumが使用する内部ID"
+
+#: of selenium.webdriver.remote.webelement.WebElement.id:3
+msgid "This is mainly for internal use. Simple use cases such as checking if 2 webelements refer to the same element, can be done using ``==``::"
+msgstr "これは主に内部向けです。2つのWeb要素が同じ要素を参照しているかどうかをチェックするなどの単純な使い方ができます。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.location:1
+msgid "The location of the element in the renderable canvas."
+msgstr "レンダリング可能なキャンバス内の要素の位置。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.location_once_scrolled_into_view:1
+msgid ""
+"THIS PROPERTY MAY CHANGE WITHOUT WARNING. Use this to discover where on the screen an element is so that we can click it. This method should cause "
+"the element to be scrolled into view."
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement.location_once_scrolled_into_view:5
+msgid "Returns the top lefthand corner location on the screen, or ``None`` if the element is not visible."
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement.parent:1
+msgid "Internal reference to the WebDriver instance this element was found from."
+msgstr "この要素が見つかったWebDriverインスタンスへの内部参照。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.rect:1
+msgid "A dictionary with the size and location of the element."
+msgstr "要素のサイズと位置を持つ辞書。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_base64:1
+msgid "Gets the screenshot of the current element as a base64 encoded string."
+msgstr "現在の要素のスクリーンショットをbase64でエンコードされた文字列として取得します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_base64:4
+msgid "img_b64 = element.screenshot_as_base64"
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_png:1
+msgid "Gets the screenshot of the current element as a binary data."
+msgstr "現在の要素のスクリーンショットをバイナリデータとして取得します。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.screenshot_as_png:4
+msgid "element_png = element.screenshot_as_png"
+msgstr ""
+
+#: of selenium.webdriver.remote.webelement.WebElement.size:1
+msgid "The size of the element."
+msgstr "要素のサイズ。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.tag_name:1
+msgid "This element's ``tagName`` property."
+msgstr "この要素の ``tagName`` プロパティ。"
+
+#: of selenium.webdriver.remote.webelement.WebElement.text:1
+msgid "The text of the element."
+msgstr "要素のテキスト。"
+
+#: ../../source/api.rst:187
+msgid "UI Support"
+msgstr "UIサポート"
+
+#: of selenium.webdriver.support.select.Select.deselect_all:1
+msgid ""
+"Clear all selected entries. This is only valid when the SELECT supports multiple selections. throws NotImplementedError If the SELECT does not "
+"support multiple selections"
+msgstr ""
+"選択されたすべてのエントリをクリアします。これは、SELECTが複数の選択をサポートしている場合にのみ有効です。SELECTが複数の選択肢をサポートしていない"
+"場合、NotImplementedErrorをスローします。"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_index:1
+msgid "Deselect the option at the given index. This is done by examing the \"index\" attribute of an element, and not merely by counting."
+msgstr ""
+"指定したインデックスのオプションの選択を解除します。これは要素の\"index\"属性を調べることによって行われます。単にカウントするだけではありません。"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_index:5
+msgid "index - The option at this index will be deselected"
+msgstr "index - このインデックスのオプションは選択解除されます。"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_index:7 selenium.webdriver.support.select.Select.select_by_index:7
+msgid "throws NoSuchElementException If there is no option with specisied index in SELECT"
+msgstr "指定したインデックスを持つオプションがSELECTにない場合、NoSuchElementExceptionをスローします"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_value:1
+msgid "Deselect all options that have a value matching the argument. That is, when given \"foo\" this would deselect an option like:"
+msgstr "引数に一致する値を持つすべてのオプションの選択を解除します。つまり、 \"foo\"を指定すると、次のようなオプションの選択が解除されます。"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_value:4 selenium.webdriver.support.select.Select.deselect_by_visible_text:4
+#: selenium.webdriver.support.select.Select.select_by_value:4 selenium.webdriver.support.select.Select.select_by_visible_text:4
+msgid "<option value=\"foo\">Bar</option>"
+msgstr ""
+
+#: of selenium.webdriver.support.select.Select.deselect_by_value:7 selenium.webdriver.support.select.Select.select_by_value:7
+msgid "value - The value to match against"
+msgstr "value - 照合する値"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_value:9 selenium.webdriver.support.select.Select.select_by_value:9
+msgid "throws NoSuchElementException If there is no option with specisied value in SELECT"
+msgstr "指定した値を持つオプションがSELECTにない場合、NoSuchElementExceptionをスローします"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_visible_text:1
+msgid "Deselect all options that display text matching the argument. That is, when given \"Bar\" this would deselect an option like:"
+msgstr ""
+"引数に一致するテキストを表示するすべてのオプションの選択を解除します。つまり、 \"Bar\"を指定すると、次のようなオプションの選択が解除されます。"
+
+#: of selenium.webdriver.support.select.Select.deselect_by_visible_text:7 selenium.webdriver.support.select.Select.select_by_visible_text:7
+msgid "text - The visible text to match against"
+msgstr "text - 一致する目に見えるテキスト"
+
+#: of selenium.webdriver.support.select.Select.select_by_index:1
+msgid "Select the option at the given index. This is done by examing the \"index\" attribute of an element, and not merely by counting."
+msgstr "指定したインデックスでオプションを選択します。これは要素の\"index\"属性を調べることによって行われます。単にカウントするだけではありません。"
+
+#: of selenium.webdriver.support.select.Select.select_by_index:5
+msgid "index - The option at this index will be selected"
+msgstr "index - このインデックスのオプションが選択されます。"
+
+#: of selenium.webdriver.support.select.Select.select_by_value:1
+msgid "Select all options that have a value matching the argument. That is, when given \"foo\" this would select an option like:"
+msgstr "引数に一致する値を持つすべてのオプションを選択します。つまり、\"foo\"を指定すると、次のようなオプションが選択されます。"
+
+#: of selenium.webdriver.support.select.Select.select_by_visible_text:1
+msgid "Select all options that display text matching the argument. That is, when given \"Bar\" this would select an option like:"
+msgstr "引数に一致するテキストを表示するすべてのオプションを選択します。つまり、\"Bar\"を指定すると、次のようなオプションが選択されます。"
+
+#: of selenium.webdriver.support.select.Select.select_by_visible_text:9
+msgid "throws NoSuchElementException If there is no option with specisied text in SELECT"
+msgstr "SELECTに指定されたテキストを持つオプションがない場合、NoSuchElementExceptionをスローします"
+
+#: of selenium.webdriver.support.select.Select.all_selected_options:1
+msgid "Returns a list of all selected options belonging to this select tag"
+msgstr "このselectタグに属するすべての選択されたオプションのリストを返します。"
+
+#: of selenium.webdriver.support.select.Select.first_selected_option:1
+msgid "The first selected option in this select tag (or the currently selected option in a normal select)"
+msgstr "この選択タグ内の最初に選択されたオプション（または通常選択中の現在選択されているオプション）"
+
+#: of selenium.webdriver.support.select.Select.options:1
+msgid "Returns a list of all options belonging to this select tag"
+msgstr "このselectタグに属するすべてのオプションのリストを返します。"
+
+#: of selenium.webdriver.support.wait.WebDriverWait.until:1
+msgid "Calls the method provided with the driver as an argument until the         return value is not False."
+msgstr "戻り値がFalseでない限り、ドライバで提供されたメソッドを引数として呼び出します。"
+
+#: of selenium.webdriver.support.wait.WebDriverWait.until_not:1
+msgid "Calls the method provided with the driver as an argument until the         return value is False."
+msgstr "戻り値がFalseになるまで、ドライバで提供されたメソッドを引数として呼び出します。"
+
+#: ../../source/api.rst:202
+msgid "Color Support"
+msgstr "カラーサポート"
+
+#: of selenium.webdriver.support.color.Color:1
+msgid "Color conversion support class"
+msgstr "色変換サポートクラス"
+
+#: ../../source/api.rst:211
+msgid "Expected conditions Support"
+msgstr "期待される条件サポート"
+
+#: of selenium.webdriver.support.expected_conditions.alert_is_present:1
+msgid "Expect an alert to be present."
+msgstr "アラートが存在することを期待してください。"
+
+#: of selenium.webdriver.support.expected_conditions.element_located_selection_state_to_be:1
+msgid ""
+"An expectation to locate an element and check if the selection state specified is in that state. locator is a tuple of (by, path) is_selected is a "
+"boolean"
+msgstr ""
+"要素の位置を特定し、指定された選択状態がその状態にあるかどうかを確認すること。ロケータは（by、path）のタプルです。is_selectedはブール値です。"
+
+#: of selenium.webdriver.support.expected_conditions.element_located_to_be_selected:1
+msgid "An expectation for the element to be located is selected. locator is a tuple of (by, path)"
+msgstr "配置される要素の期待値が選択されます。ロケータは（by、path）のタプルです。"
+
+#: of selenium.webdriver.support.expected_conditions.element_selection_state_to_be:1
+msgid "An expectation for checking if the given element is selected. element is WebElement object is_selected is a Boolean.\""
+msgstr "指定された要素が選択されているかどうかを確認するための期待値。要素はWebElementオブジェクトis_selectedはブール値です。"
+
+#: of selenium.webdriver.support.expected_conditions.element_to_be_clickable:1
+msgid "An Expectation for checking an element is visible and enabled such that you can click it."
+msgstr "要素をチェックするための期待値が表示され、クリックできるように有効になります。"
+
+#: of selenium.webdriver.support.expected_conditions.element_to_be_selected:1
+msgid "An expectation for checking the selection is selected. element is WebElement object"
+msgstr "選択を確認するための期待値が選択されます。要素はWebElementオブジェクトです。"
+
+#: of selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it:1
+msgid ""
+"An expectation for checking whether the given frame is available to switch to.  If the frame is available it switches the given driver to the "
+"specified frame."
+msgstr ""
+"指定されたフレームが切り替えることができるかどうかをチェックするための期待。フレームが利用可能な場合、指定されたドライバを指定されたフレームに切り"
+"替えます。"
+
+#: of selenium.webdriver.support.expected_conditions.invisibility_of_element_located:1
+msgid "An Expectation for checking that an element is either invisible or not present on the DOM."
+msgstr ""
+
+#: of selenium.webdriver.support.expected_conditions.invisibility_of_element_located:4
+msgid "locator used to find the element"
+msgstr "DOM上に要素が見えないか、存在しないかを確認するための期待。 要素を見つけるためのロケータ。"
+
+#: of selenium.webdriver.support.expected_conditions.new_window_is_opened:1
+msgid "An expectation that a new window will be opened and have the number of windows handles increase"
+msgstr "新しいウィンドウが開かれ、ウィンドウの数が増えるとの期待"
+
+#: of selenium.webdriver.support.expected_conditions.number_of_windows_to_be:1
+msgid "An expectation for the number of windows to be a certain value."
+msgstr "ウィンドウの数が一定の値になることの期待。"
+
+#: of selenium.webdriver.support.expected_conditions.presence_of_all_elements_located:1
+msgid ""
+"An expectation for checking that there is at least one element present on a web page. locator is used to find the element returns the list of "
+"WebElements once they are located"
+msgstr "Webページに少なくとも1つの要素が存在するかどうかを確認する必要があります。ロケータは、要素が見つかるとWebElementsのリストを返します"
+
+#: of selenium.webdriver.support.expected_conditions.presence_of_element_located:1
+msgid ""
+"An expectation for checking that an element is present on the DOM of a page. This does not necessarily mean that the element is visible. locator - "
+"used to find the element returns the WebElement once it is located"
+msgstr ""
+"要素がページのDOM上に存在するかどうかを確認するための期待。これは要素が可視であることを必ずしも意味しません。locator - 見つかった要素が見つかると"
+"WebElementを返します"
+
+#: of selenium.webdriver.support.expected_conditions.staleness_of:1
+msgid ""
+"Wait until an element is no longer attached to the DOM. element is the element to wait for. returns False if the element is still attached to the "
+"DOM, true otherwise."
+msgstr ""
+"要素がDOMに接続されなくなるまで待ちます。 elementは待機する要素です。要素がまだDOMにアタッチされている場合はFalseを返し、そうでない場合はtrueを返し"
+"ます。"
+
+#: of selenium.webdriver.support.expected_conditions.text_to_be_present_in_element:1
+msgid "An expectation for checking if the given text is present in the specified element. locator, text"
+msgstr "指定されたテキストが指定された要素に存在するかどうかをチェックするための期待値。ロケータ、テキスト"
+
+#: of selenium.webdriver.support.expected_conditions.text_to_be_present_in_element_value:1
+msgid "An expectation for checking if the given text is present in the element's locator, text"
+msgstr "指定されたテキストが要素のロケータ、テキストに存在するかどうかの確認"
+
+#: of selenium.webdriver.support.expected_conditions.title_contains:1
+msgid ""
+"An expectation for checking that the title contains a case-sensitive substring. title is the fragment of title expected returns True when the "
+"title matches, False otherwise"
+msgstr ""
+"タイトルに大文字小文字を区別する部分文字列が含まれているかどうかを確認する必要があります。titleは期待されるタイトルの断片です。タイトルが一致すると"
+"Trueを返し、そうでない場合はFalseを返します。"
+
+#: of selenium.webdriver.support.expected_conditions.title_is:1
+msgid ""
+"An expectation for checking the title of a page. title is the expected title, which must be an exact match returns True if the title matches, "
+"false otherwise."
+msgstr ""
+"ページのタイトルを確認するための期待。titleは予想されるタイトルです。完全一致でなければなりません。タイトルが一致する場合はTrueを返し、そうでない場"
+"合はfalseを返します。"
+
+#: of selenium.webdriver.support.expected_conditions.url_changes:1
+msgid ""
+"An expectation for checking the current url. url is the expected url, which must not be an exact match returns True if the url is different, false "
+"otherwise."
+msgstr ""
+"現在のURLをチェックする予定です。urlは予期されるurlであり、完全一致であってはいけません。urlが異なる場合はTrueを返し、そうでない場合はfalseを返しま"
+"す。"
+
+#: of selenium.webdriver.support.expected_conditions.url_contains:1
+msgid ""
+"An expectation for checking that the current url contains a case-sensitive substring. url is the fragment of url expected, returns True when the "
+"title matches, False otherwise"
+msgstr ""
+"現在のURLに大文字小文字を区別する部分文字列が含まれているかどうかを確認する必要があります。urlは予想されるurlの断片であり、タイトルが一致するとTrue"
+"を返し、そうでない場合はFalseを返します。"
+
+#: of selenium.webdriver.support.expected_conditions.url_matches:1
+msgid ""
+"An expectation for checking the current url. pattern is the expected pattern, which must be an exact match returns True if the title matches, "
+"false otherwise."
+msgstr ""
+"現在のURLをチェックする予定です。 patternは期待されるパターンです。完全一致でなければなりません。一致する場合はTrueを返し、一致しない場合はTrueを返"
+"します。"
+
+#: of selenium.webdriver.support.expected_conditions.url_to_be:1
+msgid ""
+"An expectation for checking the current url. url is the expected url, which must be an exact match returns True if the title matches, false "
+"otherwise."
+msgstr ""
+"現在のURLをチェックする予定です。 urlは期待URLであり、正確に一致する必要があります。一致する場合はTrueを返し、そうでない場合はfalseを返します"
+
+#: of selenium.webdriver.support.expected_conditions.visibility_of:1
+msgid ""
+"An expectation for checking that an element, known to be present on the DOM of a page, is visible. Visibility means that the element is not only "
+"displayed but also has a height and width that is greater than 0. element is the WebElement returns the (same) WebElement once it is visible"
+msgstr ""
+"ページのDOM上に存在することがわかっている要素が表示されているかどうかを確認する必要があります。可視性は、要素が表示されるだけでなく、高さと幅が0よ"
+"り大きいことを意味します。要素は、WebElementが表示されたら（同じ）WebElementを返します。"
+
+#: of selenium.webdriver.support.expected_conditions.visibility_of_all_elements_located:1
+msgid ""
+"An expectation for checking that all elements are present on the DOM of a page and visible. Visibility means that the elements are not only "
+"displayed but also has a height and width that is greater than 0. locator - used to find the elements returns the list of WebElements once they "
+"are located and visible"
+msgstr ""
+"すべての要素がページのDOM上に存在し、可視であることを確認する必要があります。可視性とは、要素が表示されるだけでなく、高さと幅が0より大きいことを意"
+"味します。locator - 要素が見つかるとWebElementsのリストが返され、表示されます"
+
+#: of selenium.webdriver.support.expected_conditions.visibility_of_any_elements_located:1
+msgid ""
+"An expectation for checking that there is at least one element visible on a web page. locator is used to find the element returns the list of "
+"WebElements once they are located"
+msgstr "Webページに少なくとも1つの要素が表示されていることを確認する必要があります。ロケータは、要素が見つかるとWebElementsのリストを返します"
+
+#: of selenium.webdriver.support.expected_conditions.visibility_of_element_located:1
+msgid ""
+"An expectation for checking that an element is present on the DOM of a page and visible. Visibility means that the element is not only displayed "
+"but also has a height and width that is greater than 0. locator - used to find the element returns the WebElement once it is located and visible"
+msgstr ""
+"ある要素がページのDOM上に存在し、可視であることを確認するための期待。可視性は、要素が表示されるだけでなく、0より大きい高さと幅も持つことを意味しま"
+"す。locator - 要素が見つかるとWebElementを返します。"
+
+#~ msgid "Element may not yet be on the screen at the time of the find operation,"
+#~ msgstr "検索操作時に要素がまだ画面に表示されていない可能性があります。"
+
+#~ msgid "Gets the screenshot of the current element. Returns False if there is"
+#~ msgstr "現在の要素のスクリーンショットを取得します。存在する場合はFalseを返します。"
+
+#~ msgid "file inputs, this could be a local file path."
+#~ msgstr "これはローカルファイルパスである可能性があります。"

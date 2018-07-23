@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Baiju Muthukadan
+# This file is distributed under the same license as the Selenium Python
+# Bindings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Selenium Python Bindings 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-28 14:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/page-objects.rst:4
+msgid "Page Objects"
+msgstr "ページオブジェクト"
+
+#: ../../source/page-objects.rst:6
+msgid ""
+"This chapter is a tutorial introduction to page objects design pattern.  "
+"A page object represents an area in the web application user interface "
+"that your test is interacting."
+msgstr ""
+"この章では、ページオブジェクトのデザインパターンのチュートリアルを紹介します。"
+"ページオブジェクトは、テストが対話しているWebアプリケーションユーザーインターフェイス内の領域を表します。"
+
+#: ../../source/page-objects.rst:10
+msgid "Benefits of using page object pattern:"
+msgstr ""
+"ページオブジェクトパターンを使用する利点:"
+
+#: ../../source/page-objects.rst:12
+msgid "Creating reusable code that can be shared across multiple test cases"
+msgstr "複数のテストケースで共有できる再利用可能なコードの作成"
+
+#: ../../source/page-objects.rst:13
+msgid "Reducing the amount of duplicated code"
+msgstr "重複したコードの量を減らす"
+
+#: ../../source/page-objects.rst:14
+msgid "If the user interface changes, the fix needs changes in only one place"
+msgstr "ユーザーインターフェイスが変更された場合、修正は1か所だけで変更する必要があります"
+
+#: ../../source/page-objects.rst:18
+msgid "Test case"
+msgstr "テストケース"
+
+#: ../../source/page-objects.rst:20
+msgid ""
+"Here is a test case which searches for a word in python.org website and "
+"ensure some results are found."
+msgstr ""
+"Python.orgのウェブサイトで単語を検索し、いくつかの結果が見つかるようにするテストケースです。"
+
+#: ../../source/page-objects.rst:61
+msgid "Page object classes"
+msgstr "ページオブジェクトクラス"
+
+#: ../../source/page-objects.rst:63
+msgid ""
+"The page object pattern intends creating an object for each web page. By "
+"following this technique a layer of separation between the test code and "
+"technical implementation is created."
+msgstr ""
+"ページオブジェクトパターンは、各ウェブページのオブジェクトを作成することを意図している。"
+"この技術に従うことによって、テストコードと技術的な実装との間の分離層が作り出されます。"
+
+#: ../../source/page-objects.rst:67
+msgid "The ``page.py`` will look like this::"
+msgstr "`page.py` は次のようになります::"
+
+#: ../../source/page-objects.rst:111
+msgid "Page elements"
+msgstr "ページ要素"
+
+#: ../../source/page-objects.rst:113
+msgid "The ``element.py`` will look like this::"
+msgstr "`element.py` は次のようになります::"
+
+#: ../../source/page-objects.rst:137
+msgid "Locators"
+msgstr "ロケータ"
+
+#: ../../source/page-objects.rst:139
+msgid ""
+"One of the practices is to separate the locator strings from the place "
+"where they are being used.  In this example, locators of the same page "
+"belong to same class."
+msgstr ""
+"習慣の1つは、ロケータ文字列が使用されている場所からロケータ文字列を分離することです。"
+"この例では、同じページのロケータは同じクラスに属します。"
+
+#: ../../source/page-objects.rst:143
+msgid "The ``locators.py`` will look like this::"
+msgstr "`locators.py` は次のようになります::"
+

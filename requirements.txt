@@ -1,2 +1,4 @@
 selenium
 Sphinx
+sphinx-intl
+sphinx-rtd-theme
